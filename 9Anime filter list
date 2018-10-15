@@ -67,6 +67,9 @@ mp4upload.com###overlay
 ! Advertisement tracking, not a big deal, just annoying if you don't want ad's tracking you.
 ||riluaneth.com/logo.png
 
+! This will stop some of those newly added popup advertisements even if you wish to enable banner advertisements.
+||xml.revrtb.com^$domain=9anime.to,important
+
 
 
 
@@ -75,7 +78,7 @@ mp4upload.com###overlay
 
 ! Whitelist (enable in user filters if you want to)
 ! 
-! Enable banner advertisements (if you trust 9Anime)
+! Enable banner advertisements and re-disable popup advertisements (if you trust 9Anime)
 ! @@||*^$domain=9anime.to
 !
 ! The following fix empty ad-windows
