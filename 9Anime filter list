@@ -36,7 +36,7 @@
 # Out of everything here, this has to be updated the most often.
 
 # Blocks the inline script that causes the above issues
-9anime.to##script:inject(abort-current-inline-script.js, _0x7b8f)
+9anime.to##script:contains(cssgram)
 
 # Blocks the hosts that cause the redirect and load the offsite scripts
 ||soujoobafoo.com
