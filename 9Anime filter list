@@ -43,7 +43,7 @@
 ||poogriry.click
 
 # Blocks bit.ly links on 9Anime that other ad partners have been trying to abuse to get around our adblocking attempts
-||bit.ly^$domain=9anime.to,important
+||bit.ly^$domain=9anime.to
 
 # Blocks popup requests from the following locations when on 9Animne, both have been used by the primary script as a way to force redirect popups.
 ||static.akacdn.ru^$popup,domain=9anime.to,important
