@@ -69,6 +69,8 @@ mp4upload.com###overlay
 
 # This will stop some of those newly added popup advertisements even if you wish to enable banner advertisements.
 ||xml.revrtb.com^$domain=9anime.to,important
+||tharbadir.com$domain=9anime.to,important
+||bodelen.com$domain=9anime.to,important
 
 
 
