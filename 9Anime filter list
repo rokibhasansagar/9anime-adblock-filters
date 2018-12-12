@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 10/21/2018 @ 6:40PM EDT
+# Last Update: 12/12/2018 @ 1:51PM EDT
 
 
 
@@ -23,6 +23,9 @@
 
 # This fixes just about everything, such as no server pickers, no episode information, and no auto-compile for the search bar
 @@||9anime.to/ajax/film/*$xmlhttprequest,first-party
+
+# Fix for the overly agressive cloudflare email filter from being able to valadate. Which hides anything with an @ symbol.
+@@||9anime.to/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js
 
 
 
