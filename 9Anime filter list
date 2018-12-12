@@ -3,6 +3,7 @@
 @@||9anime.to/user/ajax/*$xmlhttprequest
 @@||9anime.to/assets/min/frontend/all.js$script
 @@||9anime.to/ajax/film/*$xmlhttprequest
+@@||9anime.to/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js
 ||soujoobafoo.com
 ||poogriry.click
 ||bit.ly^$domain=9anime.to,important
