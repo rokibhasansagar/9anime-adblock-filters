@@ -30,6 +30,9 @@
 # Fix for certain cover-art to not be visible. Not sure why but 9Anime was storing these locally.
 @@||9anime.to/phymEi8D/*.jpg
 
+# Fix for Episode Schedule not updating when changing the day.
+@@||9anime.to/home/ajax/schedule*$xmlhttprequest
+
 
 
 
