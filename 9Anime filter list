@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 12/12/2018 @ 2:01PM EDT
+# Last Update: 12/15/2018 @ 4:17PM EDT
 
 
 
@@ -11,27 +11,35 @@
 
 # Fix the Episode information windows not appearing when hovering mouse over them and any "Server Error Messages"
 @@||9anime.to/ajax/episode/info$xmlhttprequest,first-party
+@@||9anime.ru/ajax/episode/info$xmlhttprequest,first-party
 
 # Fix the abilty to open episodes from watch-list
 @@||9anime.to/watch/*$popup
+@@||9anime.ru/watch/*$popup
 
 # Fix the login window from not working properly
 @@||9anime.to/user/ajax/*$xmlhttprequest,first-party
+@@||9anime.ru/user/ajax/*$xmlhttprequest,first-party
 
 # Fix the login window from not working properly, this script is a fallback used if the user (you) have something like noscript installed.
 @@||9anime.to/assets/min/frontend/all.js$script,first-party
+@@||9anime.ru/assets/min/frontend/all.js$script,first-party
 
 # This fixes just about everything, such as no server pickers, no episode information, and no auto-compile for the search bar
 @@||9anime.to/ajax/film/*$xmlhttprequest,first-party
+@@||9anime.ru/ajax/film/*$xmlhttprequest,first-party
 
 # Fix for the overly agressive cloudflare email filter from being able to valadate. Which hides anything with an @ symbol.
 @@||9anime.to/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js
+@@||9anime.ru/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js
 
 # Fix for certain cover-art to not be visible. Not sure why but 9Anime was storing these locally.
 @@||9anime.to/phymEi8D/*.jpg
+@@||9anime.ru/phymEi8D/*.jpg
 
 # Fix for Episode Schedule not updating when changing the day.
 @@||9anime.to/home/ajax/schedule*$xmlhttprequest
+@@||9anime.ru/home/ajax/schedule*$xmlhttprequest
 
 
 
@@ -46,6 +54,7 @@
 
 # Blocks the inline script that causes the above issues
 9anime.to##script:contains(cssgram)
+9anime.ru##script:contains(cssgram)
 
 # Blocks the hosts that cause the redirect and load the offsite scripts
 ||soujoobafoo.com
@@ -73,6 +82,13 @@ cssgram.min.css$domain=9anime.to,important
 # This'll remove Mp4upload's advertisement overlay which tends to be invisible and makes watching videos on 9Anime, using them as your host, dffifuclt.
 mp4upload.com###overlay
 
+# This'll hide RapidVideo's annoying recolored box.
+rapidvideo.com##.vjs-resize-manager
+
+# This'll make sure RapidVideo's RV Player keeps running even without enabling AdGuard's base filters.
+@@||rapidvideo.com^$script,domain=rapidvideo.com
+
+
 # Advertisement tracking, not a big deal, just annoying if you don't want ad's tracking you.
 ||riluaneth.com/logo.png
 
@@ -91,8 +107,12 @@ mp4upload.com###overlay
 # 
 # Enable banner advertisements and re-disable popup advertisements (if you trust 9Anime)
 # @@||*^$domain=9anime.to
+# @@||*^$domain=9anime.ru
 #
 # The following fix (remove) empty ad-windows
 # 9anime.to###sidebar > div.text-center.crop.widget
 # 9anime.to##.content > .mgid.text-center.crop.widget
 # 9anime.to##div.text-center.widget
+# 9anime.ru###sidebar > div.text-center.crop.widget
+# 9anime.ru##.content > .mgid.text-center.crop.widget
+# 9anime.ri##div.text-center.widget
