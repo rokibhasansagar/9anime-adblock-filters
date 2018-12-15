@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 12/15/2018 @ 4:17PM EDT
+# Last Update: 12/15/2018 @ 4:35PM EDT
 
 
 
@@ -61,15 +61,15 @@
 ||poogriry.click
 
 # Blocks bit.ly links on 9Anime that other ad partners have been trying to abuse to get around our adblocking attempts
-||bit.ly^$domain=9anime.to,important
+||bit.ly^$domain=9anime.to|9anime.ru,important
 
 # Blocks popup requests from the following locations when on 9Animne, both have been used by the primary script as a way to force redirect popups.
-||static.akacdn.ru^$popup,domain=9anime.to,important
-||google.com^$popup,domain=9anime.to,important
+||static.akacdn.ru^$popup,domain=9anime.to|9anime.ru,important
+||google.com^$popup,domain=9anime.to|9anime.ru,important
 
 ! Blocks both known script files by name, in case the above hosts change
-zeroclipboard.min.js$domain=9anime.to,important
-cssgram.min.css$domain=9anime.to,important
+zeroclipboard.min.js$domain=9anime.to|9anime.ru,important
+cssgram.min.css$domain=9anime.to|9anime.ru,important
 
 
 
@@ -93,9 +93,9 @@ rapidvideo.com##.vjs-resize-manager
 ||riluaneth.com/logo.png
 
 # This will stop some of those newly added popup advertisements even if you wish to enable banner advertisements.
-||xml.revrtb.com^$domain=9anime.to,important
-||tharbadir.com$domain=9anime.to,important
-||bodelen.com$domain=9anime.to,important
+||xml.revrtb.com^$domain=9anime.to|9anime.ru,important
+||tharbadir.com$domain=9anime.to|9anime.ru,important
+||bodelen.com$domain=9anime.to|9anime.ru,important
 
 
 
