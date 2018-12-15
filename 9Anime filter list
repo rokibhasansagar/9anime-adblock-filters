@@ -33,9 +33,11 @@
 @@||9anime.to/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js
 @@||9anime.ru/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js
 
-# Fix for certain cover-art to not be visible. Not sure why but 9Anime was storing these locally.
-@@||9anime.to/phymEi8D/*.jpg
-@@||9anime.ru/phymEi8D/*.jpg
+# Fix for certain cover-art to not be visible. Not sure why but 9Anime was storing these locally. (It'll keep hiding banner ads though)
+9anime.ru/scripts/*$image
+9anime.to/scripts/*$image
+@@||9anime.to/*/*/*$image
+@@||9anime.ru/*/*/*$image
 
 # Fix for Episode Schedule not updating when changing the day.
 @@||9anime.to/home/ajax/schedule*$xmlhttprequest
@@ -115,4 +117,4 @@ rapidvideo.com##.vjs-resize-manager
 # 9anime.to##div.text-center.widget
 # 9anime.ru###sidebar > div.text-center.crop.widget
 # 9anime.ru##.content > .mgid.text-center.crop.widget
-# 9anime.ri##div.text-center.widget
+# 9anime.ru##div.text-center.widget
