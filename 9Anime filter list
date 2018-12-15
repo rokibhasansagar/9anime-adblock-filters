@@ -6,6 +6,14 @@
 @@||9anime.to/home/ajax/schedule*$xmlhttprequest
 @@||9anime.to/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js
 @@||9anime.to/phymEi8D/*.jpg
+@@||9anime.ru/ajax/episode/info$xmlhttprequest
+@@||9anime.ru/watch/*$popup
+@@||9anime.ru/user/ajax/*$xmlhttprequest
+@@||9anime.ru/assets/min/frontend/all.js$script
+@@||9anime.ru/ajax/film/*$xmlhttprequest
+@@||9anime.ru/home/ajax/schedule*$xmlhttprequest
+@@||9anime.ru/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js
+@@||9anime.ru/phymEi8D/*.jpg
 ||soujoobafoo.com
 ||poogriry.click
 ||bit.ly^$domain=9anime.to,important
@@ -18,4 +26,7 @@
 ||xml.revrtb.com^$domain=9anime.to,important
 ||tharbadir.com$domain=9anime.to,important
 ||bodelen.com$domain=9anime.to,important
+@@||rapidvideo.com^$domain=rapidvideo.com,script
+||rapidvideo.com##.vjs-resize-manager
 9anime.to:contains(cssgram)
+9anime.ru:contains(cssgram)
