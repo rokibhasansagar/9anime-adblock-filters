@@ -1,0 +1,106 @@
+! Title: 9Anime.ru Filter-list
+! Expires: 1 days
+! Description: Filters to fix common issues with 9Anime and block malicious code
+! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
+# Last Update: 12/19/2018 @ 11:00PM EDT
+
+
+
+
+# Average user experence fixes (Fixes the website)
+
+# Fix the Episode information windows not appearing when hovering mouse over them and any "Server Error Messages"
+@@||9anime.ru/ajax/episode/info$xmlhttprequest,first-party
+
+# Fix the abilty to open episodes from watch-list
+@@||9anime.ru/watch/*$popup
+
+# Fix the login window from not working properly
+@@||9anime.ru/user/ajax/*$xmlhttprequest,first-party
+
+# Fix the login window from not working properly, this script is a fallback used if the user (you) have something like noscript installed.
+@@||9anime.ru/assets/min/frontend/all.js$script,first-party
+
+# This fixes just about everything, such as no server pickers, no episode information, and no auto-compile for the search bar
+@@||9anime.ru/ajax/film/*$xmlhttprequest,first-party
+
+# Fix for the overly agressive cloudflare email filter from being able to valadate. Which hides anything with an @ symbol.
+@@||9anime.ru/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js
+
+# Fix for certain cover-art to not be visible. Not sure why but 9Anime was storing these locally. (It'll keep hiding banner ads though)
+9anime.ru/scripts/*$image
+@@||9anime.ru/*/*/*$image
+
+# Fix for Episode Schedule not updating when changing the day.
+@@||9anime.ru/home/ajax/schedule*$xmlhttprequest
+
+
+
+
+
+
+
+# Blocking Malicious websites
+
+# The following is a mass attempt to prevent the current exploit that opens a new window to an image, followed by a redirect to a malicious website.
+# Out of everything here, this has to be updated the most often.
+
+# Blocks the inline script that causes the above issues
+9anime.ru##script:contains(cssgram)
+
+# Blocks the hosts that cause the redirect and load the offsite scripts
+||soujoobafoo.com
+||poogriry.click
+
+# Blocks bit.ly links on 9Anime that other ad partners have been trying to abuse to get around our adblocking attempts
+||bit.ly^$domain=9anime.ru,important
+
+# Blocks popup requests from the following locations when on 9Animne, both have been used by the primary script as a way to force redirect popups.
+||static.akacdn.ru^$popup,domain=9anime.ru,important
+||google.com^$popup,domain=9anime.ru,important
+
+! Blocks both known script files by name, in case the above hosts change
+zeroclipboard.min.js$domain=9anime.ru,important
+cssgram.min.css$domain=9anime.ru,important
+
+
+
+
+
+
+
+# Misc Filters
+
+# This'll remove Mp4upload's advertisement overlay which tends to be invisible and makes watching videos on 9Anime, using them as your host, dffifuclt.
+mp4upload.com###overlay
+
+# This'll hide RapidVideo's annoying recolored box.
+rapidvideo.com##.vjs-resize-manager
+
+# This'll make sure RapidVideo's RV Player keeps running even without enabling AdGuard's base filters.
+@@||rapidvideo.com^$script,domain=rapidvideo.com
+
+
+# Advertisement tracking, not a big deal, just annoying if you don't want ad's tracking you.
+||riluaneth.com/logo.png
+
+# This will stop some of those newly added popup advertisements even if you wish to enable banner advertisements.
+||xml.revrtb.com^$domain=9anime.ru,important
+||tharbadir.com$domain=9anime.ru,important
+||bodelen.com$domain=9anime.ru,important
+
+
+
+
+
+
+
+# Whitelist (enable in user filters if you want to)
+# 
+# Enable banner advertisements and re-disable popup advertisements (if you trust 9Anime)
+# @@||*^$domain=9anime.ru
+#
+# The following fix (remove) empty ad-windows
+# 9anime.ru###sidebar > div.text-center.crop.widget
+# 9anime.ru##.content > .mgid.text-center.crop.widget
+# 9anime.ru##div.text-center.widget
