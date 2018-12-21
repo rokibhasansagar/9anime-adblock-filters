@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 12/20/2018 @ 11:11AM EDT
+# Last Update: 12/21/2018 @ 3:28AM EDT
 
 
 
@@ -84,11 +84,19 @@ cssgram.min.css$domain=9anime.to|9anime.ru,important
 # This'll remove Mp4upload's advertisement overlay which tends to be invisible and makes watching videos on 9Anime, using them as your host, dffifuclt.
 mp4upload.com###overlay
 
+# This'll remove Mp4upload's HD logo from the video player.
+mp4upload.com##.jw-logo
+
 # This'll hide RapidVideo's annoying recolored box.
 rapidvideo.com##.vjs-resize-manager
 
 # This'll make sure RapidVideo's RV Player keeps running even without enabling AdGuard's base filters.
 @@||rapidvideo.com^$script,domain=rapidvideo.com
+
+# These filters stop RapidVideo, Streamango, and OpenLoad from disabling the right-click context menu.
+rapidvideo.com##+js(addEventListener-defuser.js, contextmenu)
+streamango.com##script:contains(contextmenu)
+openload.co##script:contains(contextmenu)
 
 
 # Advertisement tracking, not a big deal, just annoying if you don't want ad's tracking you.
