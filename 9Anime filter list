@@ -43,6 +43,10 @@
 @@||9anime.to/home/ajax/schedule
 @@||9anime.ru/home/ajax/schedule
 
+# Fix for the return of the banner advertisements & associated scripts.
+||9anime.to/inc/*
+||9anime.ru/inc/*
+
 
 
 
