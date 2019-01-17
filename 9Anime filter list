@@ -1,8 +1,8 @@
-! Title: 9Anime Filter-list
+! Title: 9Anime Filter-list: No Banner Ads
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 12/22/2018 @ 12:02AM EDT
+# Last Update: 1/17/2019 @ 2:25AM EDT
 
 
 
@@ -42,6 +42,10 @@
 # Fix for Episode Schedule not updating when changing the day.
 @@||9anime.to/home/ajax/schedule
 @@||9anime.ru/home/ajax/schedule
+
+# Fix for the return of the banner advertisements & associated scripts.
+||9anime.to/inc/*
+||9anime.ru/inc/*
 
 
 
@@ -98,25 +102,17 @@ rapidvideo.com##+js(addEventListener-defuser.js, contextmenu)
 streamango.com##script:contains(contextmenu)
 openload.co##script:contains(contextmenu)
 
-
 # Advertisement tracking, not a big deal, just annoying if you don't want ad's tracking you.
 ||riluaneth.com/logo.png
 
-# This will stop some of those newly added popup advertisements even if you wish to enable banner advertisements.
+# This will stop some of those newly added popup advertisements.
 ||xml.revrtb.com^$domain=9anime.to|9anime.ru,important
 ||tharbadir.com$domain=9anime.to|9anime.ru,important
 ||bodelen.com$domain=9anime.to|9anime.ru,important
 
 
 
-
-
-
-
 # Whitelist (Place these in the user filter's section of your AdBlocker, without the first # on the left)
-# 
-# Enable banner advertisements and re-disable popup advertisements (if you trust 9Anime)
-# @@||*^$domain=9anime.to|9anime.ru
 #
 # The following fix (remove) empty ad-windows
 # 9anime.to###sidebar > div.text-center.crop.widget
