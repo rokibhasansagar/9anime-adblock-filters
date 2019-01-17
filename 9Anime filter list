@@ -37,3 +37,5 @@
 ||9anime.ru:contains(cssgram)
 ||9anime.to##div.text-center.widget
 ||9anime.ru##div.text-center.widget
+||9anime.to/inc/*
+||9anime.ru/inc/*
