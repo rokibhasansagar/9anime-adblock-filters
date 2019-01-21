@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 1/17/2019 @ 2:25AM EDT
+# Last Update: 1/20/2019 @ 11:57PM EDT
 
 
 
@@ -46,6 +46,10 @@
 # Fix for the return of the banner advertisements & associated scripts.
 ||9anime.to/inc/*
 ||9anime.ru/inc/*
+
+# Fix for the default "uBlock filters" filterlist breaking an important script function.
+9anime.to#@#+js(set-constant.js, String.prototype.charAt, noopFunc)
+9anime.ru#@#+js(set-constant.js, String.prototype.charAt, noopFunc)
 
 
 
