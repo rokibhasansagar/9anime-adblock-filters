@@ -32,6 +32,7 @@
 ||tharbadir.com$domain=9anime.to|9anime.ru,important
 ||bodelen.com$domain=9anime.to|9anime.ru,important
 @@||rapidvideo.com^$domain=rapidvideo.com,script
+@@||openload.co/embed/*
 ||rapidvideo.com##.vjs-resize-manager
 ||9anime.to:contains(cssgram)
 ||9anime.ru:contains(cssgram)
