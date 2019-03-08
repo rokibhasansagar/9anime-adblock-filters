@@ -40,3 +40,8 @@
 ||9anime.ru##div.text-center.widget
 ||9anime.to/inc/*
 ||9anime.ru/inc/*
+||*&phone=*
+@@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru
+||streamango.com###videooverlay
+||adsco.re
+||openload.co/r$domain=openload.co|openload.pw
