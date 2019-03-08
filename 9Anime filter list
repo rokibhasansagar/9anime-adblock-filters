@@ -2,8 +2,10 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 2/27/2019 @ 1:02PM EDT
+# Last Update: 3/8/2019 @ 10:34AM EDT
 
+
+# Banner unblocking
 
 # Unblock traffic which originates from 9Anime and isn't blocked for being malicious as seen below.
 @@||*^$domain=9anime.to|9anime.ru
@@ -13,6 +15,9 @@
 9anime.to#@#div > div[id][style*="overflow:"][style*="hidden;"][style*="height:"]
 9anime.ru#@##sidebar > .widget.crop
 9anime.ru#@#div > div[id][style*="overflow:"][style*="hidden;"][style*="height:"]
+
+
+
 
 
 # Average user experence fixes (Fixes the website)
@@ -54,6 +59,11 @@
 # Fix for the default "uBlock filters" filterlist breaking an important script function.
 9anime.to#@#+js(set-constant.js, String.prototype.charAt, noopFunc)
 9anime.ru#@#+js(set-constant.js, String.prototype.charAt, noopFunc)
+
+# Double-fix for google's captcha not appearing all the time
+@@||gstatic.com/recaptcha/$script
+
+
 
 
 # Blocking Malicious websites
