@@ -51,8 +51,15 @@
 
 # Misc Filters & quality of life fixes
 
-# This prevent's rapidvideo from loading their overlay skin for the video player. Allowing you to easily download videos again.
-rapidvideo.com/js/video.min.js$script,important
+# This prevent's rapidvideo from breaking when other filter adjust things
+@@||rapidvideo.com/js/video.min.js$script
+@@||rapidvideo.com/js/videojs.hotkeys.min.js$script
+@@||rapidvideo.com/js/new.js$script
+@@||rapidvideo.com/js/js.cookie.js$script
+@@||rapidvideo.com/js/jquery.tipsy.js$script
+@@||rapidvideo.com/js/jquery.limit-1.2.source.js$script
+@@||rapidvideo.com/js/jquery-ui.min.js$script
+@@||rapidvideo.com/js/jquery.validate.min.js$script
 
 # This'll reduce the number of clicks needed when using openload before the video starts playing.
 openload.co##div:matches-css(z-index: 300000)
