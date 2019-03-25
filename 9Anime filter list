@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 3/24/2019 @ 8:15PM EDT
+# Last Update: 3/25/2019 @ 10:57 AM EDT
 
 
 # Banner unblocking
@@ -54,15 +54,18 @@
 # Misc Filters & quality of life fixes
 
 # This prevent's rapidvideo from breaking when other filter adjust things
-@@||rapidvideo.com/js/video.min.js$script
+# REEEE, they keep moving the hotkeys file around!!!
+@@||rapidvideo.com/*/videojs.hotkeys.min.js$script
 @@||rapidvideo.com/videojs.hotkeys.min.js$script
-@@||rapidvideo.com/js/videojs.hotkeys.min.js$script
-@@||rapidvideo.com/js/new.js$script
-@@||rapidvideo.com/js/js.cookie.js$script
-@@||rapidvideo.com/js/jquery.tipsy.js$script
-@@||rapidvideo.com/js/jquery.limit-1.2.source.js$script
-@@||rapidvideo.com/js/jquery-ui.min.js$script
-@@||rapidvideo.com/js/jquery.validate.min.js$script
+@@||cloudflare.com/ajax/libs/videojs-hotkeys/*/videojs.hotkeys.min.js$script
+# Video Player javascript
+@@||rapidvideo.com/*/video.min.js$script
+@@||rapidvideo.com/*/new.js$script
+@@||rapidvideo.com/*/js.cookie.js$script
+@@||rapidvideo.com/*/jquery.tipsy.js$script
+@@||rapidvideo.com/*/jquery.limit-1.2.source.js$script
+@@||rapidvideo.com/*/jquery-ui.min.js$script
+@@||rapidvideo.com/*/jquery.validate.min.js$script
 
 # This'll reduce the number of clicks needed when using openload before the video starts playing.
 openload.co##div:matches-css(z-index: 300000)
