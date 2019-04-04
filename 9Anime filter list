@@ -56,8 +56,9 @@
 # This'll reduce the number of clicks needed when using openload before the video starts playing.
 openload.co##div:matches-css(z-index: 300000)
 
-# This'll remove Mp4upload's advertisement overlay which tends to be invisible and makes watching videos on 9Anime, using them as your host, dffifuclt.
+# This'll remove Mp4upload & Streamango's advertisement overlay which tends to be invisible.
 mp4upload.com###overlay
+streamango.com###videooverlay
 
 # This'll remove Mp4upload's HD logo from the video player.
 mp4upload.com##.jw-logo
