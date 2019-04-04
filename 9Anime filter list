@@ -53,7 +53,7 @@
 
 # Misc Filters & quality of life fixes
 
-# This prevent's rapidvideo from breaking when other filter adjust things
+# This prevent's rapidvideo from breaking when other filters adjust things
 # REEEE, they keep moving the hotkeys file around!!!
 @@||rapidvideo.com/*/videojs.hotkeys.min.js$script
 @@||rapidvideo.com/videojs.hotkeys.min.js$script
@@ -78,6 +78,9 @@ mp4upload.com##.jw-logo
 
 # This'll hide RapidVideo's annoying recolored box.
 rapidvideo.com##.vjs-resize-manager
+
+# This'll hide RapidVideo's annoying "premium" popup.
+rapidvideo.com###top350p
 
 # These filters stop RapidVideo, Streamango, and OpenLoad from disabling the right-click context menu.
 rapidvideo.com##+js(addEventListener-defuser.js, contextmenu)
