@@ -10,6 +10,14 @@
 ||streamango.com###videooverlay
 ||rapidvideo.com##.vjs-resize-manager
 ||rapidvideo.com###top350p
+||9anime.to###top350p
+||9anime.ru###top350p
+||9anime.to###overlay
+||9anime.ru###overlay
+||9anime.to###videooverlay
+||9anime.ru###videooverlay
+||9anime.to##.vjs-resize-manager
+||9anime.ru##.vjs-resize-manager
 ||9anime.to##div.text-center.widget
 ||9anime.ru##div.text-center.widget
 ||9anime.to###sidebar > .widget.crop.text-center
@@ -20,6 +28,7 @@
 ||zap.buzz
 ||bebi.com
 ||mgid.com
+||adnxs.com
 ||trk10.com
 ||prpops.com
 ||revrtb.com
