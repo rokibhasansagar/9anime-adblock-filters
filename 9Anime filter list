@@ -7,15 +7,13 @@
 @@||9anime.ru/assets/$script
 @@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru
 ||mp4upload.com###overlay
+||rapidvideo.com###top350p
 ||streamango.com###videooverlay
 ||rapidvideo.com##.vjs-resize-manager
-||rapidvideo.com###top350p
 ||9anime.to###top350p
 ||9anime.ru###top350p
 ||9anime.to###overlay
 ||9anime.ru###overlay
-||9anime.to###videooverlay
-||9anime.ru###videooverlay
 ||9anime.to##.vjs-resize-manager
 ||9anime.ru##.vjs-resize-manager
 ||9anime.to##div.text-center.widget
