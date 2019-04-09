@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 4/7/2019 @ 12:35 AM EDT
+# Last Update: 4/9/2019 @ 12:19 PM EDT
 
 
 
@@ -10,30 +10,28 @@
 # General Fixes
 
 # Average user experence fixes (Fixes the website)
-@@||9anime.to/assets/$script
-@@||9anime.ru/assets/$script
-@@||9anime.to/*$xmlhttprequest
-@@||9anime.ru/*$xmlhttprequest
+@@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.live|9anime.nl
+@@||9anime.*/*$xmlhttprequest,domain=9anime.to|9anime.ru|9anime.live|9anime.nl
 
 # Fix for google's captcha not appearing all the time
 @@||gstatic.com/recaptcha/$script
-@@||9anime.to/captcha/$image
-@@||9anime.ru/captcha/$image
+@@||9anime.*/captcha/$image,domain=9anime.to|9anime.ru|9anime.live|9anime.nl
 
 # Fix for disqus not always loading
-@@||disqus.com^$domain=9anime.to|9anime.ru
-@@||disquscdn.com^$domain=9anime.to|9anime.ru
+@@||disqus.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl
+@@||disquscdn.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl
 
 # Fix for the overly aggressive cloudflare email filter. Stopping it from hiding anything with an @ symbol.
-@@||9anime.to/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js
-@@||9anime.ru/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js
+@@||9anime.*/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js$domain=9anime.to|9anime.ru|9anime.live|9anime.nl
 
 # Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
-@@|http*://$third-party,stylesheet,domain=9anime.to|9anime.ru
+@@|http*://$third-party,stylesheet,domain=9anime.to|9anime.ru|9anime.live|9anime.nl
 
 # Fix for missing tooltips
 9anime.ru#@#+js(set-constant.js, String.prototype.charAt, trueFunc)
 9anime.to#@#+js(set-constant.js, String.prototype.charAt, trueFunc)
+9anime.nl#@#+js(set-constant.js, String.prototype.charAt, trueFunc)
+9anime.live#@#+js(set-constant.js, String.prototype.charAt, trueFunc)
 
 
 
@@ -68,10 +66,16 @@ openload.co##script:contains(contextmenu)
 # The following fix (remove) empty ad-windows
 9anime.to##div.text-center.widget
 9anime.ru##div.text-center.widget
+9anime.nl##div.text-center.widget
+9anime.live##div.text-center.widget
 9anime.to###sidebar > .widget.crop.text-center
 9anime.ru###sidebar > .widget.crop.text-center
+9anime.nl###sidebar > .widget.crop.text-center
+9anime.live###sidebar > .widget.crop.text-center
 9anime.to###sidebar > div.text-center.crop.widget
 9anime.ru###sidebar > div.text-center.crop.widget
+9anime.nl###sidebar > div.text-center.crop.widget
+9anime.live###sidebar > div.text-center.crop.widget
 
 
 
@@ -97,3 +101,7 @@ openload.co##script:contains(contextmenu)
 9anime.to##+js(abort-current-inline-script.js, atob, decodeURIComponent)
 9anime.ru##+js(abort-current-inline-script.js, RegExp, zfgloaded)
 9anime.ru##+js(abort-current-inline-script.js, atob, decodeURIComponent)
+9anime.nl##+js(abort-current-inline-script.js, RegExp, zfgloaded)
+9anime.nl##+js(abort-current-inline-script.js, atob, decodeURIComponent)
+9anime.live##+js(abort-current-inline-script.js, RegExp, zfgloaded)
+9anime.live##+js(abort-current-inline-script.js, atob, decodeURIComponent)
