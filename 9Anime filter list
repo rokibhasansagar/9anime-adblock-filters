@@ -1,27 +1,36 @@
-@@||9anime.to/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js
-@@||9anime.ru/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js
+@@||9anime.*/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js$domain=9anime.to|9anime.ru|9anime.nl|9anime.live
 @@||gstatic.com/recaptcha/$script
-@@||9anime.to/captcha/$image
-@@||9anime.ru/captcha/$image
-@@||9anime.to/assets/$script
-@@||9anime.ru/assets/$script
-@@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru
+@@||9anime.*/captcha/$image,domain=9anime.to|9anime.ru|9anime.nl|9anime.live
+@@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live
+@@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.nl|9anime.live
 ||mp4upload.com###overlay
 ||rapidvideo.com###top350p
 ||streamango.com###videooverlay
 ||rapidvideo.com##.vjs-resize-manager
 ||9anime.to###top350p
 ||9anime.ru###top350p
+||9anime.nl###top350p
+||9anime.live###top350p
 ||9anime.to###overlay
 ||9anime.ru###overlay
+||9anime.nl###overlay
+||9anime.live###overlay
 ||9anime.to##.vjs-resize-manager
 ||9anime.ru##.vjs-resize-manager
+||9anime.nl##.vjs-resize-manager
+||9anime.live##.vjs-resize-manager
 ||9anime.to##div.text-center.widget
 ||9anime.ru##div.text-center.widget
+||9anime.nl##div.text-center.widget
+||9anime.live##div.text-center.widget
 ||9anime.to###sidebar > .widget.crop.text-center
 ||9anime.ru###sidebar > .widget.crop.text-center
+||9anime.nl###sidebar > .widget.crop.text-center
+||9anime.live###sidebar > .widget.crop.text-center
 ||9anime.to###sidebar > div.text-center.crop.widget
 ||9anime.ru###sidebar > div.text-center.crop.widget
+||9anime.nl###sidebar > div.text-center.crop.widget
+||9anime.live###sidebar > div.text-center.crop.widget
 ||*&phone=*
 ||zap.buzz
 ||bebi.com
