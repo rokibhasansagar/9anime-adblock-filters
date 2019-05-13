@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 5/6/2019 @ 1:21 PM EDT
+# Last Update: 5/13/2019 @ 11:56 AM EDT
 
 
 # Banner unblocking
@@ -73,7 +73,7 @@ mp4upload.com###overlay
 streamango.com###videooverlay
 
 # This'll remove Mp4upload's HD logo from the video player.
-mp4upload.com##.jw-logo
+mp4upload.com##.vjs-logo
 
 # This'll hide RapidVideo's annoying recolored box.
 rapidvideo.com##.vjs-resize-manager
@@ -83,6 +83,7 @@ rapidvideo.com###top350p
 
 # These filters stop RapidVideo, Streamango, and OpenLoad from disabling the right-click context menu.
 rapidvideo.com##+js(addEventListener-defuser.js, contextmenu)
+mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
 streamango.com##script:contains(contextmenu)
 openload.co##script:contains(contextmenu)
 
