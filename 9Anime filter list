@@ -3,9 +3,10 @@
 @@||9anime.*/captcha/$image,domain=9anime.to|9anime.ru|9anime.nl|9anime.live
 @@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live
 @@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.nl|9anime.live
-||mp4upload.com###overlay
 ||rapidvideo.com###top350p
 ||streamango.com###videooverlay
+||mp4upload.com##.vjs-over.vjs-fade
+||mp4upload.com##.vjs-resize-manager
 ||rapidvideo.com##.vjs-resize-manager
 ||9anime.to###top350p
 ||9anime.ru###top350p
@@ -15,6 +16,10 @@
 ||9anime.ru###overlay
 ||9anime.nl###overlay
 ||9anime.live###overlay
+||9anime.to##.vjs-over.vjs-fade
+||9anime.ru##.vjs-over.vjs-fade
+||9anime.nl##.vjs-over.vjs-fade
+||9anime.live##.vjs-over.vjs-fade
 ||9anime.to##.vjs-resize-manager
 ||9anime.ru##.vjs-resize-manager
 ||9anime.nl##.vjs-resize-manager
