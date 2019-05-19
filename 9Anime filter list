@@ -3,6 +3,10 @@
 @@||9anime.*/captcha/$image,domain=9anime.to|9anime.ru|9anime.nl|9anime.live
 @@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live
 @@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.nl|9anime.live
+@@||rapidvideo.com/*/video-js-6.2.0.js
+@@||rapidvideo.com/*/silvermine-videojs-quality-selector.min.js
+@@||rapidvideo.com/*/videojs.hotkeys-0.2.25.min.js
+@@||rapidvideo.com/*/pack.js
 ||rapidvideo.com###top350p
 ||streamango.com###videooverlay
 ||mp4upload.com##.vjs-over.vjs-fade
