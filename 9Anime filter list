@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 5/30/2019 @ 10:00 AM EDT
+# Last Update: 5/30/2019 @ 3:02 PM EDT
 # Hope this works for you /u/RedditChickenWings
 
 
@@ -93,10 +93,15 @@ openload.co##script:contains(contextmenu)
 9anime.live##+js(abort-current-inline-script.js, RegExp, zfgloaded)
 9anime.live##+js(abort-current-inline-script.js, atob, decodeURIComponent)
 
-# Remove Popups on Prettyfast.to
-*$subdocument,domain=prettyfast.to
+# Remove Popups on Prettyfast.to (F5)
 prettyfast.to##+js(addEventListener-defuser.js, mousedown)
-||ceeglagu.net
+
+# Kill other popup providers
+||ceeglagu.net^
+||deloplen.com^
+||remtoaku.net^
+||dilruwha.net^
+||deloplen.com^
 
 
 
