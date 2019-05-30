@@ -82,11 +82,11 @@ openload.co##script:contains(contextmenu)
 prettyfast.to##+js(addEventListener-defuser.js, mousedown)
 
 # Kill other popup providers
-||ceeglagu.net^
-||deloplen.com^
 ||remtoaku.net^
-||dilruwha.net^
+||ceeglagu.net^
+||stazumik.net^
 ||deloplen.com^
+||dilruwha.net^
 
 
 
