@@ -7,6 +7,8 @@
 @@||rapidvideo.com/*/silvermine-videojs-quality-selector.min.js
 @@||rapidvideo.com/*/videojs.hotkeys-0.2.25.min.js
 @@||rapidvideo.com/*/pack.js
+@@||jwpsrv.com^$domain=prettyfast.to
+@@||*.googleusercontent.com^$domain=prettyfast.to
 ||rapidvideo.com###top350p
 ||streamango.com###videooverlay
 ||mp4upload.com##.vjs-over.vjs-fade
@@ -59,5 +61,6 @@
 ||moneymakercdn.com
 ||adsco.re$important
 ||popads.net$important
+||*$domain=prettyfast.to
 ||propellerclick.com$important
 ||addthis.com^$third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs
