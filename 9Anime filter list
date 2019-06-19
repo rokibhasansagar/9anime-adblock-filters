@@ -43,6 +43,7 @@
 ||9anime.ru###sidebar > div.text-center.crop.widget
 ||9anime.nl###sidebar > div.text-center.crop.widget
 ||9anime.live###sidebar > div.text-center.crop.widget
+about:blank$popup
 ||*&phone=*
 ||zap.buzz
 ||bebi.com
@@ -53,6 +54,7 @@
 ||prpops.com
 ||revrtb.com
 ||defpush.com
+||*.hwcdn.net
 ||remtoaku.net
 ||stazumik.net
 ||dilruwha.net
