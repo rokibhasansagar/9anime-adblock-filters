@@ -4,9 +4,9 @@
 @@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live
 @@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.nl|9anime.live
 @@||rapidvideo.com/*/videojs.ima.js
-@@||rapidvideo.com/*/video-js-7.5.4.js
+@@||rapidvideo.com/*/video-js-*.js
 @@||rapidvideo.com/*/silvermine-videojs-quality-selector.min.js
-@@||rapidvideo.com/*/videojs.hotkeys-0.2.25.min.js
+@@||rapidvideo.com/*/videojs.hotkeys-*.min.js
 @@||rapidvideo.com/*/pack.js
 @@||prettyfast.to
 @@||jwpsrv.com^$domain=prettyfast.to
@@ -51,9 +51,9 @@ about:blank$popup
 ||mgid.com
 ||adnxs.com
 ||trk10.com
-||exosrv.com
 ||prpops.com
 ||revrtb.com
+||realsrv.com
 ||defpush.com
 ||*.hwcdn.net
 ||remtoaku.net
@@ -61,9 +61,12 @@ about:blank$popup
 ||dilruwha.net
 ||glauvoob.com
 ||theonecdn.com
+||suprclicks.com
+||suprclicks.info
 ||popmonetizer.com
 ||moneymakercdn.com
 ||adsco.re$important
+||exosrv.com$important
 ||popads.net$important
 ||ceeglagu.net$important
 ||deloplen.com$important
