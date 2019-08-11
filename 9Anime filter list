@@ -57,10 +57,11 @@ openload.pw##script:contains(contextmenu)
 
 # Prettyfast.to Fixes
 ||*$domain=prettyfast.to
-@@||prettyfast.to
-@@||jwpsrv.com^$domain=prettyfast.to
-@@||googleapis.com^$domain=prettyfast.to
-@@||*.googleusercontent.com^$domain=prettyfast.to
+prettyfast.to##.afs_ads
+@@||prettyfast.to^$important
+@@||jwpsrv.com^$domain=prettyfast.to,important
+@@||googleapis.com^$domain=prettyfast.to,important
+@@||googleusercontent.com^$domain=prettyfast.to,important
 prettyfast.to##+js(nowebrtc.js)
 prettyfast.to##+js(abort-current-inline-script.js, Math, zfgloaded)
 
@@ -84,6 +85,7 @@ prettyfast.to##+js(abort-current-inline-script.js, Math, zfgloaded)
 # Advertisement Blocking
 ||revrtb.com^$third-party
 ||defpush.com^$third-party
+||deloplen.com^$third-party
 ||popmonetizer.com^$third-party
 ||propellerclick.com^$third-party
 ||runative-syndicate.com^$third-party
