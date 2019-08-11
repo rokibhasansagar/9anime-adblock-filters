@@ -56,6 +56,7 @@ streamango.com##script:contains(contextmenu)
 openload.pw##script:contains(contextmenu)
 
 # Prettyfast.to Fixes
+*$domain=prettyfast.to
 @@||prettyfast.to^$important
 @@||jwpsrv.com^$important,domain=prettyfast.to
 @@||googleapis.com^$important,domain=prettyfast.to
