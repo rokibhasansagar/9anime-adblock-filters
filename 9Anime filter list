@@ -57,10 +57,10 @@ openload.pw##script:contains(contextmenu)
 
 # Prettyfast.to Fixes
 *$domain=prettyfast.to
-@@||prettyfast.to^$important
-@@||jwpsrv.com^$important,domain=prettyfast.to
-@@||googleapis.com^$important,domain=prettyfast.to
-@@||googleusercontent.com^$important,domain=prettyfast.to
+@@||prettyfast.to^
+@@||jwpsrv.com^$domain=prettyfast.to
+@@||googleapis.com^$domain=prettyfast.to
+@@||googleusercontent.com^$domain=prettyfast.to
 prettyfast.to##+js(nowebrtc.js)
 prettyfast.to##+js(abort-current-inline-script.js, Math, zfgloaded)
 prettyfast.to##.afs_ads
