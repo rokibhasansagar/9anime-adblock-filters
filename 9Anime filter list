@@ -80,13 +80,14 @@ about:blank$popup
 ||wpnjs.com$third-party
 ||sleepto.com$important
 ||steepto.com$important
+||zijaipse.com$important
+||oukruque.com$important
 ||gleechie.net$important
 ||ceeglagu.net$important
 ||deloplen.com$important
 ||exdynsrv.com$important
 ||google.com/favicon.ico
 ||*$domain=prettyfast.to
-||runative-syndicate.com
 ||ie8eamus.com$important
 ||sevootie.com$important
 ||shusacem.net$important
@@ -104,6 +105,7 @@ about:blank$popup
 ||*.doubleclick.net$important
 ||spotscenered.info$important
 ||propellerclick.com$important
+||runative-syndicate.com$important
 ||googletagmanager.com/gtm.js$script
 ||imasdk.googleapis.com^$third-party
 ||googletagmanager.com/gtag/$third-party
