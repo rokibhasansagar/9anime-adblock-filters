@@ -82,8 +82,10 @@ prettyfast.to##+js(abort-current-inline-script.js, Math, zfgloaded)
 
 # Standalone imports from other filter-lists
 # Advertisement Blocking
+||zap.buzz^$third-party
 ||revrtb.com^$third-party
 ||defpush.com^$third-party
+||class2deal.com^$third-party
 ||popmonetizer.com^$third-party
 ||propellerclick.com^$third-party
 ||runative-syndicate.com^$third-party
