@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 10/4/2019 @ 1:59 AM EDT
+# Last Update: 10/4/2019 @ 2:05 AM EDT
 
 
 
@@ -62,6 +62,7 @@ openload.pw##script:contains(contextmenu)
 @@||googleapis.com^$domain=prettyfast.to
 @@||*.googleusercontent.com^$domain=prettyfast.to
 @@||www.gstatic.com/cv/js/sender/v*/cast_sender.js$domain=prettyfast.to
+@@||www.gstatic.com/cast/sdk/libs/sender/*/cast_framework.js$domain=prettyfast.to
 prettyfast.to##.afs_ads
 prettyfast.to##+js(nowebrtc.js)
 prettyfast.to##+js(abort-current-inline-script.js, Math, zfgloaded)
