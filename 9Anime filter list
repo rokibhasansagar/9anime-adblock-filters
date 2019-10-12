@@ -1,8 +1,8 @@
-@@||9anime.*/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js$domain=9anime.to|9anime.ru|9anime.nl|9anime.live
+@@||9anime.*/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
 @@||gstatic.com/recaptcha/$script
-@@||9anime.*/captcha/$image,domain=9anime.to|9anime.ru|9anime.nl|9anime.live
-@@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live
-@@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.nl|9anime.live
+@@||9anime.*/captcha/$image,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
+@@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
+@@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
 @@||rapidvideo.com/*/videojs.ima.js
 @@||rapidvideo.com/*/video-js-*.js
 @@||rapidvideo.com/*/silvermine-videojs-quality-selector.min.js
