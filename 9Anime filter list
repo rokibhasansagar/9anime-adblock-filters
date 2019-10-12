@@ -2,15 +2,15 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 10/4/2019 @ 2:05 AM EDT
+# Last Update: 10/12/2019 @ 4:27 AM EDT
 
 
 # Banner unblocking
 
 # Unblock traffic which originates from 9Anime and isn't blocked for being malicious as seen below.
-@@||*^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl
+@@||*^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
 
-# Blocks a new advertising partner that was being given a temprary trial.
+# Blocks a rogue advertiser.
 class2deal.com^$important
 
 # Stop uBlock's base filters from disabling creation of sidebar ads.
@@ -18,6 +18,7 @@ class2deal.com^$important
 9anime.ru#@#+js(abort-current-inline-script.js, Math, zfgloaded)
 9anime.nl#@#+js(abort-current-inline-script.js, Math, zfgloaded)
 9anime.live#@#+js(abort-current-inline-script.js, Math, zfgloaded)
+9anime.one#@#+js(abort-current-inline-script.js, Math, zfgloaded)
 
 # Disable cosmetic filtering of the banner ads
 9anime.to#@##sidebar > .widget.crop
@@ -28,19 +29,21 @@ class2deal.com^$important
 9anime.nl#@#div > div[id][style*="overflow:"][style*="hidden;"][style*="height:"]
 9anime.live#@##sidebar > .widget.crop
 9anime.live#@#div > div[id][style*="overflow:"][style*="hidden;"][style*="height:"]
+9anime.one#@##sidebar > .widget.crop
+9anime.one#@#div > div[id][style*="overflow:"][style*="hidden;"][style*="height:"]
 
 
 # General Fixes
 
 # Average user experence fixes (Fixes the website)
-@@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.live|9anime.nl
-@@||9anime.*/*$xmlhttprequest,domain=9anime.to|9anime.ru|9anime.live|9anime.nl
+@@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
+@@||9anime.*/*$xmlhttprequest,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
 
 # Fix for the overly aggressive cloudflare email filter. Stopping it from hiding anything with an @ symbol.
-@@||9anime.*/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js$domain=9anime.to|9anime.ru|9anime.live|9anime.nl
+@@||9anime.*/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
 
 # Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
-@@|http*://$third-party,stylesheet,domain=9anime.to|9anime.ru|9anime.live|9anime.nl
+@@|http*://$third-party,stylesheet,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
 
 
 # Misc Filters & quality of life fixes
