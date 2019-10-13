@@ -2,23 +2,23 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-! Last Update: 10/13/2019 @ 1:41 AM EDT
-
-
-
-
+! Last Update: 10/13/2019 @ 1:46 AM EDT
+!
+!
+!
+!
 ! General 9Anime Fixes
 ! Average user experence fixes (Fixes the website)
 @@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
 @@||9anime.*/*$xmlhttprequest,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
-
+!
 ! Fix for the overly aggressive cloudflare email filter. Stopping it from hiding anything with an @ symbol.
 @@||9anime.*/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
-
+!
 ! Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
 @@|http*://$third-party,stylesheet,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
-
-
+!
+!
 ! External Player Tweaks
 ! This prevent's rapidvideo from breaking when other filters adjust things
 @@||cloudflare.com/ajax/libs/videojs-hotkeys/*/videojs.hotkeys.min.js$script
@@ -27,25 +27,25 @@
 @@||rapidvideo.com/*/video-js-*.js
 @@||rapidvideo.com/*/videojs.hotkeys-*.min.js
 @@||rapidvideo.com/*/silvermine-videojs-quality-selector.min.js
-
+!
 ! Compatability for Easylist & Openload
 @@||easylist.club^$script,domain=openload.pw
 openload.pw#@#.adsbox
-
+!
 ! This'll remove Mp4upload & Streamango's advertisement overlay which tends to be invisible.
 mp4upload.com##.vjs-over.vjs-fade
 streamango.com###videooverlay
-
+!
 ! This'll remove Mp4upload's HD logo from the video player.
 mp4upload.com##.vjs-logo
 mp4upload.com##.vjs-resize-manager
-
+!
 ! This'll hide RapidVideo's annoying recolored box.
 rapidvideo.com##.vjs-resize-manager
-
+!
 ! This'll hide RapidVideo's annoying "premium" popup.
 rapidvideo.com###top350p
-
+!
 ! Prettyfast.to Fixes
 ||*$domain=prettyfast.to
 @@||prettyfast.to
@@ -55,103 +55,106 @@ rapidvideo.com###top350p
 @@||www.gstatic.com/cv/js/sender/v*/cast_sender.js$domain=prettyfast.to
 @@||www.gstatic.com/cast/sdk/libs/sender/*/cast_framework.js$domain=prettyfast.to
 prettyfast.to##.afs_ads
-
+!
 ! Visual Tweaks
 ! The following fix (remove) empty ad-windows
 9anime.to##div.text-center.widget
 9anime.ru##div.text-center.widget
 9anime.nl##div.text-center.widget
 9anime.live##div.text-center.widget
+9anime.one##div.text-center.widget
 9anime.to###sidebar > .widget.crop.text-center
 9anime.ru###sidebar > .widget.crop.text-center
 9anime.nl###sidebar > .widget.crop.text-center
 9anime.live###sidebar > .widget.crop.text-center
+9anime.one###sidebar > .widget.crop.text-center
 9anime.to###sidebar > div.text-center.crop.widget
 9anime.ru###sidebar > div.text-center.crop.widget
 9anime.nl###sidebar > div.text-center.crop.widget
 9anime.live###sidebar > div.text-center.crop.widget
-
-
+9anime.one###sidebar > div.text-center.crop.widget
+!
+!
 ! Standalone imports from other filter-lists
 ! Advertisement Blocking
-||zap.buzz^$third-party
-||defpush.com^$third-party
-||class2deal.com^$third-party
-||popmonetizer.com^$third-party
-||propellerclick.com^$third-party
-||runative-syndicate.com^$third-party
-||addthis.com^$third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs
-
+zap.buzz^$third-party
+defpush.com^$third-party
+class2deal.com^$third-party
+popmonetizer.com^$third-party
+propellerclick.com^$third-party
+runative-syndicate.com^$third-party
+addthis.com^$third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs
+!
 ! Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
-||disqus.com/api/ping?$third-party
-||google-analytics.com^
-||referrer.disqus.com^
-||revrtb.com^
-||amung.us^
-||bebi.com^
-||mgid.com^
+disqus.com/api/ping?$third-party
+google-analytics.com^
+referrer.disqus.com^
+revrtb.com^
+amung.us^
+bebi.com^
+mgid.com^
 .php?zoneid=
 /ping.gif?
 /apu.php?zoneid=
 .com/ads-
-
+!
 ! Mobile Device "External Import" list
 about:blank$popup
-||*&phone=*
-||adnxs.com
-||trk10.com
-||prpops.com
-||realsrv.com
-||*.hwcdn.net
-||remtoaku.net
-||stazumik.net
-||dilruwha.net
-||raigluce.net
-||gromairt.net
-||glauvoob.com
-||theonecdn.com
-||suprclicks.com
-||suprclicks.info
-||myornamenti.com
-||onclicksuper.com
-||moneymakercdn.com
-||adsco.re$important
-||adservice.google.com
-||exosrv.com$important
-||popads.net$important
-||vidcpm.com$important
-||remarketingpixel.com
-||wpnjs.com$third-party
-||sleepto.com$important
-||steepto.com$important
-||zijaipse.com$important
-||oukruque.com$important
-||gleechie.net$important
-||ceeglagu.net$important
-||deloplen.com$important
-||exdynsrv.com$important
-||google.com/favicon.ico
-||ie8eamus.com$important
-||sevootie.com$important
-||shusacem.net$important
-||caithamo.net$important
-||grooksom.com$important
-||jotchept.com$important
-||tharbadir.com$important
-||fd7qz88ckd.com$important
-||l6b587tcj1.com$important
-||jf71qh5v14.com$important
-||yr9n47004g.com$important
-||bnsjb1ab1e.com$important
-||0byv9mgbn0.com$important
-||cjl58f3agc.com$important
-||dt2xr6g2i5.com$important
-||track.adsplay.in$important
-||direct.apus.tech$important
-||*.doubleclick.net$important
-||spotscenered.info$important
-||googletagmanager.com/gtm.js$script
-||imasdk.googleapis.com^$third-party
-||googletagmanager.com/gtag/$third-party
+*&phone=*
+adnxs.com
+trk10.com
+prpops.com
+realsrv.com
+*.hwcdn.net
+remtoaku.net
+stazumik.net
+dilruwha.net
+raigluce.net
+gromairt.net
+glauvoob.com
+theonecdn.com
+suprclicks.com
+suprclicks.info
+myornamenti.com
+onclicksuper.com
+moneymakercdn.com
+adsco.re$important
+adservice.google.com
+exosrv.com$important
+popads.net$important
+vidcpm.com$important
+remarketingpixel.com
+wpnjs.com$third-party
+sleepto.com$important
+steepto.com$important
+zijaipse.com$important
+oukruque.com$important
+gleechie.net$important
+ceeglagu.net$important
+deloplen.com$important
+exdynsrv.com$important
+google.com/favicon.ico
+ie8eamus.com$important
+sevootie.com$important
+shusacem.net$important
+caithamo.net$important
+grooksom.com$important
+jotchept.com$important
+tharbadir.com$important
+fd7qz88ckd.com$important
+l6b587tcj1.com$important
+jf71qh5v14.com$important
+yr9n47004g.com$important
+bnsjb1ab1e.com$important
+0byv9mgbn0.com$important
+cjl58f3agc.com$important
+dt2xr6g2i5.com$important
+track.adsplay.in$important
+direct.apus.tech$important
+*.doubleclick.net$important
+spotscenered.info$important
+googletagmanager.com/gtm.js$script
+imasdk.googleapis.com^$third-party
+googletagmanager.com/gtag/$third-party
 *$third-party,script,domain=mp4upload.com
-||mp4upload.com/vjs/videojs-contrib-ads.js
+mp4upload.com/vjs/videojs-contrib-ads.js
