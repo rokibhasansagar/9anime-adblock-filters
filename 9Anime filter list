@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 10/14/2019 @ 12:21 PM EDT
+# Last Update: 10/14/2019 @ 12:59 PM EDT
 
 
 
@@ -12,53 +12,58 @@
 @@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.tv
 @@||9anime.*/*$xmlhttprequest,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.tv
 
-
 # Fix for the overly aggressive cloudflare email filter. Stopping it from hiding anything with an @ symbol.
 @@||9anime.*/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.tv
 
 # Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
 @@|http*://$third-party,stylesheet,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.tv
 
+# 9Anime Visual Tweaks
+# The following removes empty ad-windows
+9anime.*##div.text-center.widget
+9anime.*###sidebar > .widget.crop.text-center
+9anime.*###sidebar > div.text-center.crop.widget
+
+# Inject scriplets to prevent creation of sidebar ads.
+9anime.*##+js(abort-current-inline-script.js, Math, zfgloaded)
+
 
 # External Player Tweaks
-# This prevent's rapidvideo from breaking when other filters adjust things
-@@||cloudflare.com/ajax/libs/videojs-hotkeys/*/videojs.hotkeys.min.js$script
-#@@||rapidvideo.com/*/pack.js$script
-#@@||rapidvideo.com/*/videojs.ima.js
-#@@||rapidvideo.com/*/video-js-*.js
-#@@||rapidvideo.com/*/videojs.hotkeys-*.min.js
-#@@||rapidvideo.com/*/silvermine-videojs-quality-selector.min.js
-@@||rapidvideo.*/assets/$stylesheet
+# RapidVideo
+||rapidvideo.com^$script
 @@||rapidvideo.*/assets/$script
 @@||rapidvideo.*/js/pack.js$script
+@@||rapidvideo.*/assets/$stylesheet
+@@||cloudflare.com/ajax/libs/videojs-hotkeys/*/videojs.hotkeys.min.js$script
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=rapidvideo.com|rapidvideo.is|rapidvid.to
 
+# This'll hide some of RapidVideo's annoying video elements.
+rapidvideo.*###top350p
+rapidvideo.*##.vjs-logo
+rapidvideo.*##.vjs-resize-manager
+
+
+# Openload
 # This'll reduce the number of clicks needed when using openload before the video starts playing.
 openload.pw##div:matches-css(z-index: 300000)
 
-# Compatability for Easylist & Openload
+# Avoid Triggering Openload's Anti-Adblock
 @@||easylist.club^$script,domain=openload.pw
 openload.pw#@#.adsbox
 
-# This'll remove Mp4upload & Streamango's advertisement overlay which tends to be invisible.
+
+# MP4Upload
+# Stopp 3rd party scripts from loading
+*$third-party,script,domain=mp4upload.com
+
+# This'll remove Mp4upload's advertisement overlay which tends to be invisible.
+mp4upload.com###overlay
 mp4upload.com##.vjs-over.vjs-fade
-streamango.com###videooverlay
 
 # This'll remove Mp4upload's HD logo from the video player.
 mp4upload.com##.vjs-logo
 mp4upload.com##.vjs-resize-manager
 
-# This'll hide RapidVideo's annoying recolored box.
-rapidvideo.com##.vjs-resize-manager
-
-# This'll hide RapidVideo's annoying "premium" popup.
-rapidvideo.com###top350p
-
-# These filters stop RapidVideo, Streamango, OpenLoad, and Mp4Upload from disabling the right-click context menu.
-rapidvideo.com##+js(addEventListener-defuser.js, contextmenu)
-mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
-streamango.com##script:contains(contextmenu)
-openload.pw##script:contains(contextmenu)
 
 # Prettyfast.to Fixes
 ||*$domain=prettyfast.to
@@ -72,23 +77,65 @@ prettyfast.to##.afs_ads
 prettyfast.to##+js(nowebrtc.js)
 prettyfast.to##+js(abort-current-inline-script.js, Math, zfgloaded)
 
-# Visual Tweaks
-# The following fix (remove) empty ad-windows
-9anime.*##div.text-center.widget
-9anime.*###sidebar > .widget.crop.text-center
-9anime.*###sidebar > div.text-center.crop.widget
+
+#MyCloud Fixes
+#Overlay Popups
+mcloud.to###jwa
+mcloud.to###.afs_ads
+
+
+# These filters stop RapidVideo, OpenLoad, and Mp4Upload from disabling the right-click context menu.
+rapidvideo.com##+js(addEventListener-defuser.js, contextmenu)
+mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
+openload.pw##+js(addEventListener-defuser.js, contextmenu)
+#openload.pw##script:contains(contextmenu)
+
 
 
 # Standalone imports from other filter-lists
 # Advertisement Blocking
+||popads.net^
+||exosrv.com^
+||mc.yandex.ru^
+||dt2xr6g2i5.com^
+||fd7qz88ckd.com^
 ||zap.buzz^$third-party
 ||revrtb.com^$third-party
+||vidcpm.com^$third-party
 ||defpush.com^$third-party
+||exdynsrv.com^$third-party
 ||class2deal.com^$third-party
 ||popmonetizer.com^$third-party
+||spotscenered.info^$third-party
 ||propellerclick.com^$third-party
 ||runative-syndicate.com^$third-party
-||addthis.com^$third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs
+||googletagmanager.com/gtag/$third-party
+||addthis.com^$important,third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs
+
+#Google API Fix
+@@||googleapis.com^$script
+
+
+
+# uBO Imports
+# RapidVideo uBO Injects
+rapidvideo.*##+js(window.open-defuser)
+rapidvideo.*##+js(abort-current-inline-script, Math, zfgloaded)
+
+# OpenLoad uBO Injects
+openload.*##+js(window.open-defuser)
+openload.*##+js(nano-setInterval-booster)
+openload.*##+js(set-constant, sadbl, false)
+openload.*##+js(abort-on-property-read, BetterJsPop)
+openload.*##+js(abort-current-inline-script, adblock, adblock2)
+openload.*##+js(abort-current-inline-script, atob, decodeURIComponent)
+
+# MP4Upload uBO Injects
+mp4upload.com##+js(popads-dummy)
+mp4upload.com##+js(abort-current-inline-script, decodeURI, decodeURIComponent)
+mp4upload.com##+js(addEventListener-defuser, /^(?:click|mousedown|mousemove|touchstart|touchend|touchmove)$/, system.popunder)
+
+
 
 # Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
 ||disqus.com/api/ping?$third-party
@@ -98,10 +145,7 @@ prettyfast.to##+js(abort-current-inline-script.js, Math, zfgloaded)
 ||amung.us^
 ||bebi.com^
 ||mgid.com^
-.php?zoneid=
-/ping.gif?
-/apu.php?zoneid=
 .com/ads-
-
-# Inject scriplets to prevent creation of sidebar ads.
-9anime.*##+js(abort-current-inline-script.js, Math, zfgloaded)
+/ping.gif?
+.php?zoneid=
+/www/delivery/*
