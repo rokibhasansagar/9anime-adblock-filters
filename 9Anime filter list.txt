@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.2
+! Version: 0.3
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 10/15/2019 @ 2:18 AM EDT
+! Last Update: 10/15/2019 @ 2:25 AM EDT
 !
 !
 !
@@ -58,9 +58,9 @@
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=rapidvideo.com|rapidvideo.is|rapidvid.to
 !
 ! This'll hide some of RapidVideo's annoying video elements.
-rapidvideo.*###top350p
-rapidvideo.*##.vjs-logo
-rapidvideo.*##.vjs-resize-manager
+rapidvideo.com###top350p
+rapidvideo.com##.vjs-logo
+rapidvideo.com##.vjs-resize-manager
 !
 !
 ! Openload
@@ -98,10 +98,6 @@ mp4upload.com##.vjs-resize-manager
 prettyfast.to##.afs_ads
 prettyfast.to##iframe[src^="about:blank"]
 !
-||grooksom.com^
-||reevaipi.com^
-||deloplen.com^
-||hamtugin.com^
 !
 !
 ! MyCloud Fixes
@@ -115,6 +111,10 @@ mcloud.to##.afs_ads
 ! Advertisement Blocking
 ||popads.net^
 ||exosrv.com^
+||grooksom.com^
+||reevaipi.com^
+||deloplen.com^
+||hamtugin.com^
 ||mc.yandex.ru^
 ||dt2xr6g2i5.com^
 ||fd7qz88ckd.com^
