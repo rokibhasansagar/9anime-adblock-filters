@@ -5,7 +5,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 10/15/2019 @ 2:25 AM EDT
+! Last Update: 10/15/2019 @ 2:32 AM EDT
 !
 !
 !
@@ -88,8 +88,9 @@ mp4upload.com##.vjs-resize-manager
 !
 ! Prettyfast.to Fixes
 ! "Everything"
-||*$domain=prettyfast.to
 @@||prettyfast.to
+||*$domain=prettyfast.to
+||google.com/favicon.ico$popup
 @@||jwpsrv.com^$domain=prettyfast.to
 @@||googleapis.com^$domain=prettyfast.to
 @@||*.googleusercontent.com^$domain=prettyfast.to
