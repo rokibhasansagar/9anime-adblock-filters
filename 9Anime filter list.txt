@@ -96,11 +96,11 @@ mp4upload.com##.vjs-resize-manager
 @@||www.gstatic.com/cv/js/sender/v*/cast_sender.js$domain=prettyfast.to
 @@||www.gstatic.com/cast/sdk/libs/sender/*/cast_framework.js$domain=prettyfast.to
 prettyfast.to##.afs_ads
-prettyfast.to###iframe
+prettyfast.to##iframe
 !
-||grooksom.com$important
-||deloplen.com$important
-||hamtugin.com$important
+grooksom.com$important
+deloplen.com$important
+hamtugin.com$important
 !
 !
 ! MyCloud Fixes
