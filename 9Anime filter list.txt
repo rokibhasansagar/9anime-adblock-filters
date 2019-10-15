@@ -91,10 +91,10 @@ mp4upload.com##.vjs-resize-manager
 @@||www.gstatic.com/cast/sdk/libs/sender/*/cast_framework.js$domain=prettyfast.to
 prettyfast.to##.afs_ads
 !
-prettyfast.to###iframe
-https://grooksom.com^$important
-https://deloplen.com^$important
-https://hamtugin.com^$important
+https://grooksom.com$important
+https://deloplen.com$important
+https://hamtugin.com$important
+https://prettyfast.to###iframe$important
 !
 !
 ! MyCloud Fixes
