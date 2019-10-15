@@ -5,7 +5,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 10/15/2019 @ 1:53 AM EDT
+! Last Update: 10/15/2019 @ 1:35 AM EDT
 !
 !
 !
@@ -90,9 +90,11 @@ mp4upload.com##.vjs-resize-manager
 @@||www.gstatic.com/cv/js/sender/v*/cast_sender.js$domain=prettyfast.to
 @@||www.gstatic.com/cast/sdk/libs/sender/*/cast_framework.js$domain=prettyfast.to
 prettyfast.to##.afs_ads
-prettyfast.to##iframe[src="about:blank"]
-||deloplen.com$important
-||grooksom$important
+!
+prettyfast.to###iframe
+https://grooksom.com^$important
+https://deloplen.com^$important
+https://hamtugin.com^$important
 !
 !
 ! MyCloud Fixes
@@ -166,13 +168,11 @@ about:blank$popup
 ||oukruque.com$important
 ||gleechie.net$important
 ||ceeglagu.net$important
-||deloplen.com$important
 ||google.com/favicon.ico
 ||ie8eamus.com$important
 ||sevootie.com$important
 ||shusacem.net$important
 ||caithamo.net$important
-||grooksom.com$important
 ||jotchept.com$important
 ||tharbadir.com$important
 ||l6b587tcj1.com$important
