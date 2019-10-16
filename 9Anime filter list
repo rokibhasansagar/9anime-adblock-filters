@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 10/15/2019 @ 12:54 AM EDT
+# Last Update: 10/16/2019 @ 12:40 PM EDT
 
 
 
@@ -40,8 +40,9 @@
 # This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
 @@||akacdn.ru$third-party,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
 
-# Blocks a rogue advertiser.
+# Blocks rogue advertisers.
 ||class2deal.com^$important
+||defpush.com^$important
 
 # Google API Fix
 @@||googleapis.com^$script
