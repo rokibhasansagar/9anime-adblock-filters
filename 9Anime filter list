@@ -13,42 +13,42 @@
 @@||jwpsrv.com^$domain=prettyfast.to
 @@||googleusercontent.com
 @@||jwpcdn.com
-||openload.pw#@#.adsbox
-||prettyfast.to###iframe
-||rapidvideo.com###top350p
-||openload.pw###videooverlay
-||streamango.com###videooverlay
-||mp4upload.com##.vjs-over.vjs-fade
-||mp4upload.com##.vjs-resize-manager
-||rapidvideo.com##.vjs-resize-manager
-||9anime.to###top350p
-||9anime.ru###top350p
-||9anime.nl###top350p
-||9anime.live###top350p
-||9anime.to###overlay
-||9anime.ru###overlay
-||9anime.nl###overlay
-||9anime.live###overlay
-||9anime.to##.vjs-over.vjs-fade
-||9anime.ru##.vjs-over.vjs-fade
-||9anime.nl##.vjs-over.vjs-fade
-||9anime.live##.vjs-over.vjs-fade
-||9anime.to##.vjs-resize-manager
-||9anime.ru##.vjs-resize-manager
-||9anime.nl##.vjs-resize-manager
-||9anime.live##.vjs-resize-manager
-||9anime.to##div.text-center.widget
-||9anime.ru##div.text-center.widget
-||9anime.nl##div.text-center.widget
-||9anime.live##div.text-center.widget
-||9anime.to###sidebar > .widget.crop.text-center
-||9anime.ru###sidebar > .widget.crop.text-center
-||9anime.nl###sidebar > .widget.crop.text-center
-||9anime.live###sidebar > .widget.crop.text-center
-||9anime.to###sidebar > div.text-center.crop.widget
-||9anime.ru###sidebar > div.text-center.crop.widget
-||9anime.nl###sidebar > div.text-center.crop.widget
-||9anime.live###sidebar > div.text-center.crop.widget
+openload.pw#@#.adsbox
+prettyfast.to###iframe
+rapidvideo.com###top350p
+openload.pw###videooverlay
+streamango.com###videooverlay
+mp4upload.com##.vjs-over.vjs-fade
+mp4upload.com##.vjs-resize-manager
+rapidvideo.com##.vjs-resize-manager
+9anime.to###top350p
+9anime.ru###top350p
+9anime.nl###top350p
+9anime.live###top350p
+9anime.to###overlay
+9anime.ru###overlay
+9anime.nl###overlay
+9anime.live###overlay
+9anime.to##.vjs-over.vjs-fade
+9anime.ru##.vjs-over.vjs-fade
+9anime.nl##.vjs-over.vjs-fade
+9anime.live##.vjs-over.vjs-fade
+9anime.to##.vjs-resize-manager
+9anime.ru##.vjs-resize-manager
+9anime.nl##.vjs-resize-manager
+9anime.live##.vjs-resize-manager
+9anime.to##div.text-center.widget
+9anime.ru##div.text-center.widget
+9anime.nl##div.text-center.widget
+9anime.live##div.text-center.widget
+9anime.to###sidebar > .widget.crop.text-center
+9anime.ru###sidebar > .widget.crop.text-center
+9anime.nl###sidebar > .widget.crop.text-center
+9anime.live###sidebar > .widget.crop.text-center
+9anime.to###sidebar > div.text-center.crop.widget
+9anime.ru###sidebar > div.text-center.crop.widget
+9anime.nl###sidebar > div.text-center.crop.widget
+9anime.live###sidebar > div.text-center.crop.widget
 about:blank$popup
 ||*&phone=*
 ||zap.buzz
@@ -74,7 +74,6 @@ about:blank$popup
 ||popmonetizer.com
 ||moneymakercdn.com
 ||adsco.re$important
-||adservice.google.com
 ||exosrv.com$important
 ||popads.net$important
 ||vidcpm.com$important
@@ -122,6 +121,8 @@ about:blank$popup
 ||spotscenered.info$important
 ||takeprizehere.life$important
 ||propellerclick.com$important
+||commercialvalue.org$important
+||adservice.google.com$important
 ||security6service.com$important
 ||runative-syndicate.com$important
 *$third-party,domain=prettyfast.to
