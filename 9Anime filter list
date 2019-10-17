@@ -3,6 +3,7 @@
 @@||9anime.*/captcha/$image,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
 @@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
 @@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
+@@||easylist.club$script,domain=openload.pw
 @@||rapidvideo.com/*/videojs.ima.js
 @@||rapidvideo.com/*/video-js-*.js
 @@||rapidvideo.com/*/silvermine-videojs-quality-selector.min.js
@@ -10,7 +11,10 @@
 @@||rapidvideo.com/*/pack.js
 @@||prettyfast.to
 @@||jwpsrv.com^$domain=prettyfast.to
-@@||*.googleusercontent.com^$domain=prettyfast.to
+@@||googleusercontent.com
+@@||jwpcdn.com
+||openload.pw#@#.adsbox
+||prettyfast.to###iframe
 ||rapidvideo.com###top350p
 ||openload.pw###videooverlay
 ||streamango.com###videooverlay
@@ -67,7 +71,6 @@ about:blank$popup
 ||suprclicks.com
 ||suprclicks.info
 ||myornamenti.com
-||onclicksuper.com
 ||popmonetizer.com
 ||moneymakercdn.com
 ||adsco.re$important
@@ -80,6 +83,7 @@ about:blank$popup
 ||wpnjs.com$third-party
 ||sleepto.com$important
 ||steepto.com$important
+||mylunara.com$important
 ||zijaipse.com$important
 ||oukruque.com$important
 ||gleechie.net$important
@@ -96,7 +100,9 @@ about:blank$popup
 ||hamtugin.com$important
 ||grooksom.com$important
 ||jotchept.com$important
+||uptimecdn.com$important
 ||tharbadir.com$important
+||leadoffer.xyz$important
 ||class2deal.com$important
 ||fd7qz88ckd.com$important
 ||l6b587tcj1.com$important
@@ -106,12 +112,19 @@ about:blank$popup
 ||0byv9mgbn0.com$important
 ||cjl58f3agc.com$important
 ||dt2xr6g2i5.com$important
+||onclickmega.com$important
+||prmtracking.com$important
+||xentracking.com$important
+||onclicksuper.com$important
 ||track.adsplay.in$important
 ||direct.apus.tech$important
 ||*.doubleclick.net$important
 ||spotscenered.info$important
+||takeprizehere.life$important
 ||propellerclick.com$important
+||security6service.com$important
 ||runative-syndicate.com$important
+*$third-party,domain=prettyfast.to
 ||googletagmanager.com/gtm.js$script
 ||imasdk.googleapis.com^$third-party
 ||googletagmanager.com/gtag/$third-party
