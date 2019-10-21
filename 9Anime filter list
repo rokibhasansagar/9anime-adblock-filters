@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 10/15/2019 @ 12:12 AM EDT
+# Last Update: 10/21/2019 @ 4:00 AM EDT
 
 
 
@@ -31,22 +31,12 @@
 # Inject scriplets to prevent creation of sidebar ads.
 9anime.*##+js(abort-current-inline-script.js, Math, zfgloaded)
 
+# Blocks rogue advertisers.
+||class2deal.com^$important
+||indlzxgptf.com^$important
+
 
 # External Player Tweaks
-# RapidVideo
-||rapidvideo.com^$script
-@@||rapidvideo.*/assets/$script
-@@||rapidvideo.*/js/pack.js$script
-@@||rapidvideo.*/assets/$stylesheet
-@@||cloudflare.com/ajax/libs/videojs-hotkeys/*/videojs.hotkeys.min.js$script
-@@||imasdk.googleapis.com/js/sdkloader/ima3.js$script,domain=rapidvideo.com|rapidvideo.is|rapidvid.to
-
-# This'll hide some of RapidVideo's annoying video elements.
-rapidvideo.*###top350p
-rapidvideo.*##.vjs-logo
-rapidvideo.*##.vjs-resize-manager
-
-
 # Openload
 # This'll reduce the number of clicks needed when using openload before the video starts playing.
 openload.pw##div:matches-css(z-index: 300000)
@@ -89,8 +79,7 @@ mcloud.to###jwa
 mcloud.to##.afs_ads
 
 
-# These filters stop RapidVideo, OpenLoad, and Mp4Upload from disabling the right-click context menu.
-rapidvideo.com##+js(addEventListener-defuser.js, contextmenu)
+# These filters stop OpenLoad, and Mp4Upload from disabling the right-click context menu.
 mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
 openload.pw##+js(addEventListener-defuser.js, contextmenu)
 #openload.pw##script:contains(contextmenu)
@@ -123,10 +112,6 @@ openload.pw##+js(addEventListener-defuser.js, contextmenu)
 
 
 # uBO Imports
-# RapidVideo uBO Injects
-rapidvideo.*##+js(window.open-defuser)
-rapidvideo.*##+js(abort-current-inline-script, Math, zfgloaded)
-
 # OpenLoad uBO Injects
 openload.*##+js(window.open-defuser)
 openload.*##+js(nano-setInterval-booster)
