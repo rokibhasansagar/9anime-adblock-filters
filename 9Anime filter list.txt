@@ -5,7 +5,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 10/21/2019 @ 4:11 PM EDT
+! Last Update: 10/22/2019 @ 11:20 AM EDT
 !
 !
 !
@@ -71,6 +71,15 @@ mp4upload.com##.vjs-over.vjs-fade
 ! This'll remove Mp4upload's HD logo from the video player.
 mp4upload.com##.vjs-logo
 mp4upload.com##.vjs-resize-manager
+!
+!
+! VeryStream Fixes
+! Anti-Advertising
+verystream.com##.adsbox
+||dog1.verystream.com^
+
+! Doge Button on the player kept getting in the way
+verystream.com##.vjs-doge-button
 !
 !
 ! Prettyfast.to Fixes
@@ -179,6 +188,7 @@ about:blank$popup
 ||bnsjb1ab1e.com$important
 ||0byv9mgbn0.com$important
 ||cjl58f3agc.com$important
+||e2b9jbowv7.com$important
 ||track.adsplay.in$important
 ||direct.apus.tech$important
 ||*.doubleclick.net$important
