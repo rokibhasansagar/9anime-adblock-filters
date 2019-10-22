@@ -46,7 +46,6 @@ about:blank$popup
 ||*&phone=*
 ||zap.buzz
 ||bebi.com
-||mgid.com
 ||adnxs.com
 ||trk10.com
 ||prpops.com
@@ -65,18 +64,17 @@ about:blank$popup
 ||easylist.club
 ||theonecdn.com
 ||suprclicks.com
-||dog1.woof.tube^
 ||suprclicks.info
 ||myornamenti.com
 ||popmonetizer.com
 ||moneymakercdn.com
 ||adsco.re$important
+||mgid.com$important
 ||exosrv.com$important
 ||popads.net$important
 ||vidcpm.com$important
 ||trackb.bid$important
 ||lvmobi.com$important
-||dog1.verystream.com^
 ||remarketingpixel.com
 ||defpush.com$important
 ||wpnjs.com$third-party
@@ -104,6 +102,7 @@ about:blank$popup
 ||uptimecdn.com$important
 ||tharbadir.com$important
 ||leadoffer.xyz$important
+||dog1.woof.tube$important
 ||viatepigan.com$important
 ||class2deal.com$important
 ||fd7qz88ckd.com$important
@@ -128,6 +127,7 @@ about:blank$popup
 ||takeprizehere.life$important
 ||propellerclick.com$important
 ||commercialvalue.org$important
+||dog1.verystream.com$important
 ||adservice.google.com$important
 ||security6service.com$important
 ||system-scan.download$important
