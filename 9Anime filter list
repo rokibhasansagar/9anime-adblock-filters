@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 10/21/2019 @ 4:15 PM EDT
+# Last Update: 10/22/2019 @ 11:13 AM EDT
 
 
 
@@ -74,6 +74,16 @@ mp4upload.com##.vjs-logo
 mp4upload.com##.vjs-resize-manager
 
 
+# VeryStream Fixes
+# Anti-Advertising
+verystream.com##.adsbox
+||dog1.verystream.com^
+||c.adsco.re^$domain=verystream.com
+
+#Doge Button on the player kept getting in the way
+verystream.com##.vjs-doge-button
+
+
 # Prettyfast.to Fixes
 # "Everything"
 ||*$domain=prettyfast.to
@@ -94,7 +104,8 @@ mcloud.to###jwa
 mcloud.to##.afs_ads
 
 
-# These filters stop OpenLoad, and Mp4Upload from disabling the right-click context menu.
+# These filters stop OpenLoad, VeryStream, and Mp4Upload from disabling the right-click context menu.
+verystream.com##+js(addEventListener-defuser.js, contextmenu)
 mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
 openload.pw##+js(addEventListener-defuser.js, contextmenu)
 
@@ -113,6 +124,12 @@ openload.*##+js(abort-current-inline-script, atob, decodeURIComponent)
 mp4upload.com##+js(popads-dummy)
 mp4upload.com##+js(abort-current-inline-script, decodeURI, decodeURIComponent)
 mp4upload.com##+js(addEventListener-defuser, /^(?:click|mousedown|mousemove|touchstart|touchend|touchmove)$/, system.popunder)
+
+# VeryStream uBo Injects
+verystream.com##+js(abort-on-property-read, open)
+verystream.com##+js(abort-on-property-read, adblock)
+verystream.com##+js(nano-setTimeout-booster)
+
 
 
 # Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
