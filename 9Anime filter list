@@ -22,26 +22,32 @@ mp4upload.com##.vjs-resize-manager
 9anime.ru###overlay
 9anime.nl###overlay
 9anime.live###overlay
+9anime.one###overlay
 9anime.to##.vjs-over.vjs-fade
 9anime.ru##.vjs-over.vjs-fade
 9anime.nl##.vjs-over.vjs-fade
 9anime.live##.vjs-over.vjs-fade
+9anime.one##.vjs-over.vjs-fade
 9anime.to##.vjs-resize-manager
 9anime.ru##.vjs-resize-manager
 9anime.nl##.vjs-resize-manager
 9anime.live##.vjs-resize-manager
+9anime.one##.vjs-resize-manager
 9anime.to##div.text-center.widget
 9anime.ru##div.text-center.widget
 9anime.nl##div.text-center.widget
 9anime.live##div.text-center.widget
+9anime.one##div.text-center.widget
 9anime.to###sidebar > .widget.crop.text-center
 9anime.ru###sidebar > .widget.crop.text-center
 9anime.nl###sidebar > .widget.crop.text-center
 9anime.live###sidebar > .widget.crop.text-center
+9anime.one###sidebar > .widget.crop.text-center
 9anime.to###sidebar > div.text-center.crop.widget
 9anime.ru###sidebar > div.text-center.crop.widget
 9anime.nl###sidebar > div.text-center.crop.widget
 9anime.live###sidebar > div.text-center.crop.widget
+9anime.one###sidebar > div.text-center.crop.widget
 about:blank$popup
 ||*&phone=*
 ||zap.buzz
