@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 10/30/2019 @ 11:42 PM EDT
+# Last Update: 10/30/2019 @ 11:43 PM EDT
 
 
 
@@ -37,7 +37,7 @@
 9anime.*###sidebar > div.text-center.crop.widget
 
 # Inject scriplets to prevent creation of sidebar ads.
-9anime.*##+js(abort-current-inline-script.js, Math, zfgloadedpopup)
+9anime.*##+js(abort-current-inline-script.js, Math, zfgloaded)
 
 
 
@@ -90,7 +90,7 @@ woof.tube##.vjs-doge-button
 @@||www.gstatic.com/cast/sdk/libs/sender/*/cast_framework.js$domain=prettyfast.to
 prettyfast.to##.afs_ads
 prettyfast.to##+js(nowebrtc.js)
-prettyfast.to##+js(abort-current-inline-script.js, Math, zfgloaded)
+prettyfast.to##+js(abort-current-inline-script.js, Math, zfgloadedpopup)
 
 
 # MyCloud Fixes
