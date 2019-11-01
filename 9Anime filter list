@@ -2,17 +2,14 @@
 @@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
 @@||9anime.*/captcha/$image,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
 @@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
-@@||easylist.club$script,domain=openload.pw
 @@||gstatic.com/recaptcha/$script
 @@||googleusercontent.com
 @@||prettyfast.to
 @@||jwpsrv.com
 @@||jwpcdn.com
 woof.tube##.adsbox
-openload.pw#@#.adsbox
 prettyfast.to###iframe
 verystream.com##.adsbox
-openload.pw###videooverlay
 woof.tube##.vjs-doge-button
 streamango.com###videooverlay
 verystream.com##.vjs-doge-button
