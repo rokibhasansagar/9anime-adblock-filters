@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 10/31/2019 @ 12:30 AM EDT
+# Last Update: 10/31/2019 @ 10:32 PM EDT
 
 
 
@@ -51,15 +51,6 @@
 
 
 # External Player Tweaks
-# Openload
-# This'll reduce the number of clicks needed when using openload before the video starts playing.
-openload.pw##div:matches-css(z-index: 300000)
-
-# Avoid Triggering Openload's Anti-Adblock
-@@||easylist.club^$script,domain=openload.pw
-openload.pw#@#.adsbox
-
-
 # MP4Upload
 # Stop 3rd party scripts from loading
 *$third-party,script,domain=mp4upload.com
@@ -117,22 +108,13 @@ mcloud.to##.afs_ads
 /videojs.sda.
 
 
-# These filters stop OpenLoad, VeryStream, and Mp4Upload from disabling the right-click context menu.
+# These filters stop VeryStream, and Mp4Upload from disabling the right-click context menu.
 verystream.com##+js(addEventListener-defuser.js, contextmenu)
 mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
-openload.pw##+js(addEventListener-defuser.js, contextmenu)
 
 
 
 # uBO Imports
-# OpenLoad uBO Injects
-openload.*##+js(window.open-defuser)
-openload.*##+js(nano-setInterval-booster)
-openload.*##+js(set-constant, sadbl, false)
-openload.*##+js(abort-on-property-read, BetterJsPop)
-openload.*##+js(abort-current-inline-script, adblock, adblock2)
-openload.*##+js(abort-current-inline-script, atob, decodeURIComponent)
-
 # MP4Upload uBO Injects
 mp4upload.com##+js(popads-dummy)
 mp4upload.com##+js(abort-current-inline-script, decodeURI, decodeURIComponent)
