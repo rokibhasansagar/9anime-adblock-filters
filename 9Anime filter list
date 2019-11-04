@@ -7,12 +7,8 @@
 @@||prettyfast.to
 @@||jwpsrv.com
 @@||jwpcdn.com
-woof.tube##.adsbox
+hydrax.net##.afs_ads
 prettyfast.to###iframe
-verystream.com##.adsbox
-woof.tube##.vjs-doge-button
-streamango.com###videooverlay
-verystream.com##.vjs-doge-button
 mp4upload.com##.vjs-over.vjs-fade
 mp4upload.com##.vjs-resize-manager
 9anime.to###overlay
@@ -105,11 +101,12 @@ about:blank$popup
 ||hamtugin.com$important
 ||grooksom.com$important
 ||jotchept.com$important
+||krboeyeq.com$important
+||fhtoxxda.com$important
 ||appsflyer.com$important
 ||uptimecdn.com$important
 ||tharbadir.com$important
 ||leadoffer.xyz$important
-||dog1.woof.tube$important
 ||viatepigan.com$important
 ||class2deal.com$important
 ||fd7qz88ckd.com$important
@@ -135,7 +132,6 @@ about:blank$popup
 ||takeprizehere.life$important
 ||propellerclick.com$important
 ||commercialvalue.org$important
-||dog1.verystream.com$important
 ||adservice.google.com$important
 ||security6service.com$important
 ||system-scan.download$important
@@ -146,6 +142,4 @@ about:blank$popup
 ||googletagmanager.com/gtag/$third-party
 *$third-party,script,domain=mp4upload.com
 ||mp4upload.com/vjs/videojs-contrib-ads.js
-*.html$popup,domain=verystream.com|woof.tube
-*$popup,third-party,domain=verystream.com|woof.tube
 ||addthis.com^$third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs
