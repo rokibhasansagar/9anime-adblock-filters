@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 10/31/2019 @ 10:31 PM EDT
+# Last Update: 11/04/2018 @ 12:42 PM EDT
 
 
 
@@ -56,18 +56,12 @@ mp4upload.com##.vjs-logo
 mp4upload.com##.vjs-resize-manager
 
 
-# VeryStream Fixes
+# Hydrax Fixes
 # Anti-Advertising
-verystream.com##.adsbox
-woof.tube##.adsbox
-||dog1.verystream.com^
-||dog1.woof.tube^
-.html$popup,domain=verystream.com|woof.tube
-$popup,third-party,domain=verystream.com|woof.tube
-
-# Doge Button on the player kept getting in the way
-verystream.com##.vjs-doge-button
-woof.tube##.vjs-doge-button
+hydrax.net##.afs_ads
+@@||iamcdn.net^$domain=hydrax.net
+@@||multi.idocdn.com^$domain=hydrax.net
+@@||i.tori-dennis.xyz^$xhr,domain=hydrax.net
 
 
 # Prettyfast.to Fixes
@@ -99,17 +93,15 @@ mcloud.to##.afs_ads
 /videojs.sda.
 
 
-# These filters stop VeryStream and Mp4Upload from disabling the right-click context menu.
-verystream.com##+js(addEventListener-defuser.js, contextmenu)
+# This filter stops Mp4Upload from disabling the right-click context menu.
 mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
 
 
 
 # uBO Imports
-# VeryStream uBo Injects
-verystream.com##+js(abort-on-property-read, open)
-verystream.com##+js(abort-on-property-read, adblock)
-verystream.com##+js(nano-setTimeout-booster)
+# Hydrax uBo Inject
+hydrax.net##+js(abort-on-property-read, adblock)
+
 
 
 
@@ -132,6 +124,8 @@ mp4upload.com##+js(addEventListener-defuser, /^(?:click|mousedown|mousemove|touc
 ||revrtb.com^$third-party
 ||vidcpm.com^$third-party
 ||defpush.com^$third-party
+||krboeyeq.com$third-party
+||fhtoxxda.com$third-party
 ||exdynsrv.com^$third-party
 ||popmonetizer.com^$third-party
 ||spotscenered.info^$third-party
