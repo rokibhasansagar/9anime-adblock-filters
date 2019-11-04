@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.4
+! Version: 0.5
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 10/31/2019 @ 10:33 PM EDT
+! Last Update: 11/04/2018 @ 12:52 PM EDT
 !
 !
 !
@@ -64,18 +64,14 @@ mp4upload.com##.vjs-logo
 mp4upload.com##.vjs-resize-manager
 !
 !
-! VeryStream Fixes
+! Hydrax Fixes
 ! Anti-Advertising
-verystream.com##.adsbox
-woof.tube##.adsbox
-||dog1.verystream.com^
-||dog1.woof.tube^
-.html$popup,domain=verystream.com|woof.tube
-$popup,third-party,domain=verystream.com|woof.tube
-!
-! Doge Button on the player kept getting in the way
-verystream.com##.vjs-doge-button
-woof.tube##.vjs-doge-button
+hydrax.net##.afs_ads
+||krboeyeq.com$third-party
+||fhtoxxda.com$third-party
+@@||iamcdn.net^$domain=hydrax.net
+@@||multi.idocdn.com^$domain=hydrax.net
+@@||i.tori-dennis.xyz^$xhr,domain=hydrax.net
 !
 !
 ! Prettyfast.to Fixes
