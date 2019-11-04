@@ -99,16 +99,13 @@ mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
 
 
 # uBO Imports
-# Hydrax uBo Inject
-hydrax.net##+js(abort-on-property-read, adblock)
-
-
-
-
 # MP4Upload uBO Injects
 mp4upload.com##+js(popads-dummy)
 mp4upload.com##+js(abort-current-inline-script, decodeURI, decodeURIComponent)
 mp4upload.com##+js(addEventListener-defuser, /^(?:click|mousedown|mousemove|touchstart|touchend|touchmove)$/, system.popunder)
+
+# Hydrax uBo Inject
+hydrax.net##+js(abort-on-property-read, adblock)
 
 
 
