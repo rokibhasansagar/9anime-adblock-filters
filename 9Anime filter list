@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 11/04/2018 @ 12:48 PM EDT
+# Last Update: 11/05/2019 @ 10:00 AM EDT
 
 
 
@@ -129,3 +129,4 @@ hydrax.net##+js(abort-on-property-read, adblock)
 /ping.gif?
 .php?zoneid=
 /www/delivery/*
+/:\/\/www\.([a-z]{6,16})\.com\/([a-z]{1,4})\.js$/$3p,script
