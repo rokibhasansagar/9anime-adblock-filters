@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 11/05/2019 @ 10:01 AM EDT
+# Last Update: 11/07/2019 @ 1:42 PM EDT
 # Hope this works for you /u/RedditChickenWings
 
 
@@ -61,9 +61,12 @@ mp4upload.com##.vjs-resize-manager
 # Hydrax Fixes
 # Anti-Advertising
 hydrax.net##.afs_ads
+@@||jpsrv.com^$domain=hydrax.net
 @@||iamcdn.net^$domain=hydrax.net
+@@||jsdelivr.net^$domain=hydrax.net
+@@||playhydrax.com^$domain=hydrax.net
 @@||multi.idocdn.com^$domain=hydrax.net
-@@||i.tori-dennis.xyz^$xhr,domain=hydrax.net
+@@||i.*-*.xyz/html/*.html?domain=playhydrax.com,domain=hydrax.net
 
 
 # Prettyfast.to Fixes
@@ -108,7 +111,7 @@ mp4upload.com##+js(addEventListener-defuser, /^(?:click|mousedown|mousemove|touc
 
 # Hydrax uBo Inject
 hydrax.net##+js(abort-on-property-read, adblock)
-
+hydrax.net##+js(popads-dummy)
 
 
 # Standalone imports from other filter-lists
@@ -126,6 +129,7 @@ hydrax.net##+js(abort-on-property-read, adblock)
 ||fhtoxxda.com$third-party
 ||defpush.com^$third-party
 ||exdynsrv.com^$third-party
+||fkqafflyjz.com^$third-party
 ||popmonetizer.com^$third-party
 ||spotscenered.info^$third-party
 ||propellerclick.com^$third-party
