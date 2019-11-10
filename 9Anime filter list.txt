@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.5
+! Version: 0.6
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 11/07/2019 @ 1:46 PM EDT
+! Last Update: 11/10/2019 @ 10:17 AM EDT
 !
 !
 !
@@ -13,9 +13,10 @@
 ! General 9Anime Fixes
 ! Average user experence fixes (Fixes the website)
 @@||gstatic.com/recaptcha/$script
+@@||9anime.*/waf-verify$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
+@@||9anime.*$xmlhttprequest,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
 @@||9anime.*/assets/*$script,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
 @@||9anime.*/captcha/*$image,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
-@@||9anime.*$xmlhttprequest,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
 @@||fonts.googleapis.com^$stylesheet,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
 !
 ! Fix for the overly aggressive cloudflare email filter. Stopping it from hiding anything with an @ symbol.
@@ -67,11 +68,14 @@ mp4upload.com##.vjs-resize-manager
 ! Hydrax Fixes
 ! Anti-Advertising
 hydrax.net##.afs_ads
-@@||jpsrv.com^$domain=hydrax.net
-@@||iamcdn.net^$domain=hydrax.net
-@@||jsdelivr.net^$domain=hydrax.net
-@@||playhydrax.com^$domain=hydrax.net
-@@||multi.idocdn.com^$domain=hydrax.net
+playhydrax.com##.afs_ads
+||acloudvideos.com^$third-party
+||movcpm.com^$domain=hydrax.net|playhydrax.com
+@@||jpsrv.com^$domain=hydrax.net|playhydrax.com
+@@||iamcdn.net^$domain=hydrax.net|playhydrax.com
+@@||jsdelivr.net^$domain=hydrax.net|playhydrax.com
+@@||playhydrax.com^$domain=hydrax.net|playhydrax.com
+@@||multi.idocdn.com^$domain=hydrax.net|playhydrax.com
 /:\/\/www\.([a-z]{6,16})\.com\/([a-z]{1,4})\.js$/$3p,script
 @@||i.*-*.xyz/html/*.html?domain=playhydrax.com,domain=hydrax.net
 !
