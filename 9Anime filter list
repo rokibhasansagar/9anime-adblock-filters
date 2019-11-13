@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 11/10/2019 @ 11:05 AM EDT
+# Last Update: 11/13/2019 @ 11:59 AM EDT
 # Hope this works for you /u/RedditChickenWings
 
 
@@ -63,8 +63,7 @@ mp4upload.com##.vjs-resize-manager
 # Anti-Advertising
 hydrax.net##.afs_ads
 playhydrax.com##.afs_ads
-||acloudvideos.com^$third-party
-||movcpm.com^$domain=hydrax.net|playhydrax.com
+||cadsabs.com^$domain=hydrax.net|playhydrax.com
 @@||jpsrv.com^$domain=hydrax.net|playhydrax.com
 @@||iamcdn.net^$domain=hydrax.net|playhydrax.com
 @@||jsdelivr.net^$domain=hydrax.net|playhydrax.com
@@ -72,7 +71,6 @@ playhydrax.com##.afs_ads
 @@||i.*-*.xyz/html/*.html?domain=playhydrax.com,domain=hydrax.net
 @@||hydrax.net$domain=playhydrax.net|9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
 @@||playhydrax.com^$domain=hydrax.net|9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
-
 
 # Prettyfast.to Fixes
 # "Everything"
@@ -115,10 +113,8 @@ mp4upload.com##+js(abort-current-inline-script, decodeURI, decodeURIComponent)
 mp4upload.com##+js(addEventListener-defuser, /^(?:click|mousedown|mousemove|touchstart|touchend|touchmove)$/, system.popunder)
 
 # Hydrax uBo Inject
-playhydrax.net##+js(abort-on-property-read, adblock)
-hydrax.net##+js(abort-on-property-read, adblock)
-playhydrax.net##+js(popads-dummy)
-hydrax.net##+js(popads-dummy)
+hydrax.net##+js(aopr, _0x2a8b)
+playhydrax.net##+js(aopr, _0x2a8b)
 
 
 # Standalone imports from other filter-lists
@@ -146,9 +142,14 @@ hydrax.net##+js(popads-dummy)
 
 # Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
 ||disqus.com/api/ping?$third-party
+||io.narrative.io/?$third-party
+||viglink.com/images/pixel.gif
+||rezync.com^$third-party
 ||google-analytics.com^
 ||referrer.disqus.com^
 ||revrtb.com^
+||pippio.com^
+||adnxs.com^
 ||amung.us^
 ||bebi.com^
 ||mgid.com^
@@ -156,7 +157,6 @@ hydrax.net##+js(popads-dummy)
 /ping.gif?
 .php?zoneid=
 /www/delivery/*
-/:\/\/www\.([a-z]{6,16})\.com\/([a-z]{1,4})\.js$/$3p,script
 
 
 # CUSTOM rules start here
