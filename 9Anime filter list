@@ -140,6 +140,7 @@ about:blank$popup
 ||xpx7heciz9.com$important
 ||bnsjb1ab1e.com$important
 ||0byv9mgbn0.com$important
+||qd3u5eeuos.com$important
 ||cjl58f3agc.com$important
 ||dt2xr6g2i5.com$important
 ||e2b9jbowv7.com$important
@@ -148,7 +149,6 @@ about:blank$popup
 ||onclickmega.com$important
 ||prmtracking.com$important
 ||xentracking.com$important
-||acloudvideos.com$important
 ||qjokrqhidpki.com$important
 ||bestcontent.club$important
 ||onclicksuper.com$important
@@ -174,4 +174,6 @@ about:blank$popup
 ||googletagmanager.com/gtag/$third-party
 *$third-party,script,domain=mp4upload.com
 ||mp4upload.com/vjs/videojs-contrib-ads.js
+||acloudvideos.com$important,domain=Hydrax.net|PlayHydraX.com
+||acloudimages.com$important,domain=Hydrax.net|PlayHydraX.com
 ||addthis.com^$third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs
