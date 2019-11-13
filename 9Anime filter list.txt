@@ -5,7 +5,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 11/12/2019 @ 10:32 AM EDT
+! Last Update: 11/13/2019 @ 12:03 PM EDT
 !
 !
 !
@@ -69,13 +69,11 @@ mp4upload.com##.vjs-resize-manager
 ! Anti-Advertising
 hydrax.net##.afs_ads
 playhydrax.com##.afs_ads
-||acloudvideos.com^$third-party
-||movcpm.com^$domain=hydrax.net|playhydrax.com
+||cadsabs.com^$domain=hydrax.net|playhydrax.com
 @@||jpsrv.com^$domain=hydrax.net|playhydrax.com
 @@||iamcdn.net^$domain=hydrax.net|playhydrax.com
 @@||jsdelivr.net^$domain=hydrax.net|playhydrax.com
 @@||multi.idocdn.com^$domain=hydrax.net|playhydrax.com
-/:\/\/www\.([a-z]{6,16})\.com\/([a-z]{1,4})\.js$/$3p,script
 @@||i.*-*.xyz/html/*.html?domain=playhydrax.com,domain=hydrax.net
 @@||hydrax.net$domain=playhydrax.net|9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
 @@||playhydrax.com^$domain=hydrax.net|9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one
@@ -140,6 +138,9 @@ mcloud.to##.afs_ads
 !
 ! Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
 ||disqus.com/api/ping?$third-party
+||io.narrative.io/?$third-party
+||viglink.com/images/pixel.gif
+||rezync.com^$third-party
 ||google-analytics.com^
 ||referrer.disqus.com^
 ||revrtb.com^
@@ -198,6 +199,8 @@ about:blank$popup
 ||l6b587tcj1.com$important
 ||jf71qh5v14.com$important
 ||yr9n47004g.com$important
+||i5iog3mlrw.com$important
+||xpx7heciz9.com$important
 ||bnsjb1ab1e.com$important
 ||0byv9mgbn0.com$important
 ||cjl58f3agc.com$important
