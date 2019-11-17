@@ -5,7 +5,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 11/13/2019 @ 12:03 PM EDT
+! Last Update: 11/17/2019 @ 1:53 AM EDT
 !
 !
 !
