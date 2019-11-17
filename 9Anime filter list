@@ -117,6 +117,7 @@ about:blank$popup
 ||reevaipi.com$important
 ||hamtugin.com$important
 ||grooksom.com$important
+||whegrads.com$important
 ||jotchept.com$important
 ||krboeyeq.com$important
 ||fhtoxxda.com$important
@@ -168,7 +169,7 @@ about:blank$popup
 ||security6service.com$important
 ||system-scan.download$important
 ||runative-syndicate.com$important
-*$third-party,domain=prettyfast.to
+*$subdocument,domain=prettyfast.to
 ||googletagmanager.com/gtm.js$script
 ||imasdk.googleapis.com^$third-party
 ||googletagmanager.com/gtag/$third-party
