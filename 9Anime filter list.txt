@@ -85,9 +85,13 @@ playhydrax.com##.afs_ads
 ||raiphupi.com^
 ||oodsotso.com^
 ||opsivesh.net^
+||grooksom.com^
+||deloplen.com^
+||whegrads.com^
 ||viatepigan.com^
 ||*$domain=prettyfast.to
 ||google.com/favicon.ico$popup
+*$subdocument,domain=prettyfast.to
 @@||jwpsrv.com^$domain=prettyfast.to
 @@||googleapis.com^$domain=prettyfast.to
 @@||*.googleusercontent.com^$domain=prettyfast.to
@@ -117,9 +121,7 @@ mcloud.to##.afs_ads
 ! Advertisement Blocking
 ||popads.net^
 ||exosrv.com^
-||grooksom.com^
 ||reevaipi.com^
-||deloplen.com^
 ||hamtugin.com^
 ||mc.yandex.ru^
 ||dt2xr6g2i5.com^
