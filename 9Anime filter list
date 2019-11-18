@@ -2,9 +2,10 @@
 @@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
 @@||9anime.*/captcha/$image,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
 @@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
+*$domain=prettyfast.to
 @@||gstatic.com/recaptcha/$script
 @@||googleusercontent.com
-@@||prettyfast.to
+@@||prettyfast.to$~third-party
 @@||jwpsrv.com
 @@||jwpcdn.com
 hydrax.net##.afs_ads
@@ -109,7 +110,6 @@ about:blank$popup
 ||deloplen.com$important
 ||exdynsrv.com$important
 ||google.com/favicon.ico
-||*$domain=prettyfast.to
 ||ie8eamus.com$important
 ||sevootie.com$important
 ||shusacem.net$important
@@ -169,7 +169,6 @@ about:blank$popup
 ||security6service.com$important
 ||system-scan.download$important
 ||runative-syndicate.com$important
-*$subdocument,domain=prettyfast.to
 ||googletagmanager.com/gtm.js$script
 ||imasdk.googleapis.com^$third-party
 ||googletagmanager.com/gtag/$third-party
