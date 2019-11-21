@@ -2,12 +2,12 @@
 @@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
 @@||9anime.*/captcha/$image,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
 @@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
-*$domain=prettyfast.to
-@@||gstatic.com/recaptcha/$script
-@@||googleusercontent.com
-@@||prettyfast.to$~third-party
-@@||jwpsrv.com
-@@||jwpcdn.com
+*$domain=prettyfast.to,important
+@@||gstatic.com/recaptcha/$script,important
+@@||googleusercontent.com$important
+@@||prettyfast.to$~third-party,important
+@@||jwpsrv.com$important
+@@||jwpcdn.com$important
 hydrax.net##.afs_ads
 prettyfast.to###iframe
 mp4upload.com##.vjs-over.vjs-fade
@@ -122,6 +122,8 @@ about:blank$popup
 ||krboeyeq.com$important
 ||fhtoxxda.com$important
 ||tvopcxtf.com$important
+||serconmp.com$important
+||keechavy.com$important
 ||omnitagjs.com$important
 ||appsflyer.com$important
 ||uptimecdn.com$important
