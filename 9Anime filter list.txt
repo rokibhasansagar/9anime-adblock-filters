@@ -5,7 +5,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 11/17/2019 @ 1:53 AM EDT
+! Last Update: 11/25/2019 @ 2:13 AM EDT
 !
 !
 !
@@ -81,11 +81,14 @@ playhydrax.com##.afs_ads
 !
 ! Prettyfast.to Fixes
 ! "Everything"
-@@||prettyfast.to
+prettyfast.to##iframe
+prettyfast.to##.afs_ads
+@@||prettyfast.to$~third-party
 ||raiphupi.com^
 ||oodsotso.com^
 ||opsivesh.net^
 ||grooksom.com^
+||ouhegapy.net^
 ||deloplen.com^
 ||whegrads.com^
 ||viatepigan.com^
@@ -97,9 +100,6 @@ playhydrax.com##.afs_ads
 @@||*.googleusercontent.com^$domain=prettyfast.to
 @@||www.gstatic.com/cv/js/sender/v*/cast_sender.js$domain=prettyfast.to
 @@||www.gstatic.com/cast/sdk/libs/sender/*/cast_framework.js$domain=prettyfast.to
-prettyfast.to##iframe
-prettyfast.to##.afs_ads
-prettyfast.to##iframe[src^="about:blank"]
 !
 ! IP Regex (commonly used, hax'd IP addresses)
 /^https?:\/\/(35|104)\.(\d){1,3}\.(\d){1,3}\.(\d){1,3}\//$popup,third-party
