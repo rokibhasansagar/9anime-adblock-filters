@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 11/13/2019 @ 11:59 AM EDT
+# Last Update: 11/25/2019 @ 4:45 PM EDT
 
 
 
@@ -61,6 +61,7 @@ mp4upload.com##.vjs-resize-manager
 # Anti-Advertising
 hydrax.net##.afs_ads
 playhydrax.com##.afs_ads
+||movcpm.com^$domain=hydrax.net|playhydrax.com
 ||cadsabs.com^$domain=hydrax.net|playhydrax.com
 @@||jpsrv.com^$domain=hydrax.net|playhydrax.com
 @@||iamcdn.net^$domain=hydrax.net|playhydrax.com
@@ -110,9 +111,6 @@ mp4upload.com##+js(popads-dummy)
 mp4upload.com##+js(abort-current-inline-script, decodeURI, decodeURIComponent)
 mp4upload.com##+js(addEventListener-defuser, /^(?:click|mousedown|mousemove|touchstart|touchend|touchmove)$/, system.popunder)
 
-# Hydrax uBo Inject
-hydrax.net##+js(aopr, _0x2a8b)
-playhydrax.net##+js(aopr, _0x2a8b)
 
 
 # Standalone imports from other filter-lists
@@ -130,6 +128,7 @@ playhydrax.net##+js(aopr, _0x2a8b)
 ||krboeyeq.com$third-party
 ||fhtoxxda.com$third-party
 ||exdynsrv.com^$third-party
+||greedseed.world$third-party
 ||fkqafflyjz.com^$third-party
 ||popmonetizer.com^$third-party
 ||spotscenered.info^$third-party
