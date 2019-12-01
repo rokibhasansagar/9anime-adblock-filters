@@ -5,7 +5,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 12/1/2019 @ 12:28 PM EDT
+! Last Update: 12/1/2019 @ 12:30 PM EDT
 !
 !
 !
@@ -85,9 +85,7 @@ playhydrax.com##.afs_ads
 prettyfast.to##iframe
 prettyfast.to##.afs_ads
 @@||prettyfast.to$~third-party
-*$stylesheet,domain=prettyfast.to
-*$subdocument,domain=prettyfast.to
-*$xmlhttprequest,domain=prettyfast.to
+*$domain=prettyfast.to
 ||serconmp.com^
 ||google.com/favicon.ico$popup
 @@||jwpsrv.com^$domain=prettyfast.to
