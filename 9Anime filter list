@@ -1,7 +1,7 @@
-@@||9anime.*/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
-@@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
-@@||9anime.*/captcha/$image,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
-@@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one
+@@||9anime.*/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.love|9anime.life
+@@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.love|9anime.life
+@@||9anime.*/captcha/$image,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.love|9anime.life
+@@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.love|9anime.life
 *$important,domain=prettyfast.to
 @@||googleusercontent.com$important
 @@||prettyfast.to$~third-party,important
