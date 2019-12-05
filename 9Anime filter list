@@ -2,12 +2,13 @@
 @@|http*://$script,stylesheet,third-party,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.love|9anime.life
 @@||9anime.*/captcha/$image,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.love|9anime.life
 @@||9anime.*/assets/$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.love|9anime.life
-*$important,domain=prettyfast.to
+*$domain=prettyfast.to
+@@||jwpsrv.com$important
+@@||jwpcdn.com$important
 @@||googleusercontent.com$important
 @@||prettyfast.to$~third-party,important
 @@||gstatic.com/recaptcha/$script,important
-@@||jwpsrv.com$important
-@@||jwpcdn.com$important
+@@||gstatic.com/cast/sdk/libs/sender/*/cast_framework.js
 hydrax.net##.afs_ads
 prettyfast.to###iframe
 mp4upload.com##.vjs-over.vjs-fade
@@ -114,6 +115,7 @@ about:blank$popup
 ||mylunara.com$important
 ||zijaipse.com$important
 ||oukruque.com$important
+||sinsoftu.com$important
 ||gleechie.net$important
 ||ceeglagu.net$important
 ||deloplen.com$important
