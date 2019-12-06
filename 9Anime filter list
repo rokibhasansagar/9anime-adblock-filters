@@ -8,7 +8,7 @@
 
 # Banner unblocking
 # Unblock traffic which originates from 9Anime and isn't blocked for being malicious as seen below.
-@@||*^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life
+@@||*^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv
 
 # Stop uBlock's base filters from disabling creation of sidebar ads.
 9anime.to#@#+js(abort-current-inline-script.js, Math, zfgloaded)
