@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 12/04/2019 @ 2:05 AM EDT
+# Last Update: 12/06/2019 @ 4:30 PM EDT
 
 
 
@@ -14,8 +14,9 @@
 9anime.to#@#+js(abort-current-inline-script.js, Math, zfgloaded)
 9anime.ru#@#+js(abort-current-inline-script.js, Math, zfgloaded)
 9anime.nl#@#+js(abort-current-inline-script.js, Math, zfgloaded)
-9anime.live#@#+js(abort-current-inline-script.js, Math, zfgloaded)
+9anime.tv#@#+js(abort-current-inline-script.js, Math, zfgloaded)
 9anime.one#@#+js(abort-current-inline-script.js, Math, zfgloaded)
+9anime.live#@#+js(abort-current-inline-script.js, Math, zfgloaded)
 9anime.life#@#+js(abort-current-inline-script.js, Math, zfgloaded)
 9anime.love#@#+js(abort-current-inline-script.js, Math, zfgloaded)
 
@@ -26,10 +27,12 @@
 9anime.ru#@#div > div[id][style*="overflow:"][style*="hidden;"][style*="height:"]
 9anime.nl#@##sidebar > .widget.crop
 9anime.nl#@#div > div[id][style*="overflow:"][style*="hidden;"][style*="height:"]
-9anime.live#@##sidebar > .widget.crop
-9anime.live#@#div > div[id][style*="overflow:"][style*="hidden;"][style*="height:"]
+9anime.tv#@##sidebar > .widget.crop
+9anime.tv#@#div > div[id][style*="overflow:"][style*="hidden;"][style*="height:"]
 9anime.one#@##sidebar > .widget.crop
 9anime.one#@#div > div[id][style*="overflow:"][style*="hidden;"][style*="height:"]
+9anime.live#@##sidebar > .widget.crop
+9anime.live#@#div > div[id][style*="overflow:"][style*="hidden;"][style*="height:"]
 9anime.life#@##sidebar > .widget.crop
 9anime.life#@#div > div[id][style*="overflow:"][style*="hidden;"][style*="height:"]
 9anime.love#@##sidebar > .widget.crop
@@ -40,11 +43,11 @@
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
 @@||gstatic.com/recaptcha/$script
-@@||fonts.googleapis.com^$stylesheet,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life
+@@||fonts.googleapis.com^$stylesheet,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv
 
 # Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
 # This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
-@@||akacdn.ru$third-party,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life
+@@||akacdn.ru$third-party,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv
 
 # Blocks rogue advertisers.
 ||class2deal.com^$important
@@ -82,8 +85,8 @@ playhydrax.com##.afs_ads
 @@||jsdelivr.net^$domain=hydrax.net|playhydrax.com
 @@||multi.idocdn.com^$domain=hydrax.net|playhydrax.com
 @@||i.*-*.xyz/html/*.html?domain=playhydrax.com,domain=hydrax.net
-@@||hydrax.net$domain=playhydrax.net|9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life
-@@||playhydrax.com^$domain=hydrax.net|9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life
+@@||hydrax.net$domain=playhydrax.net|9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv
+@@||playhydrax.com^$domain=hydrax.net|9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv
 
 
 # Prettyfast.to Fixes
