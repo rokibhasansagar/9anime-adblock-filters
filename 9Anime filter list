@@ -77,11 +77,13 @@ mcloud.to###jwa
 ||adservice.google.com
 ||google-analytics.com
 ||popads.net$important
-||adnxs.com$important
 ||referrer.disqus.com
+||adnxs.com$important
+||mgid.com$important
 ||adsco.re$important
 ||videoplayerhub.com
 ||io.narrative.io
+||dobleclick.net
 ||serconmp.com
 ||iwtserve.com
 ||viglink.com
@@ -89,7 +91,6 @@ mcloud.to###jwa
 ||adstrue.com
 ||pippio.com
 ||rezync.com
-||mgid.com
 ||amung.us
 ||zap.buzz
 about:blank$popup
