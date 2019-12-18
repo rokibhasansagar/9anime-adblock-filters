@@ -5,7 +5,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 12/15/2019 @ 3:03 PM EDT
+! Last Update: 12/18/2019 @ 4:47 PM EDT
 !
 !
 !
@@ -76,13 +76,13 @@ mp4upload.com##.vjs-resize-manager
 hydrax.net##.afs_ads
 playhydrax.com##.afs_ads
 ||movcpm.com^$domain=hydrax.net|playhydrax.com
-||cadsabs.com^$domain=hydrax.net|playhydrax.com
-||cadspmz.com^$domain=hydrax.net|playhydrax.com
 @@||jpsrv.com^$domain=hydrax.net|playhydrax.com
 @@||iamcdn.net^$domain=hydrax.net|playhydrax.com
 @@||jsdelivr.net^$domain=hydrax.net|playhydrax.com
+||kapuaawase.com^$domain=hydrax.net|playhydrax.com
+||gjproyrwjv.com^$domain=hydrax.net|playhydrax.com
 @@||multi.idocdn.com^$domain=hydrax.net|playhydrax.com
-@@||i.*-*.xyz/html/*.html?domain=playhydrax.com,domain=hydrax.net
+@@||*.*-*.xyz/html/*.html?domain=playhydrax.com,domain=hydrax.net
 @@||hydrax.net$domain=playhydrax.net|9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 @@||playhydrax.com^$domain=hydrax.net|9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 !
