@@ -14,7 +14,6 @@
 9anime.to##.afs_ads
 9anime.to##.adsbox
 9anime.to###jwa
-9anime.to###jw
 9anime.ru##.widget.crop.hidden-lg.hidden-md.text-center
 9anime.ru##.widget.text-center
 9anime.ru###propeller
@@ -22,7 +21,6 @@
 9anime.ru##.afs_ads
 9anime.ru##.adsbox
 9anime.ru###jwa
-9anime.ru###jw
 9anime.nl##.widget.crop.hidden-lg.hidden-md.text-center
 9anime.nl##.widget.text-center
 9anime.nl###propeller
@@ -30,7 +28,6 @@
 9anime.nl##.afs_ads
 9anime.nl##.adsbox
 9anime.nl###jwa
-9anime.nl###jw
 9anime.tv##.widget.crop.hidden-lg.hidden-md.text-center
 9anime.tv##.widget.text-center
 9anime.tv###propeller
@@ -38,7 +35,6 @@
 9anime.tv##.afs_ads
 9anime.tv##.adsbox
 9anime.tv###jwa
-9anime.tv###jw
 9anime.one##.widget.crop.hidden-lg.hidden-md.text-center
 9anime.one##.widget.text-center
 9anime.one###propeller
@@ -46,7 +42,6 @@
 9anime.one##.afs_ads
 9anime.one##.adsbox
 9anime.one###jwa
-9anime.one###jw
 9anime.live##.widget.crop.hidden-lg.hidden-md.text-center
 9anime.live##.widget.text-center
 9anime.live###propeller
@@ -54,7 +49,6 @@
 9anime.live##.afs_ads
 9anime.live##.adsbox
 9anime.live###jwa
-9anime.live###jw
 9anime.life##.widget.crop.hidden-lg.hidden-md.text-center
 9anime.life##.widget.text-center
 9anime.life###propeller
@@ -62,7 +56,6 @@
 9anime.life##.afs_ads
 9anime.life##.adsbox
 9anime.life###jwa
-9anime.life###jw
 9anime.love##.widget.crop.hidden-lg.hidden-md.text-center
 9anime.love##.widget.text-center
 9anime.love###propeller
@@ -70,7 +63,6 @@
 9anime.love##.afs_ads
 9anime.love##.adsbox
 9anime.love###jwa
-9anime.love###jw
 9anime.page##.widget.crop.hidden-lg.hidden-md.text-center
 9anime.page##.widget.text-center
 9anime.page###propeller
@@ -78,7 +70,6 @@
 9anime.page##.afs_ads
 9anime.page##.adsbox
 9anime.page###jwa
-9anime.page###jw
 9anime.video##.widget.crop.hidden-lg.hidden-md.text-center
 9anime.video##.widget.text-center
 9anime.video###propeller
@@ -86,14 +77,12 @@
 9anime.video##.afs_ads
 9anime.video##.adsbox
 9anime.video###jwa
-9anime.video###jw
 mp4upload.com##.vjs-logo
 prettyfast.to##.afs_ads
 mcloud.to###propeller
 hydrax.net##.afs_ads
 mcloud.to##.afs_ads
 mcloud.to###jwa
-mcloud.to###jw
 @@||imasdk.googleapis.com/js/sdkloader/ima3.js
 @@||*.googleusercontent.com
 @@||xiao.smamuhh1metro.com
@@ -125,6 +114,8 @@ mcloud.to###jw
 ||z.moatads.com$important
 ||google.com/favicon.ico
 ||serconmp.com$important
+||psitchie.com$important
+||doubooca.com$important
 ||madsans.com$important
 ||adservice.google.com
 ||google-analytics.com
