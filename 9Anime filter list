@@ -101,7 +101,7 @@ mcloud.to###jwa
 @@||imacdn.net
 @@||idocdn.com
 @@||akacdn.ru
-||googletagmanager.com/gtag/$third-party
+||googletagmanager.com$third-party
 ||runative-syndicate.com$important
 ||mp4upload.com/*-contrib-ads.js
 ||propellerclick.com$important
@@ -117,10 +117,12 @@ mcloud.to###jwa
 ||psitchie.com$important
 ||doubooca.com$important
 ||madsans.com$important
+||cadspmz.com$important
 ||adservice.google.com
 ||google-analytics.com
 ||popads.net$important
 ||referrer.disqus.com
+||apus.tech$important
 ||adnxs.com$important
 ||mgid.com$important
 ||adsco.re$important
