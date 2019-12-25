@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 12/19/2019 @ 12:42 PM EDT
+# Last Update: 12/25/2019 @ 2:44 PM EDT
 
 
 
@@ -119,6 +119,10 @@ prettyfast.to##script:contains(apu.php?zoneid=)
 # Overlay Popups
 mcloud.to###jwa
 mcloud.to##.afs_ads
+||geethoap.com
+||doubooca.com
+||kaubapsy.com
+||postlnk.com
 
 
 # Generic VideoJs Fixes
@@ -136,6 +140,13 @@ mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
 mp4upload.com##+js(popads-dummy)
 mp4upload.com##+js(abort-current-inline-script, decodeURI, decodeURIComponent)
 mp4upload.com##+js(addEventListener-defuser, /^(?:click|mousedown|mousemove|touchstart|touchend|touchmove)$/, system.popunder)
+
+
+
+# MyCloud uBO Injects
+mcloud.to##+js(popads-dummy)
+mcloud.to##+js(abort-current-inline-script, decodeURI, decodeURIComponent)
+mcloud.to##+js(addEventListener-defuser, /^(?:click|mousedown|mousemove|touchstart|touchend|touchmove)$/, system.popunder)
 
 
 
