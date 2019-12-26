@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 12/25/2019 @ 2:43 PM EDT
+# Last Update: 12/26/2019 @ 4:10 PM EDT
 # Hope this works for you /u/RedditChickenWings
 
 
@@ -76,6 +76,7 @@ playhydrax.com##.afs_ads
 @@||xiao.smamuhh1metro.com$domain=hydrax.net|domain=playhydrax.com
 @@||*.googleusercontent.com^$domain=hydrax.net|domain=playhydrax.com
 
+
 # Prettyfast.to Fixes
 # "Everything"
 oodsotso.com^$third-party
@@ -93,15 +94,14 @@ prettyfast.to##script:contains(zfgloadedpopup)
 prettyfast.to##script:contains(apu.php?zoneid=)
 
 
-
 # MyCloud Fixes
-# Overlay Popups
+# "Everything"
+@@||mcloud.to
 mcloud.to###jwa
 mcloud.to##.afs_ads
-||geethoap.com
-||doubooca.com
-||kaubapsy.com
-||postlnk.com
+||*$domain=mcloud.to
+@@||jwpcdn.com^$domain=mcloud.to
+@@||googleapis.com^$domain=mcloud.to
 
 
 # Generic VideoJs Fixes
@@ -114,18 +114,12 @@ mcloud.to##.afs_ads
 mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
 
 
+
 # uBO Imports
 # MP4Upload uBO Injects
 mp4upload.com##+js(popads-dummy)
 mp4upload.com##+js(abort-current-inline-script, decodeURI, decodeURIComponent)
 mp4upload.com##+js(addEventListener-defuser, /^(?:click|mousedown|mousemove|touchstart|touchend|touchmove)$/, system.popunder)
-
-
-
-# MyCloud uBO Injects
-mcloud.to##+js(popads-dummy)
-mcloud.to##+js(abort-current-inline-script, decodeURI, decodeURIComponent)
-mcloud.to##+js(addEventListener-defuser, /^(?:click|mousedown|mousemove|touchstart|touchend|touchmove)$/, system.popunder)
 
 
 
