@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 12/26/2019 @ 4:27 PM EDT
+# Last Update: 12/26/2019 @ 4:46 PM EDT
 # Hope this works for you /u/RedditChickenWings
 
 
@@ -97,12 +97,13 @@ prettyfast.to##script:contains(apu.php?zoneid=)
 # MyCloud Fixes
 # "Everything"
 ||*$domain=mcloud.to
-||*$popup,domain=mcloud.to
+||google.com/favicon.ico$popup
 @@||mcloud.to
-mcloud.to###jwa
-mcloud.to##.afs_ads
 @@||jwpcdn.com^$domain=mcloud.to
 @@||googleapis.com^$domain=mcloud.to
+@@||fonts.gstatic.com/s/roboto/*/*.woff2$domain=mcloud.to
+mcloud.to###jwa
+mcloud.to##.afs_ads
 mcloud.to##+js(nowebrtc.js)
 mcloud.to##script:contains(zfgloadedpopup)
 mcloud.to##script:contains(apu.php?zoneid=)
