@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.63
+! Version: 0.64
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 1/10/2020 @ 2:13 PM EDT
+! Last Update: 1/11/2020 @ 9:15 PM EDT
 !
 !
 !
@@ -30,10 +30,10 @@
 @@||googleapis.com^$script
 !
 ! Blocks rogue advertisers.
-||class2deal.com^$important
-||indlzxgptf.com^$third-party
-||bqiovml.com^$important
-||fingahvf.top^$important
+||indlzxgptf.com$third-party
+||class2deal.com$important
+||fingahvf.top$important
+||bqiovml.com$important
 !
 !
 !
