@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.64
+! Version: 0.66
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 1/11/2020 @ 9:15 PM EDT
+! Last Update: 1/11/2020 @ 9:19 PM EDT
 !
 !
 !
@@ -31,9 +31,9 @@
 !
 ! Blocks rogue advertisers.
 ||indlzxgptf.com$third-party
-||class2deal.com$important
-||fingahvf.top$important
-||bqiovml.com$important
+||class2deal.com
+||fingahvf.top
+||bqiovml.com
 !
 !
 !
@@ -145,7 +145,7 @@ mcloud.to##.afs_ads
 ||propellerclick.com^$third-party
 ||runative-syndicate.com^$third-party
 ||googletagmanager.com/gtag/$third-party
-||addthis.com^$important,third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs
+||addthis.com^$third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs
 !
 ! Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
 ||disqus.com/api/ping?$third-party
@@ -187,39 +187,39 @@ about:blank$popup
 ||myornamenti.com
 ||onclicksuper.com
 ||moneymakercdn.com
-||adsco.re$important
+||adsco.re
 ||adservice.google.com
-||popads.net$important
+||popads.net
 ||remarketingpixel.com
 ||wpnjs.com$third-party
-||sleepto.com$important
-||steepto.com$important
-||zijaipse.com$important
-||oukruque.com$important
-||gleechie.net$important
-||ceeglagu.net$important
+||sleepto.com
+||steepto.com
+||zijaipse.com
+||oukruque.com
+||gleechie.net
+||ceeglagu.net
 ||google.com/favicon.ico
-||ie8eamus.com$important
-||sevootie.com$important
-||shusacem.net$important
-||caithamo.net$important
-||jotchept.com$important
-||tharbadir.com$important
-||fkqafflyjz.com$important
-||bocpqkpmez.com$important
-||l6b587tcj1.com$important
-||jf71qh5v14.com$important
-||yr9n47004g.com$important
-||i5iog3mlrw.com$important
-||xpx7heciz9.com$important
-||bnsjb1ab1e.com$important
-||0byv9mgbn0.com$important
-||cjl58f3agc.com$important
-||e2b9jbowv7.com$important
-||greedseed.world$important
-||track.adsplay.in$important
-||direct.apus.tech$important
-||*.doubleclick.net$important
+||ie8eamus.com
+||sevootie.com
+||shusacem.net
+||caithamo.net
+||jotchept.com
+||tharbadir.com
+||fkqafflyjz.com
+||bocpqkpmez.com
+||l6b587tcj1.com
+||jf71qh5v14.com
+||yr9n47004g.com
+||i5iog3mlrw.com
+||xpx7heciz9.com
+||bnsjb1ab1e.com
+||0byv9mgbn0.com
+||cjl58f3agc.com
+||e2b9jbowv7.com
+||greedseed.world
+||track.adsplay.in
+||direct.apus.tech
+||*.doubleclick.net
 ||googletagmanager.com/gtm.js$script
 ||imasdk.googleapis.com^$third-party
 ||googletagmanager.com/gtag/$third-party
