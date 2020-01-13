@@ -83,8 +83,7 @@ mcloud.to##.afs_ads
 mcloud.to###jwa
 @@||*.googleapis.com/js/sdkloader/ima3.js
 @@||*.googleusercontent.com
-@@||*.smamuhh1metro.com
-@@||*.twitter.com/widgets.js
+@@||xiao.smamuhh1metro.com
 @@||*.*-*.xyz/redirect/*
 @@||*.disqusservice.com
 @@||*.bootstrapcdn.com
@@ -92,11 +91,12 @@ mcloud.to###jwa
 @@||*.googleapis.com
 @@||*.disquscdn.com
 @@||*.jsdelivr.net
-@@||*.gstatic.com
+@@||gstatic.com
 @@||*.jwpcdn.com
+@@||*.jwpltx.com
 @@||*.jwpsrv.com
-@@||*.disqus.com
-@@||*.iamcdn.net
+@@||disqus.com
+@@||iamcdn.net
 @@||*.idocdn.com
 @@||*.akacdn.ru
 ||googletagmanager.com$third-party
