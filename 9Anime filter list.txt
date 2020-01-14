@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.66a
+! Version: 0.67
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 1/14/2020 @ 2:33 AM EDT
+! Last Update: 1/14/2020 @ 2:38 AM EDT
 !
 !
 !
@@ -79,7 +79,7 @@ hydrax.net##.afs_ads
 playhydrax.com##.afs_ads
 @@||hydrax.net^
 @@||playhydrax.com^
-*$domain=hydrax.net|playhydrax.com
+*$domain=hydrax.net|playhydrax.com,~csp
 @@||jpsrv.com^$domain=hydrax.net|playhydrax.com
 @@||iamcdn.net^$domain=hydrax.net|playhydrax.com
 @@||jsdelivr.net^$domain=hydrax.net|playhydrax.com
