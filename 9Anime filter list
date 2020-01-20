@@ -2,7 +2,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 1/20/2020 @ 9:01 AM EDT
+# Last Update: 1/20/2020 @ 10:15 AM EDT
 
 
 
@@ -61,8 +61,8 @@ mp4upload.com##.vjs-resize-manager
 
 # Hydrax Fixes
 # Anti-Advertising
-hydrax.net#@#.afs_ads
-playhydrax.com#@#.afs_ads
+@@||hydraX.net^$elemhide
+@@||playhydraX.net^$elemhide
 @@||hydrax.net$~third-party
 @@||playhydrax.com$~third-party
 *$domain=hydrax.net|playhydrax.com
