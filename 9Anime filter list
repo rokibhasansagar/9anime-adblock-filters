@@ -1,13 +1,14 @@
-!Last Update: 1/20/2020 10:49 AM EDT
+!Last Update: 1/20/2020 12:59 AM EDT
 ||*$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video
+@@||cadspmz.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video
 @@||*.*-*.xyz$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video
 @@||9anime.*$~third-party,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video
-@@||*.mp4upload.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video
-@@||prettyfast.to$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video
-@@||mp4upload.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video
-@@||*.mcloud.to$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video
-@@||hydrax.net$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video
-@@||mcloud.to$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video
+@@||*.mp4upload.com
+@@||prettyfast.to
+@@||mp4upload.com
+@@||*.mcloud.to
+@@||hydrax.net
+@@||mcloud.to
 9anime.to##.widget.crop.hidden-lg.hidden-md.text-center
 9anime.to##.widget.text-center
 9anime.to###propeller
@@ -159,7 +160,6 @@ mcloud.to###jwa
 @@||playhydraX.net^$elemhide
 @@||*.googleusercontent.com
 @@||xiao.smamuhh1metro.com
-@@||hydraX.net^$elemhide
 @@||*.disqusservice.com
 @@||*.bootstrapcdn.com
 @@||cdn.jsdelivr.net
@@ -170,7 +170,8 @@ mcloud.to###jwa
 @@||*.jwpsrv.com
 @@||*.akacdn.ru
 @@||gstatic.com
-@@||cadspmz.com
+@@||jwpsrv.com
+@@||jwpcdn.com
 @@||disqus.com
 @@||iamcdn.net
 ||googletagmanager.com$third-party
