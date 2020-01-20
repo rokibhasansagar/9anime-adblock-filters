@@ -1,4 +1,4 @@
-!Last Update: 1/20/2020 9:48 AM EDT
+!Last Update: 1/20/2020 10:49 AM EDT
 ||*$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video
 @@||*.*-*.xyz$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video
 @@||9anime.*$~third-party,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video
@@ -170,6 +170,7 @@ mcloud.to###jwa
 @@||*.jwpsrv.com
 @@||*.akacdn.ru
 @@||gstatic.com
+@@||cadspmz.com
 @@||disqus.com
 @@||iamcdn.net
 ||googletagmanager.com$third-party
@@ -192,7 +193,6 @@ mcloud.to###jwa
 ||doubooca.com$important
 ||bqiovml.com$important
 ||madsans.com$important
-||cadspmz.com$important
 ||adservice.google.com
 ||google-analytics.com
 ||popads.net$important
