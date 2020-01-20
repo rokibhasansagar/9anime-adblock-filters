@@ -1,4 +1,4 @@
-!Last Update: 1/20/2020 9:06 AM EDT
+!Last Update: 1/20/2020 9:22 AM EDT
 ||*$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video
 @@||*.*-*.xyz$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video
 @@||9anime.*$~third-party,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video
@@ -12,8 +12,8 @@
 9anime.to##.widget.text-center
 9anime.to###propeller
 9anime.to##.vjs-logo
-9anime.to#@#.afs_ads
-9anime.to##.adsbox
+9anime.to##.afs_ads
+9anime.to#@#.adsbox
 9anime.to###jwa
 9anime.ru##.widget.crop.hidden-lg.hidden-md.text-center
 9anime.ru##.widget.text-center
@@ -81,12 +81,13 @@
 mp4upload.com##.vjs-logo
 prettyfast.to##.afs_ads
 mcloud.to###propeller
-hydrax.net#@#.afs_ads
 mcloud.to##.afs_ads
 mcloud.to###jwa
 @@||*.googleapis.com/js/sdkloader/ima3.js
+@@||playhydraX.net^$elemhide
 @@||*.googleusercontent.com
 @@||xiao.smamuhh1metro.com
+@@||hydraX.net^$elemhide
 @@||*.disqusservice.com
 @@||*.bootstrapcdn.com
 @@||cdn.jsdelivr.net
