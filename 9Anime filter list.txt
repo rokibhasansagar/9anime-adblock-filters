@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.69
+! Version: 0.70
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 1/20/2020 @ 10:48 AM EDT
+! Last Update: 1/21/2020 @ 12:01 PM EDT
 !
 !
 !
@@ -75,18 +75,18 @@ mp4upload.com##.vjs-resize-manager
 !
 ! Hydrax Fixes
 ! Anti-Advertising
-hydrax.net##.afs_ads
-playhydrax.com##.afs_ads
-@@||hydrax.net^
-@@||playhydrax.com^
-@@||www.gstatic.com$domain=hydrax.net
-@@||cadspmz.com^$script,domain=hydrax.net
+@@||hydraX.net^$elemhide
+@@||playhydraX.net^$elemhide
+@@||hydrax.net$~third-party
+@@||playhydrax.com$~third-party
 *$domain=hydrax.net|playhydrax.com,~csp
 @@||jpsrv.com^$domain=hydrax.net|playhydrax.com
 @@||iamcdn.net^$domain=hydrax.net|playhydrax.com
 @@||jsdelivr.net^$domain=hydrax.net|playhydrax.com
+@@||www.gstatic.com$domain=hydrax.net|playhydrax.com
 @@||googleapis.com^$domain=hydrax.net|playhydrax.com
 @@||multi.idocdn.com^$domain=hydrax.net|playhydrax.com
+@@||madsimz.com^$script,domain=hydrax.net|playhydrax.com
 @@||*.*-*.xyz/html/$domain=hydrax.net|domain=playhydrax.com
 @@||*.*-*.xyz/redirect/$domain=hydrax.net|domain=playhydrax.com
 @@||xiao.smamuhh1metro.com$domain=hydrax.net|domain=playhydrax.com
