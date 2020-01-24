@@ -63,12 +63,12 @@ mcloud.to##.afs_ads
 ||io.narrative.io/?$third-party
 ||rezync.com^$third-party
 ||googletagservices.com^
-||adservice.google.com^
 ||googletagmanager.com^
 ||google-analytics.com^
 ||zap.buzz^$third-party
 ||referrer.disqus.com^
 ||propellerclick.com^
+adservice.google.com^
 ||*.jwpltx.com
 ||*.adnxs.com^
 ||pippio.com^
