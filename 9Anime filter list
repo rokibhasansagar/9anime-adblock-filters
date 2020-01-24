@@ -1,4 +1,4 @@
-! Last Update: 1/24/2020 5:35 PM EDT
+! Last Update: 1/24/2020 5:40 PM EDT
 ! Primary domains / unBlocks
 ||*$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|mp4upload.com|mcloud.to
 @@||madsimz.com$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net
@@ -20,6 +20,7 @@
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,tempest.services.disqus.com###ad-container
 prettyfast.to##.afs_ads
 mcloud.to##.afs_ads
+! Subdomains unblocked (As required)
 @@||*.googleapis.com/js/sdkloader/ima3.js
 @@||playhydraX.net^$elemhide
 @@||*.googleusercontent.com
@@ -45,7 +46,6 @@ mcloud.to##.afs_ads
 ||defpush.com^$third-party
 ||madsans.com^$third-party
 ||google.com/favicon.ico
-||direct.apus.tech
 ||viatepigan.com
 ||*.moatads.com
 ||grooksom.com
@@ -54,6 +54,7 @@ mcloud.to##.afs_ads
 ||ptaussee.net
 ||gruglooh.net
 /www/delivery/*
+||*.apus.tech
 /pixel/purst?
 /pixel/puclc?
 .php?zoneid=
@@ -67,8 +68,9 @@ mcloud.to##.afs_ads
 ||zap.buzz^$third-party
 ||referrer.disqus.com^
 ||propellerclick.com^
+||*.jwpltx.com
+||*.adnxs.com^
 ||pippio.com^
 ||popads.net^
-||*.adnxs.com^
 ||amung.us^
 ||mgid.com^
