@@ -1,228 +1,110 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.702
+! Version: 0.710
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 1/23/2020 @ 1:34 PM EDT
-!
-!
-!
-!
-! General 9Anime Fixes
-! Average user experence fixes (Fixes the website)
-@@||gstatic.com/recaptcha/$script
-@@||9anime.*/waf-verify$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
-@@||9anime.*$xmlhttprequest,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
-@@||9anime.*/assets/*$script,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
-@@||9anime.*/captcha/*$image,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
-@@||fonts.googleapis.com^$stylesheet,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
-!
-! Fix for the overly aggressive cloudflare email filter. Stopping it from hiding anything with an @ symbol.
-@@||9anime.*/cdn-cgi/scripts/*/cloudflare-static/email-decode.min.js$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
-!
-! Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
-! This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
-@@||*.akacdn.ru$third-party,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|prettyfast.to
-@@||akacdn.ru$third-party,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|prettyfast.to
-!
-! Google API Fix
-@@||googleapis.com^$script
-!
-! Blocks rogue advertisers.
-||indlzxgptf.com$third-party
-||class2deal.com
-||fingahvf.top
-||bqiovml.com
-!
-!
-!
-! 9Anime Visual Tweaks
-! The following removes empty ad-windows
-9anime.to##.widget.crop.hidden-lg.hidden-md.text-center
-9anime.to##.widget.text-center
-9anime.nl##.widget.crop.hidden-lg.hidden-md.text-center
-9anime.nl##.widget.text-center
-9anime.ru##.widget.crop.hidden-lg.hidden-md.text-center
-9anime.ru##.widget.text-center
-9anime.tv##.widget.crop.hidden-lg.hidden-md.text-center
-9anime.tv##.widget.text-center
-9anime.one##.widget.crop.hidden-lg.hidden-md.text-center
-9anime.one##.widget.text-center
-9anime.live##.widget.crop.hidden-lg.hidden-md.text-center
-9anime.live##.widget.text-center
-9anime.life##.widget.crop.hidden-lg.hidden-md.text-center
-9anime.life##.widget.text-center
-9anime.love##.widget.crop.hidden-lg.hidden-md.text-center
-9anime.love##.widget.text-center
-!
-!
-!
-! External Player Tweaks
-! MP4Upload
-! Stop 3rd party scripts from loading
-*$third-party,script,domain=mp4upload.com
-||mp4upload.com/*-contrib-ads.js
-!
-! This'll remove Mp4upload's advertisement overlay which tends to be invisible.
+! Last Update: 1/24/2020 @ 2:03 PM EDT
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# General 9Anime Fixes
+# Average user experence fixes (Fixes the website)
+@@||9anime.*$~third-party,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
+
+# Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
+# This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
+@@||*.akacdn.ru$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|prettyfast.to
+
+# Google API preventitive measures
+@@||*.gstatic.com^
+@@||*.googleapis.com^
+@@||*.googleusercontent.com^
+@@||google.com/recaptcha/api.js
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# 9Anime Visual Tweaks
+# The following removes empty ad-windows
+9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video##div.text-center.widget
+9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video###sidebar > .widget.crop.text-center
+9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video###sidebar > div.text-center.crop.widget
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# Disqus Fixes & Tweaks
+# Advertising Removial
+tempest.services.disqus.com###ad-container
+
+# Ensuring it continues to work on 9Anime
+@@||disqus.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
+@@||disquscdn.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# External Player Tweaks
+# MP4Upload
+# Anti-Advertisements
+||mp4upload.com/vjs/videojs-contrib-ads.js
+*$script,3p,domain=mp4upload.com
+||direct.apus.tech
+||madsans.com^$3p
+
+# This'll remove Mp4upload's advertisement overlay which tends to be invisible.
 mp4upload.com###overlay
-mp4upload.com##.vjs-over.vjs-fade
-!
-! This'll remove Mp4upload's HD logo from the video player.
+
+# This'll remove Mp4upload's HD logo from the video player.
 mp4upload.com##.vjs-logo
-mp4upload.com##.vjs-resize-manager
-!
-!
-! Hydrax Fixes
-! Anti-Advertising
-@@||hydraX.net^$elemhide
-@@||playhydraX.net^$elemhide
-@@||hydrax.net$~third-party
-@@||playhydrax.com$~third-party
-*$domain=hydrax.net|playhydrax.com,~csp
-*$domain=hydrax.net|playhydrax.com,popup
-@@||jpsrv.com^$domain=hydrax.net|playhydrax.com
-@@||iamcdn.net^$domain=hydrax.net|playhydrax.com
-@@||jsdelivr.net^$domain=hydrax.net|playhydrax.com
-@@||www.gstatic.com$domain=hydrax.net|playhydrax.com
-@@||googleapis.com^$domain=hydrax.net|playhydrax.com
-@@||*.*-*.xyz$domain=hydrax.net|domain=playhydrax.com
-@@||multi.idocdn.com^$domain=hydrax.net|playhydrax.com
-@@||madsimz.com^$script,domain=hydrax.net|playhydrax.com
-@@||xiao.smamuhh1metro.com$domain=hydrax.net|domain=playhydrax.com
-@@||*.googleusercontent.com^$domain=hydrax.net|domain=playhydrax.com
-!
-!
-! Prettyfast.to Fixes
-! "Everything"
-@@||prettyfast.to$~third-party
-*$domain=prettyfast.to
-||serconmp.com^
-||google.com/favicon.ico$popup
-@@||jwpsrv.com^$domain=prettyfast.to
-@@||googleapis.com^$domain=prettyfast.to
-@@||*.googleusercontent.com^$domain=prettyfast.to
-@@||www.gstatic.com/cv/js/sender/v*/cast_sender.js
-@@||www.gstatic.com/cast/sdk/libs/sender/*/cast_framework.js
-!
-! IP Regex (commonly used, hax'd IP addresses)
-/^https?:\/\/(35|104)\.(\d){1,3}\.(\d){1,3}\.(\d){1,3}\//$popup,third-party
-!
-!
-! MyCloud Fixes
-! "Everything"
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# Hydrax Fixes
+# Anti-Advertising
+||madsimz.com/*.js$empty,important,domain=hydrax.net|playhydrax.com
+# ABP Specific
+||madsimz.com/*.js$rewrite=abp-resource:blank-text,domain=hydrax.net|playhydrax.com
+
+# Anti-Anti-Adblock
+@@||hydrax.net^$elemhide
+@@||iamcdn.net^$domain=hydrax.net
+
+# Core HydraX domain: prevenitive mesures
+@@||*.*-*.xyz$domain=hydrax.net
+@@||jpsrv.com^$domain=hydrax.net
+@@||jsdelivr.net^$domain=hydrax.net
+@@||multi.idocdn.com^$domain=hydrax.net
+@@||xiao.smamuhh1metro.com$domain=hydrax.net
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# MyCloud Fixes
+# Advertisers
+||gruglooh.net
+||grooksom.com
+||jistaumt.com
+||serconmp.com
+||viatepigan.com
+||*$third-party,domain=mcloud.to
+
+# Everything else
 mcloud.to###jwa
 mcloud.to##.afs_ads
-@@||mcloud.to$~third-party
-*$domain=mcloud.to
+||mcloud.to/log/
 @@||jwpcdn.com^$domain=mcloud.to
-@@||googleapis.com^$domain=mcloud.to
-@@||fonts.gstatic.com/s/roboto/*/*.woff2$domain=mcloud.to
-!
-!
-! Generic VideoJs Fixes
-/videojs.ads-
-/videojs.ads.
-/videojs.sda.
-!
-!
-! Standalone imports from other filter-lists
-! Advertisement Blocking
-||popads.net^
-||exosrv.com^
-||reevaipi.com^
-||hamtugin.com^
-||mc.yandex.ru^
-||dt2xr6g2i5.com^
-||fd7qz88ckd.com^
-||zap.buzz^$third-party
-||revrtb.com^$third-party
-||vidcpm.com^$third-party
-||defpush.com^$third-party
-||exdynsrv.com^$third-party
-||popmonetizer.com^$third-party
-||spotscenered.info^$third-party
-||propellerclick.com^$third-party
-||runative-syndicate.com^$third-party
-||googletagmanager.com/gtag/$third-party
-||addthis.com^$third-party,domain=~missingkids.com|~missingkids.org|~sainsburys.jobs
-!
-! Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
-||disqus.com/api/ping?$third-party
-||io.narrative.io/?$third-party
-||viglink.com/images/pixel.gif
-||rezync.com^$third-party
+@@||p.jwpcdn.com/player/v/$script,3p
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# Standalone imports from other filter-lists
+# Advertisement Blocking
+||google.com/favicon.ico$popup
+||runative-syndicate.com^$3p
+/prebid.$domain=~prebid.org
+||defpush.com^$3p
+/www/delivery/*
+/pixel/purst?
+/pixel/puclc?
+.php?zoneid=
+/ping.gif?
+
+# Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
+||googletagservices.com^
 ||google-analytics.com^
 ||referrer.disqus.com^
-||revrtb.com^
+||io.narrative.io/?$3p
+||propellerclick.com^
+||rezync.com^$3p
+||zap.buzz^$3p
+||pippio.com^
+||popads.net^
+||adnxs.com^
 ||amung.us^
-||bebi.com^
 ||mgid.com^
-.com/ads-
-/ping.gif?
-.php?zoneid=
-/www/delivery/*
-!
-!
-! Mobile Device "External Import" list
-about:blank$popup
-*&phone=*
-||adnxs.com
-||trk10.com
-||prpops.com
-||pippio.com
-||realsrv.com
-||*.hwcdn.net
-||viglink.com
-||remtoaku.net
-||stazumik.net
-||dilruwha.net
-||raigluce.net
-||gromairt.net
-||glauvoob.com
-||theonecdn.com
-||z.moatads.com
-||suprclicks.com
-||suprclicks.info
-||myornamenti.com
-||onclicksuper.com
-||moneymakercdn.com
-||adsco.re
-||adservice.google.com
-||popads.net
-||remarketingpixel.com
-||wpnjs.com$third-party
-||sleepto.com
-||steepto.com
-||zijaipse.com
-||oukruque.com
-||gleechie.net
-||ceeglagu.net
-||google.com/favicon.ico
-||ie8eamus.com
-||sevootie.com
-||shusacem.net
-||caithamo.net
-||jotchept.com
-||tharbadir.com
-||fkqafflyjz.com
-||bocpqkpmez.com
-||l6b587tcj1.com
-||jf71qh5v14.com
-||yr9n47004g.com
-||i5iog3mlrw.com
-||xpx7heciz9.com
-||bnsjb1ab1e.com
-||0byv9mgbn0.com
-||cjl58f3agc.com
-||e2b9jbowv7.com
-||greedseed.world
-||track.adsplay.in
-||direct.apus.tech
-||*.doubleclick.net
-||googletagmanager.com/gtm.js$script
-||imasdk.googleapis.com^$third-party
-||googletagmanager.com/gtag/$third-party
-||*$third-party,script,domain=mp4upload.com
-||mp4upload.com/vjs/videojs-contrib-ads.js
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
