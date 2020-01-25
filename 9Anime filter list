@@ -1,7 +1,6 @@
-! Last Update: 1/24/2020 9:38 PM EDT
+! Last Update: 1/24/2020 10:30 PM EDT
 ! Primary domains / unBlocks
 *$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|mp4upload.com|mcloud.to
-@@||madsimz.com$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net
 @@||*.*-*.xyz$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net
 @@||9anime.*$~third-party,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video
 @@||*.mp4upload.com
@@ -59,6 +58,7 @@ mcloud.to##.afs_ads
 .php?zoneid=
 /ping.gif?
 ! Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
+||r.remarketingpixel.com^$third-party
 ||adservice.google.com^$important
 ||io.narrative.io/?$third-party
 ||prd.jwpltx.com^$important
@@ -71,6 +71,9 @@ mcloud.to##.afs_ads
 ||jwpltx.com^$important
 ||referrer.disqus.com^
 ||propellerclick.com^
+||postink.com$popup
+||live.rezync.com
+||roustast.net
 ||*.adnxs.com^
 ||pippio.com^
 ||popads.net^
@@ -78,6 +81,13 @@ mcloud.to##.afs_ads
 ||mgid.com^
 ! Anti-HydraX Ads Bulk Listings
 ||ie8eamus.com
+! If you're using the Android Application, use the best filter setup for HydraX
+!#if condition (adguard_ext_android_cb)
+||madsimz.com^$redirect=nooptext,important
+!#endif
+!If You're using the IOS application or Safari extension then use the only setup that'll work
+!#if condition (adguard_ext_safari || adguard_app_ios)
+@@||madsimz.com$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net
 ||vhiyyaal32.top^$important
 ||q6sehz699a.top^$important
 ||jqfjrjka5t.top^$important
@@ -91,3 +101,4 @@ mcloud.to##.afs_ads
 ||eh8jq4cmq8j9g5.com^$important
 ||5kv261gjmq04c9.com^$important
 ||01mspmd5yalky8.com^$important
+!#endif
