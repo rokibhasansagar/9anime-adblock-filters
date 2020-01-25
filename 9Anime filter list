@@ -17,6 +17,7 @@
 @@||*.gstatic.com^
 @@||*.googleapis.com^
 @@||*.googleusercontent.com^
+@@||google.com/recaptcha/api.js
 ###########################################################################################
 # 9Anime Banner Unblocking
 # Allow the banner advertisers
@@ -35,8 +36,8 @@
 tempest.services.disqus.com###ad-container
 
 #Ensuring it continues to work on 9Anime
-@@||disqus.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|prettyfast.to
-@@||disquscdn.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|prettyfast.to
+@@||disqus.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
+@@||disquscdn.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 ###########################################################################################
 # External Player Tweaks
 # MP4Upload
