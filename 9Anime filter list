@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 1/25/2020 @ 4:14 AM EDT
+# Last Update: 1/25/2020 @ 4:32 AM EDT
 # Hope this works for you /u/RedditChickenWings
 ###########################################################################################
 # General 9Anime Fixes
@@ -99,9 +99,9 @@ hydrax.net,playhydrax.com##+js(nostif, debugger)
 ###########################################################################################
 # Standalone imports from other filter-lists
 # Advertisement Blocking
-||runative-syndicate.com^$3p
+||runative-syndicate.com^$3p,important,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 /prebid.$domain=~prebid.org
-||defpush.com^$3p
+||defpush.com^$3p,important,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 /www/delivery/*
 /pixel/purst?
 .php?zoneid=
@@ -112,14 +112,14 @@ hydrax.net,playhydrax.com##+js(nostif, debugger)
 ||google-analytics.com^
 ||referrer.disqus.com^
 ||io.narrative.io/?$3p
-||propellerclick.com^
+||propellerclick.com^$important,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 ||rezync.com^$3p
-||zap.buzz^$3p
+||zap.buzz^$3p,important,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 ||pippio.com^
 ||popads.net^
 ||adnxs.com^
-||amung.us^
-||mgid.com^
+||amung.us^$important,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
+||mgid.com^$important,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 ###########################################################################################
 # CUSTOM rules start here
 # Unblock traffic which originates from 9Anime and isn't blocked for being malicious as seen above.
