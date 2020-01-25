@@ -1,11 +1,12 @@
-! Last Update: 1/24/2020 10:50 PM EDT
+! Last Update: 1/25/2020 12:14 PM EDT
 ! Primary domains / unBlocks
 *$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|mp4upload.com|mcloud.to
-@@||*.*-*.xyz$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net
+@@||*.*-*.xyz$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
 @@||9anime.*$~third-party,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video
 @@||*.mp4upload.com
-@@||prettyfast.to
+@@||playhydrax.com
 @@||mp4upload.com
+@@||prettyfast.to
 @@||*.mcloud.to
 @@||hydrax.net
 @@||mcloud.to
@@ -86,21 +87,21 @@ mcloud.to##.afs_ads
 ||madsimz.com^$redirect=nooptext,important
 !#endif
 !If You're using the IOS application then you're stuck with the crappier filters because IOS doesn't support the better filter. ;-;
-!#if condition (adguard_app_ios)
+!#if condition (ios, ext_android_cb, ext_safari)
 ||postink.com
 ||google.com/favicon.ico
-@@||madsimz.com$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net
-vhiyyaal32.top$important
-q6sehz699a.top$important
-jqfjrjka5t.top$important
-ws1xr1u2b4.top$important
-7t15ny0f4f.top$important
-o3sndvzo25.com$important
-dsw44z5igdmmbo.com$important
-wk4x5rdtoz2tn0.com$important
-n13x4nfw8frika.com$important
-pr0pgutf0hp089.com$important
-eh8jq4cmq8j9g5.com$important
-5kv261gjmq04c9.com$important
-01mspmd5yalky8.com$important
+@@||madsimz.com$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
+vhiyyaal32.top
+q6sehz699a.top
+jqfjrjka5t.top
+ws1xr1u2b4.top
+7t15ny0f4f.top
+o3sndvzo25.com
+dsw44z5igdmmbo.com
+wk4x5rdtoz2tn0.com
+n13x4nfw8frika.com
+pr0pgutf0hp089.com
+eh8jq4cmq8j9g5.com
+5kv261gjmq04c9.com
+01mspmd5yalky8.com
 !#endif
