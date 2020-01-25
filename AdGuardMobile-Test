@@ -1,0 +1,104 @@
+! Last Update: 1/24/2020 2:28 PM EDT
+!
+! General 9Anime Fixes
+! Average user experence fixes (Fixes the website)
+@@||9anime.*$~third-party,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
+! Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
+! This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
+@@||*.akacdn.ru$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|prettyfast.to
+! Google API preventitive measures
+@@||*.gstatic.com^
+@@||*.googleapis.com^
+@@||*.googleusercontent.com^
+@@||google.com/recaptcha/api.js
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Visual Tweaks
+! The following removes empty ad-windows
+9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video##div.text-center.widget
+9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video###sidebar > .widget.crop.text-center
+9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video###sidebar > div.text-center.crop.widget
+9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,mcloud.to###jwa
+9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,mp4upload.com###overlay
+9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,mp4upload.com##.vjs-logo
+9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,tempest.services.disqus.com###ad-container
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Disqus Fixes & Tweaks
+! Ensuring it continues to work on 9Anime
+@@||disqus.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
+@@||disquscdn.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|disqus.com
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! External Player Tweaks
+! MP4Upload
+! Anti-Advertisements
+||mp4upload.com/vjs/videojs-contrib-ads.js
+||direct.apus.tech
+||madsans.com^$third-party
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Hydrax Fixes
+! Anti-HydraX Ads Bulk Listings
+||jwpltx.com
+||ie8eamus.com
+||vhiyyaal32.top
+||q6sehz699a.top
+||jqfjrjka5t.top
+||ws1xr1u2b4.top
+||7t15ny0f4f.top
+||o3sndvzo25.com
+||dsw44z5igdmmbo.com
+||wk4x5rdtoz2tn0.com
+||n13x4nfw8frika.com
+||pr0pgutf0hp089.com
+||eh8jq4cmq8j9g5.com
+||5kv261gjmq04c9.com
+||01mspmd5yalky8.com
+! Anti-Anti-Adblock
+@@||hydrax.net^$elemhide
+@@||iamcdn.net^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|hydrax.net
+! Core HydraX domain: prevenitive mesures
+@@||*.*-*.xyz$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|hydrax.net
+@@||iamcdn.net^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|hydrax.net
+@@||jwpsrv.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|hydrax.net
+@@||cdn.jsdelivr.net^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|hydrax.net
+@@||multi.idocdn.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|hydrax.net
+@@||xiao.smamuhh1metro.com$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|hydrax.net
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! MyCloud Fixes
+! Advertisers
+||ptaussee.net
+||gruglooh.net
+||grooksom.com
+||jistaumt.com
+||serconmp.com
+||viatepigan.com
+! Everything else
+mcloud.to##.afs_ads
+||mcloud.to/log/
+@@||p.jwpcdn.com/player/v/$script,third-party
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! Standalone imports from other filter-lists
+! Advertisement Blocking
+||google.com/favicon.ico$popup
+||runative-syndicate.com^$third-party
+/prebid.$domain=~prebid.org
+||defpush.com^$third-party
+||*.moatads.com
+/www/delivery/*
+/pixel/purst?
+/pixel/puclc?
+.php?zoneid=
+/ping.gif?
+! Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
+||googletagservices.com^
+||googletagmanager.com^
+||google-analytics.com^
+||referrer.disqus.com^
+||io.narrative.io/?$third-party
+||propellerclick.com^
+||rezync.com^$third-party
+||zap.buzz^$third-party
+||pippio.com^
+||popads.net^
+||*.adnxs.com^
+||amung.us^
+||mgid.com^
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
