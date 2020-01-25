@@ -1,4 +1,4 @@
-! Last Update: 1/24/2020 5:47 PM EDT
+! Last Update: 1/24/2020 9:38 PM EDT
 ! Primary domains / unBlocks
 *$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|mp4upload.com|mcloud.to
 @@||madsimz.com$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net
@@ -22,7 +22,6 @@ prettyfast.to##.afs_ads
 mcloud.to##.afs_ads
 ! Subdomains unblocked (As required)
 @@||*.googleapis.com/js/sdkloader/ima3.js
-@@||playhydraX.net^$elemhide
 @@||*.googleusercontent.com
 @@||xiao.smamuhh1metro.com
 @@||*.disqusservice.com
@@ -39,9 +38,10 @@ mcloud.to##.afs_ads
 @@||jwpcdn.com
 @@||disqus.com
 @@||iamcdn.net
-! Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
+! General Advertisement Popups
 ||mp4upload.com/vjs/videojs-contrib-ads.js
 ||runative-syndicate.com^$third-party
+||direct.apus.tech^$important
 /prebid.$domain=~prebid.org
 ||defpush.com^$third-party
 ||madsans.com^$third-party
@@ -54,22 +54,23 @@ mcloud.to##.afs_ads
 ||ptaussee.net
 ||gruglooh.net
 /www/delivery/*
-||*.apus.tech
 /pixel/purst?
 /pixel/puclc?
 .php?zoneid=
 /ping.gif?
 ! Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
+||adservice.google.com^$important
 ||io.narrative.io/?$third-party
+||prd.jwpltx.com^$important
+||*.googlesyndication.com
 ||rezync.com^$third-party
 ||googletagservices.com^
 ||googletagmanager.com^
 ||google-analytics.com^
 ||zap.buzz^$third-party
+||jwpltx.com^$important
 ||referrer.disqus.com^
 ||propellerclick.com^
-adservice.google.com^
-||*.jwpltx.com
 ||*.adnxs.com^
 ||pippio.com^
 ||popads.net^
@@ -77,16 +78,16 @@ adservice.google.com^
 ||mgid.com^
 ! Anti-HydraX Ads Bulk Listings
 ||ie8eamus.com
-vhiyyaal32.top^
-q6sehz699a.top^
-jqfjrjka5t.top^
-ws1xr1u2b4.top^
-7t15ny0f4f.top^
-o3sndvzo25.com^
-dsw44z5igdmmbo.com^
-wk4x5rdtoz2tn0.com^
-n13x4nfw8frika.com^
-pr0pgutf0hp089.com^
-eh8jq4cmq8j9g5.com^
-5kv261gjmq04c9.com^
-01mspmd5yalky8.com^
+||vhiyyaal32.top^$important
+||q6sehz699a.top^$important
+||jqfjrjka5t.top^$important
+||ws1xr1u2b4.top^$important
+||7t15ny0f4f.top^$important
+||o3sndvzo25.com^$important
+||dsw44z5igdmmbo.com^$important
+||wk4x5rdtoz2tn0.com^$important
+||n13x4nfw8frika.com^$important
+||pr0pgutf0hp089.com^$important
+||eh8jq4cmq8j9g5.com^$important
+||5kv261gjmq04c9.com^$important
+||01mspmd5yalky8.com^$important
