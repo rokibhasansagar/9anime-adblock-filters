@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 1/25/2020 @ 4:39 AM EDT
+# Last Update: 1/26/2020 @ 11:03 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -65,7 +65,7 @@ mp4upload.com##.vjs-logo
 @@||iamcdn.net/players/*ads.js$script,domain=hydrax.net|playhydrax.com
 
 # Undo issue created by AdGuard Base Filter, they technically use $empty but uBlock kills that tag instead of converting (Even if documentation says differently)
-||madsimz.com/*.js$important,domain=hydrax.net|playhydrax.com,badfilter
+||madsimz.com/*.js$empty,important,domain=hydrax.net|playhydrax.com,badfilter
 
 #Core HydraX domain: prevenitive mesures
 @@||*.*-*.xyz$domain=hydrax.net|playhydrax.com
