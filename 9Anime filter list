@@ -1,4 +1,4 @@
-! Last Update: 1/31/2020 11:04 AM EDT
+! Last Update: 1/31/2020 11:51 AM EDT
 ! Primary domains / unBlocks
 *$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|mp4upload.com|mcloud.to
 @@||*.*-*.xyz$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
@@ -34,6 +34,7 @@ mcloud.to##.afs_ads
 @@||*.jwpsrv.com
 @@||*.akacdn.ru
 @@||gstatic.com
+@@||jwpltx.com
 @@||jwpsrv.com
 @@||jwpcdn.com
 @@||disqus.com
@@ -62,14 +63,12 @@ mcloud.to##.afs_ads
 ||r.remarketingpixel.com^$third-party
 ||adservice.google.com^$important
 ||io.narrative.io/?$third-party
-||prd.jwpltx.com^$important
 ||*.googlesyndication.com
 ||rezync.com^$third-party
 ||googletagservices.com^
 ||googletagmanager.com^
 ||google-analytics.com^
 ||zap.buzz^$third-party
-||jwpltx.com^$important
 ||referrer.disqus.com^
 ||propellerclick.com^
 ||live.rezync.com
@@ -86,12 +85,13 @@ mcloud.to##.afs_ads
 ||postink.com$popup
 ||google.com/favicon.ico$popup
 ||madsimz.com^$redirect=nooptext,important
-||sads*z.com^$redirect=nooptext,important,domain=hydrax.net|playhydrax.com
 !#endif
 !If You're using the IOS application then you're stuck with the crappier filters because IOS doesn't support the better filter. ;-;
 !#if condition (ios, ext_android_cb, ext_safari)
-||postink.com
-||google.com/favicon.ico
+||postink.com$popup
+||sads*z.com$popup,important
+||google.com/favicon.ico$popup
+@@||sads*z.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
+@@||fads*s.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
 @@||madsimz.com$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
-@@||sads*z.com$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
 !#endif
