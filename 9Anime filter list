@@ -1,4 +1,4 @@
-! Last Update: 1/31/2020 12:19 AM EDT
+! Last Update: 1/31/2020 11:04 AM EDT
 ! Primary domains / unBlocks
 *$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|mp4upload.com|mcloud.to
 @@||*.*-*.xyz$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
@@ -86,23 +86,12 @@ mcloud.to##.afs_ads
 ||postink.com$popup
 ||google.com/favicon.ico$popup
 ||madsimz.com^$redirect=nooptext,important
+||sads*z.com^$redirect=nooptext,important,domain=hydrax.net|playhydrax.com
 !#endif
 !If You're using the IOS application then you're stuck with the crappier filters because IOS doesn't support the better filter. ;-;
 !#if condition (ios, ext_android_cb, ext_safari)
 ||postink.com
 ||google.com/favicon.ico
 @@||madsimz.com$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
-vhiyyaal32.top$important
-q6sehz699a.top$important
-jqfjrjka5t.top$important
-ws1xr1u2b4.top$important
-7t15ny0f4f.top$important
-o3sndvzo25.com$important
-dsw44z5igdmmbo.com$important
-wk4x5rdtoz2tn0.com$important
-n13x4nfw8frika.com$important
-pr0pgutf0hp089.com$important
-eh8jq4cmq8j9g5.com$important
-5kv261gjmq04c9.com$important
-01mspmd5yalky8.com$important
+@@||sads*z.com$script,domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
 !#endif
