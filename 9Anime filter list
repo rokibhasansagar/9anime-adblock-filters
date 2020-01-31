@@ -1,4 +1,4 @@
-! Last Update: 1/25/2020 5:41 PM EDT
+! Last Update: 1/31/2020 12:19 AM EDT
 ! Primary domains / unBlocks
 *$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|mp4upload.com|mcloud.to
 @@||*.*-*.xyz$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
@@ -49,6 +49,7 @@ mcloud.to##.afs_ads
 ||*.moatads.com
 ||grooksom.com
 ||jistaumt.com
+||24vunvrv.com
 ||serconmp.com
 ||ptaussee.net
 ||gruglooh.net
