@@ -1,4 +1,4 @@
-! Last Update: 1/31/2020 11:51 AM EDT
+! Last Update: 1/31/2020 3:22 PM EDT
 ! Primary domains / unBlocks
 *$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|mp4upload.com|mcloud.to
 @@||*.*-*.xyz$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
@@ -90,6 +90,7 @@ mcloud.to##.afs_ads
 !#if condition (ios, ext_android_cb, ext_safari)
 ||postink.com$popup
 ||sads*z.com$popup,important
+||fads*s.com$popup,important
 ||google.com/favicon.ico$popup
 @@||sads*z.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
 @@||fads*s.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
