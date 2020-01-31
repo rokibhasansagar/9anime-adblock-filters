@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 1/26/2020 @ 11:03 PM EDT
+# Last Update: 1/31/2020 12:22 AM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -120,6 +120,7 @@ hydrax.net,playhydrax.com##+js(nostif, debugger)
 ||rezync.com^$3p
 ||revrtb.net^$3p
 ||exelator.com^
+||24vunvrv.com
 ||viglink.com^
 ||rtmark.net^
 ||pippio.com^
