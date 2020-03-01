@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.710
+! Version: 0.720
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 1/31/2020 12:20 AM EDT
+! Last Update: 3/1/2020 1:24 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -15,13 +15,11 @@
 # This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
 @@||*.akacdn.ru$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|prettyfast.to
 
-# Google API preventitive measures
-@@||*.gstatic.com^
-@@||*.googleapis.com^
-@@||*.googleusercontent.com^
-@@||google.com/recaptcha/api.js
+# Ensuring the recaptcha api always loads
+@@||google.com/recaptcha/*$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|prettyfast.to
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # 9Anime Visual Tweaks
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # The following removes empty ad-windows
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video##div.text-center.widget
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video###sidebar > .widget.crop.text-center
@@ -29,6 +27,11 @@
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # Disqus Fixes & Tweaks
 # Advertising Removial
+||pippio.com^
+||rezync.com^$3p
+||adnxs.com$empty
+||referrer.disqus.com^
+||io.narrative.io/?$3p
 tempest.services.disqus.com###ad-container
 
 # Ensuring it continues to work on 9Anime
@@ -36,12 +39,30 @@ tempest.services.disqus.com###ad-container
 @@||disquscdn.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # External Player Tweaks
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# Common
+# Anti-Advertisements
+||24vunvrv.com^
+||zap.buzz^
+
+# Anti-Tracking
+||google-analytics.com^
+/ping.gif?
+
+# Generics For Javascript / Fonts
+@@||*.gstatic.com^$domain=hydrax.net|playhydrax.com|mcloud.to
+@@||*.googleapis.com^
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # MP4Upload
 # Anti-Advertisements
 ||mp4upload.com/vjs/videojs-contrib-ads.js
-*$script,3p,domain=mp4upload.com
+*$script,third-party,domain=mp4upload.com
+||googletagmanager.com^
 ||direct.apus.tech
-||madsans.com^$3p
+||clksite.com^
+
+# Allow misc JS that may be blocked by other broad filters
+@@||jquery.com^$script,domain=mp4upload.com
 
 # This'll remove Mp4upload's advertisement overlay which tends to be invisible.
 mp4upload.com###overlay
@@ -51,61 +72,44 @@ mp4upload.com##.vjs-logo
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # Hydrax Fixes
 # Anti-Advertising
-||madsimz.com/*.js$empty,important,domain=hydrax.net|playhydrax.com
+*$script,rewrite=empty,domain=hydrax.net|playhydrax.com
 # ABP Specific
-||madsimz.com/*.js$rewrite=abp-resource:blank-text,domain=hydrax.net|playhydrax.com
+*$script,rewrite=abp-resource:blank-text,domain=hydrax.net|playhydrax.com
 
 # Anti-Anti-Adblock
 @@||hydrax.net^$elemhide
-@@||iamcdn.net^$domain=hydrax.net
+@@||playhydrax.com^$elemhide
+@@||iamcdn.net^*/ads.js$script,domain=hydrax.net|playhydrax.com
 
 # Core HydraX domain: prevenitive mesures
-@@||*.*-*.xyz$domain=hydrax.net
-@@||jpsrv.com^$domain=hydrax.net
-@@||jsdelivr.net^$domain=hydrax.net
-@@||multi.idocdn.com^$domain=hydrax.net
-@@||xiao.smamuhh1metro.com$domain=hydrax.net
+@@||iamcdn.net^$domain=hydrax.net|playhydrax.com
+@@||jsdelivr.net^$domain=hydrax.net|playhydrax.com
+@@||*.xyz/html/*$xhr,domain=hydrax.net|playhydrax.com
+@@||multi.idocdn.com^$domain=hydrax.net|playhydrax.com
+@@||googleapis.com/drive/*$domain=hydrax.net|playhydrax.com
+@@||*.googleusercontent.com^$domain=hydrax.net|playhydrax.com
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # MyCloud Fixes
-# Advertisers
-||gruglooh.net
-||grooksom.com
-||jistaumt.com
-||serconmp.com
-||viatepigan.com
-||*$third-party,domain=mcloud.to
-
-# Everything else
+# Advertisement Elements
 mcloud.to###jwa
 mcloud.to##.afs_ads
+
+# Anti-Error-Logging
 ||mcloud.to/log/
+
+# Ensure Key connections function
 @@||jwpcdn.com^$domain=mcloud.to
-@@||p.jwpcdn.com/player/v/$script,3p
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # Standalone imports from other filter-lists
-# Advertisement Blocking
-||google.com/favicon.ico$popup
-||runative-syndicate.com^$3p
-/prebid.$domain=~prebid.org
-||defpush.com^$3p
-/www/delivery/*
-/pixel/purst?
-/pixel/puclc?
-.php?zoneid=
-/ping.gif?
-
-# Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
-||googletagservices.com^
-||google-analytics.com^
-||referrer.disqus.com^
-||io.narrative.io/?$3p
-||propellerclick.com^
-||rezync.com^$3p
-||zap.buzz^$3p
-||24vunvrv.com
-||pippio.com^
-||popads.net^
-||adnxs.com^
-||amung.us^
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# 9Anime Ads & Ad-Trackers
+||runative-syndicate.com^$third-party
+||propellerclick.com^$third-party
+||tidaltv.com^$third-party
+||moatads.com^$third-party
+||defpush.com^$third-party
+||viglink.com^
+||lijit.com^
 ||mgid.com^
+||amung.us^
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
