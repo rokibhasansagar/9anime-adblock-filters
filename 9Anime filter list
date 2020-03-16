@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 3/1/2020 12:35 PM EDT
+# Last Update: 3/15/2020 9:46 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -45,6 +45,7 @@ tempest.services.disqus.com###ad-container
 ###########################################################################################
 # Common
 # Anti-Advertisements
+||*.bidgear.com^
 ||24vunvrv.com^
 ||zap.buzz^
 
@@ -63,6 +64,7 @@ tempest.services.disqus.com###ad-container
 ||googletagmanager.com^
 ||direct.apus.tech
 ||clksite.com^
+||gadspms.com^
 
 # Allow misc JS that may be blocked by other broad filters
 @@||jquery.com^$script,domain=mp4upload.com
