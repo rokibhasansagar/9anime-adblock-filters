@@ -1,4 +1,4 @@
-! Last Update: 3/15/2020 10:00 PM EDT
+! Last Update: 3/15/2020 9:13 PM EDT
 ! Carefully placed unBlocks
 @@||fads*z.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
 ! Cosmetic Filtering
@@ -14,11 +14,11 @@ mcloud.to##.afs_ads
 ||*.com/*refer=https%3A%2F%2Fwww.mp4upload.com*$important
 ||*.com/*refer=https%3A%2F%2Fhydrax.net*$important
 ||mp4upload.com/vjs/videojs-contrib-ads.js
-||runative-syndicate.com^$third-party
 ||direct.apus.tech^$important
-||defpush.com^$third-party
+||*.runative-syndicate.com
 ||clksite.com^$important
 ||viatepigan.com
+||*.bidgear.com
 ||*.moatads.com
 ||grooksom.com
 ||jistaumt.com
@@ -26,6 +26,8 @@ mcloud.to##.afs_ads
 ||serconmp.com
 ||ptaussee.net
 ||gruglooh.net
+||gadspms.com
+||defpush.com
 /www/delivery/*
 /pixel/purst?
 /pixel/puclc?
@@ -41,18 +43,19 @@ mcloud.to##.afs_ads
 ||googletagservices.com^
 ||googletagmanager.com^
 ||google-analytics.com^
-||zap.buzz^$third-party
 ||referrer.disqus.com^
 ||propellerclick.com^
 ||live.rezync.com
+||*.omnitagjs.com
 ||roustast.net
 ||ie8eamus.com
 ||*.adnxs.com^
+||*.mgid.com^
 ||pippio.com^
 ||popads.net^
 ||lijit.com^
 ||amung.us^
-||mgid.com^
+||zap.buzz^
 ! HydraX Domain Trickery
 ||fads*z.com$popup,important
 ||fads*s.com
