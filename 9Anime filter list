@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 3/18/2020 12:03 AM EDT
+# Last Update: 3/19/2020 10:38 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -54,7 +54,7 @@ tempest.services.disqus.com###ad-container
 /ping.gif?
 
 # Generics For Javascript / Fonts
-@@||*.gstatic.com^$domain=hydrax.net|playhydrax.com|mcloud.to
+@@||*.gstatic.com^$domain=hydrax.net|mcloud.to
 @@||*.googleapis.com^
 ###########################################################################################
 # MP4Upload
@@ -77,21 +77,17 @@ mp4upload.com##.vjs-logo
 ###########################################################################################
 # Hydrax Fixes
 # Anti-Advertising
-*$script,redirect-rule=noopjs,domain=hydrax.net|playhydrax.com
+||fadsanz.com$script,redirect-rule=noopjs,domain=hydrax.net
 
 # Anti-Anti-Adblock
 @@||hydrax.net^$elemhide
-@@||playhydrax.com^$elemhide
-@@||iamcdn.net^*/ads.js$script,domain=hydrax.net|playhydrax.com
+@@||iamcdn.net^*/ads.js$script,domain=hydrax.net
 
 #Core HydraX domain: prevenitive mesures
+@@||iamcdn.net^$domain=hydrax.net
+@@||jsdelivr.net^$domain=hydrax.net
 @@||ping.idocdn.com^$domain=hydrax.net
-@@||iamcdn.net^$domain=hydrax.net|playhydrax.com
-@@||jsdelivr.net^$domain=hydrax.net|playhydrax.com
-@@||*.xyz/html/*$xhr,domain=hydrax.net|playhydrax.com
-@@||multi.idocdn.com^$domain=hydrax.net|playhydrax.com
-@@||googleapis.com/drive/*$domain=hydrax.net|playhydrax.com
-@@||*.googleusercontent.com^$domain=hydrax.net|playhydrax.com
+@@||googleapis.com/drive/*$domain=hydrax.net
 ###########################################################################################
 # MyCloud Fixes
 # Advertisement Elements
@@ -120,8 +116,8 @@ mcloud.to##+js(acis, Math, zfgloaded)
 
 
 # HydraX Injects
-hydrax.net,playhydrax.com##+js(aopr, AaDetector)
-hydrax.net,playhydrax.com##+js(nostif, debugger)
+hydrax.net##+js(aopr, AaDetector)
+hydrax.net##+js(nostif, debugger)
 ###########################################################################################
 # Standalone imports from other filter-lists
 ###########################################################################################
