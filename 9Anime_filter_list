@@ -1,7 +1,8 @@
-! Last Update: 3/24/2020 8:12 PM EDT
+! Last Update: 4/5/2020 4:48 PM EDT
 ! Carefully placed unBlocks
-@@||fads*z.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
-@@||fads*s.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|prettyfast.to|9anime.page|9anime.video|hydrax.net|playhydrax.com
+@@||fads*z.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video|hydrax.net
+@@||fads*s.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video|hydrax.net
+@@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 ! Cosmetic Filtering
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video##div.text-center.widget
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video###sidebar > .widget.crop.text-center
@@ -55,7 +56,6 @@ mcloud.to##.afs_ads
 ||pippio.com^
 ||popads.net^
 ||lijit.com^
-||amung.us^
 ||zap.buzz^
 ! HydraX Domain Trickery
 ||fads*z.com$popup,important
