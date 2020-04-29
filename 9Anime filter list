@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 3/19/2020 10:40 PM EDT
+# Last Update: 4/29/2020 4:04 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -34,10 +34,10 @@
 ###########################################################################################
 #Advertising Removial
 ||pippio.com^
-||rezync.com^$3p
+||rezync.com^$third-party
 127.0.0.1 adnxs.com
 ||referrer.disqus.com^
-||io.narrative.io/?$3p
+||io.narrative.io/?$third-party
 tempest.services.disqus.com###ad-container
 
 #Ensuring it continues to work on 9Anime
@@ -57,13 +57,13 @@ tempest.services.disqus.com###ad-container
 /ping.gif?
 
 # Generics For Javascript / Fonts
-@@||*.gstatic.com^$domain=hydrax.net|mcloud.to
+@@||*.gstatic.com^$domain=hydrax.net|mcloud.to|mcloud2.to
 @@||*.googleapis.com^
 ###########################################################################################
 # MP4Upload
 # Anti-Advertisements
 ||mp4upload.com/vjs/videojs-contrib-ads.js
-*$script,3p,domain=mp4upload.com
+*$script,third-party,domain=mp4upload.com
 ||googletagmanager.com^
 ||direct.apus.tech
 ||clksite.com^
@@ -94,14 +94,15 @@ mp4upload.com##.vjs-logo
 ###########################################################################################
 # MyCloud Fixes
 # Advertisement Elements
-mcloud.to###jwa
-mcloud.to##.afs_ads
+mcloud.to,mcloud2.to###jwa
+mcloud.to,mcloud2.to##.afs_ads
 
 # Anti-Error-Logging
 ||mcloud.to/log/
+||mcloud2.to/log/
 
 # Ensure Key connections function
-@@||jwpcdn.com^$domain=mcloud.to
+@@||jwpcdn.com^$domain=mcloud.to|mcloud2.to
 ###########################################################################################
 # uBO Imports
 ###########################################################################################
@@ -116,6 +117,7 @@ mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
 
 #MyCloud uBO Injects
 mcloud.to##+js(acis, Math, zfgloaded)
+mcloud2.to##+js(acis, Math, zfgloaded)
 
 
 # HydraX Injects
@@ -125,11 +127,14 @@ hydrax.net##+js(nostif, debugger)
 # Standalone imports from other filter-lists
 # Advertisement Blocking
 ://xml.*/redirect?*&pubid=$subdocument
-||popmonetizer.net^$3p
-||defpush.com^$3p
+||popmonetizer.net^$third-party
+||defpush.com^$third-party
 
 # Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
-||revrtb.net^$3p
+||scorecardresearch.com^$third-party
+||crwdcntrl.net^$third-party
+||adsrvr.org^$third-party
+||revrtb.net^$third-party
 ||rtmark.net^
 ||popads.net^
 ||mgid.com^
