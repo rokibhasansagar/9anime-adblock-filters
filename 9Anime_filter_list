@@ -1,4 +1,4 @@
-! Last Update: 4/5/2020 4:48 PM EDT
+! Last Update: 4/29/2020 4:19 PM EDT
 ! Carefully placed unBlocks
 @@||fads*z.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video|hydrax.net
 @@||fads*s.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video|hydrax.net
@@ -7,21 +7,24 @@
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video##div.text-center.widget
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video###sidebar > .widget.crop.text-center
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video###sidebar > div.text-center.crop.widget
-9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,mcloud.to###jwa
+9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,mcloud.to,mcloud2.to###jwa
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,mp4upload.com###overlay
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,mp4upload.com##.vjs-logo
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,tempest.services.disqus.com###ad-container
-mcloud.to##.afs_ads
+mcloud.to,mcloud2.to##.afs_ads
 ! General Advertisement Popups
 ||*.com/*refer=https%3A%2F%2Fwww.mp4upload.com*$important
 ||*.com/*refer=https%3A%2F%2Fhydrax.net*$important
 ||mp4upload.com/vjs/videojs-contrib-ads.js
+://xml.*/redirect?*&pubid=$subdocument
 ||direct.apus.tech^$important
 ||*.runative-syndicate.com
 ||clksite.com^$important
+||scorecardresearch.com
 ||viatepigan.com
 ||*.bidgear.com
 ||*.moatads.com
+||crwdcntrl.net
 ||grooksom.com
 ||jistaumt.com
 ||24vunvrv.com
@@ -30,6 +33,7 @@ mcloud.to##.afs_ads
 ||gruglooh.net
 ||gadspms.com
 ||defpush.com
+||adsrvr.org
 /www/delivery/*
 /pixel/purst?
 /pixel/puclc?
