@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.725
+! Version: 0.73
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 4/5/2020 4:49 PM EDT
+! Last Update: 4/29/2020 4:16 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -55,7 +55,7 @@ tempest.services.disqus.com###ad-container
 /ping.gif?
 
 # Generics For Javascript / Fonts
-@@||*.gstatic.com^$domain=hydrax.net|playhydrax.com|mcloud.to
+@@||*.gstatic.com^$domain=hydrax.net|playhydrax.com|mcloud.to|mcloud2.to
 @@||*.googleapis.com^
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # MP4Upload
@@ -94,23 +94,28 @@ mp4upload.com##.vjs-logo
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # MyCloud Fixes
 # Advertisement Elements
-mcloud.to###jwa
-mcloud.to##.afs_ads
+mcloud.to,mcloud2.to###jwa
+mcloud.to,mcloud2.to##.afs_ads
 
 # Anti-Error-Logging
 ||mcloud.to/log/
+||mcloud2.to/log/
 
 # Ensure Key connections function
-@@||jwpcdn.com^$domain=mcloud.to
+@@||jwpcdn.com^$domain=mcloud.to|mcloud2.to
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # Standalone imports from other filter-lists
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # 9Anime Ads & Ad-Trackers
+://xml.*/redirect?*&pubid=$subdocument
 ||runative-syndicate.com^$third-party
+||scorecardresearch.com^$third-party
 ||propellerclick.com^$third-party
+||crwdcntrl.net^$third-party
 ||tidaltv.com^$third-party
 ||moatads.com^$third-party
 ||defpush.com^$third-party
+||adsrvr.org^$third-party
 ||viglink.com^
 ||lijit.com^
 ||mgid.com^
