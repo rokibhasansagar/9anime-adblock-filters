@@ -1,29 +1,28 @@
-! Last Update: 4/29/2020 4:19 PM EDT
+! Last Update: 5/8/2020 1:17 PM EDT
 ! Carefully placed unBlocks
-@@||fads*z.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video|hydrax.net
-@@||fads*s.com$domain=9anime.to|9anime.ru|9anime.nl|9anime.live|9anime.one|9anime.life|9anime.love|9anime.tv|9anime.page|9anime.video|hydrax.net
+@@||cdnjs.cloudflare.com/ajax/libs/fuckadblock/*/fuckadblock.min.js$important,domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|mp4upload.com
+@@||direct.apus.tech^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|mp4upload.com
+@@||plyr.io^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|mp4upload.com
 @@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 ! Cosmetic Filtering
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video##div.text-center.widget
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video###sidebar > .widget.crop.text-center
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video###sidebar > div.text-center.crop.widget
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,mcloud.to,mcloud2.to###jwa
-9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,mp4upload.com###overlay
-9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,mp4upload.com##.vjs-logo
+9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,mp4upload.com##.plyr__title_bar
 9anime.to,9anime.ru,9anime.live,9anime.nl,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,tempest.services.disqus.com###ad-container
 mcloud.to,mcloud2.to##.afs_ads
 ! General Advertisement Popups
 ||*.com/*refer=https%3A%2F%2Fwww.mp4upload.com*$important
-||*.com/*refer=https%3A%2F%2Fhydrax.net*$important
-||mp4upload.com/vjs/videojs-contrib-ads.js
 ://xml.*/redirect?*&pubid=$subdocument
-||direct.apus.tech^$important
 ||*.runative-syndicate.com
+||*.scorecardresearch.com
 ||clksite.com^$important
-||scorecardresearch.com
+||*.fontawesome.com
 ||viatepigan.com
 ||*.bidgear.com
 ||*.moatads.com
+||*.taboola.com
 ||crwdcntrl.net
 ||grooksom.com
 ||jistaumt.com
