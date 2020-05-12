@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 5/8/2020 11:48 AM EDT
+# Last Update: 5/12/2020 1:30 AM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -57,7 +57,7 @@ tempest.services.disqus.com###ad-container
 /ping.gif?
 
 # Generics For Javascript / Fonts
-@@||*.gstatic.com^$domain=hydrax.net|mcloud.to|mcloud2.to
+@@||*.gstatic.com^$domain=mcloud.to|mcloud2.to
 @@||*.googleapis.com^
 ###########################################################################################
 # MP4Upload
@@ -72,19 +72,9 @@ mp4upload.com###overlay, div.container
 # This'll remove Mp4upload's HD logo from the video player.
 mp4upload.com##.plyr__title_bar
 ###########################################################################################
-# Hydrax Fixes
+# StreamTape
 # Anti-Advertising
-||fadsanz.com$script,redirect-rule=noopjs,domain=hydrax.net
-
-# Anti-Anti-Adblock
-@@||hydrax.net^$elemhide
-@@||iamcdn.net^*/ads.js$script,domain=hydrax.net
-
-#Core HydraX domain: prevenitive mesures
-@@||iamcdn.net^$domain=hydrax.net
-@@||jsdelivr.net^$domain=hydrax.net
-@@||ping.idocdn.com^$domain=hydrax.net
-@@||googleapis.com/drive/*$domain=hydrax.net
+||streamtape.com/ad.js$other
 ###########################################################################################
 # MyCloud Fixes
 # Advertisement Elements
@@ -113,9 +103,8 @@ mcloud.to##+js(acis, Math, zfgloaded)
 mcloud2.to##+js(acis, Math, zfgloaded)
 
 
-# HydraX Injects
-hydrax.net##+js(aopr, AaDetector)
-hydrax.net##+js(nostif, debugger)
+# StreamTape
+streamtape.com##+js(aopr, open)
 ###########################################################################################
 # Standalone imports from other filter-lists
 # Advertisement Blocking
@@ -128,7 +117,9 @@ hydrax.net##+js(nostif, debugger)
 ||crwdcntrl.net^$third-party
 ||adsrvr.org^$third-party
 ||revrtb.net^$third-party
+||mc.yandex.ru^
 ||rtmark.net^
 ||popads.net^
+||adsco.re^
 ||mgid.com^
 ###########################################################################################
