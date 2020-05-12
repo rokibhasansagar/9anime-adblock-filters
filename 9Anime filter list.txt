@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.745
+! Version: 0.750
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 5/8/2020 11:38 PM EDT
+! Last Update: 5/12/2020 3:38 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -55,7 +55,7 @@ tempest.services.disqus.com###ad-container
 /ping.gif?
 
 # Generics For Javascript / Fonts
-@@||*.gstatic.com^$domain=hydrax.net|playhydrax.com|mcloud.to|mcloud2.to
+@@||*.gstatic.com^$domain=mcloud.to|mcloud2.to
 @@||*.googleapis.com^
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # MP4Upload
@@ -82,21 +82,19 @@ mp4upload.com#%#//scriptlet('prevent-fab-3.2.0')
 # This'll remove Mp4upload's HD logo from the video player.
 mp4upload.com##.plyr__title_bar
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-# Hydrax Fixes
+# Streamtape Fixes
 # Anti-Advertising
-||fadsanz.com$script,rewrite=empty,domain=hydrax.net
-# ABP Specific
-||fadsanz.com$script,rewrite=abp-resource:blank-text,domain=hydrax.net
+||growthadvisors.go2cloud.org
+||streamtape.com/ad.js
+||3i1cx7b9nupt.com^
+||otbuzvqq8fm5.com^
+||cdn.taboola.com
+||fthkmwrkqg.com
+||ntdvjlvau.com
+||cdn4ads.com
 
-# Anti-Anti-Adblock
-@@||hydrax.net^$elemhide
-@@||iamcdn.net^*/ads.js$script,domain=hydrax.net
-
-#Core HydraX domain: prevenitive mesures
-@@||iamcdn.net^$domain=hydrax.net
-@@||jsdelivr.net^$domain=hydrax.net
-@@||ping.idocdn.com^$domain=hydrax.net
-@@||googleapis.com/drive/*$domain=hydrax.net
+# Adblock Plus anti-popup Inject (Also Converts to being usable by AdGuard)
+streamtape.com#$#abort-on-property-read open
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # MyCloud Fixes
 # Advertisement Elements
@@ -122,8 +120,10 @@ mcloud.to,mcloud2.to##.afs_ads
 ||moatads.com^$third-party
 ||defpush.com^$third-party
 ||adsrvr.org^$third-party
+||mc.yandex.ru^
 ||viglink.com^
 ||lijit.com^
 ||mgid.com^
 ||amung.us^
+||adsco.re^
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
