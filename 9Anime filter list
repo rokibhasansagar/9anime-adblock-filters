@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 5/08/2020 11:45 AM EDT
+# Last Update: 5/12/2020 1:26 AM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -57,7 +57,7 @@ tempest.services.disqus.com###ad-container
 /ping.gif?
 
 # Generics For Javascript / Fonts
-@@||*.gstatic.com^$domain=hydrax.net|mcloud.to|mcloud2.to
+@@||*.gstatic.com^$domain=mcloud.to|mcloud2.to
 @@||*.googleapis.com^
 ###########################################################################################
 # MP4Upload
@@ -72,19 +72,10 @@ mp4upload.com###overlay, div.container
 # This'll remove Mp4upload's HD logo from the video player.
 mp4upload.com##.plyr__title_bar
 ###########################################################################################
-# Hydrax Fixes
+# StreamTape
 # Anti-Advertising
-||fadsanz.com$script,redirect-rule=noopjs,domain=hydrax.net
+||streamtape.com/ad.js$other
 
-# Anti-Anti-Adblock
-@@||hydrax.net^$elemhide
-@@||iamcdn.net^*/ads.js$script,domain=hydrax.net
-
-#Core HydraX domain: prevenitive mesures
-@@||iamcdn.net^$domain=hydrax.net
-@@||jsdelivr.net^$domain=hydrax.net
-@@||ping.idocdn.com^$domain=hydrax.net
-@@||googleapis.com/drive/*$domain=hydrax.net
 ###########################################################################################
 # MyCloud Fixes
 # Advertisement Elements
@@ -108,14 +99,13 @@ mp4upload.com##+js(popads-dummy)
 mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
 
 
-#MyCloud uBO Injects
+# MyCloud uBO Injects
 mcloud.to##+js(acis, Math, zfgloaded)
 mcloud2.to##+js(acis, Math, zfgloaded)
 
 
-# HydraX Injects
-hydrax.net##+js(aopr, AaDetector)
-hydrax.net##+js(nostif, debugger)
+# StreamTape
+streamtape.com##+js(aopr, open)
 ###########################################################################################
 # Standalone imports from other filter-lists
 ###########################################################################################
@@ -127,7 +117,9 @@ hydrax.net##+js(nostif, debugger)
 ||defpush.com^$third-party
 ||adsrvr.org^$third-party
 ||propellerclick.com^
+||mc.yandex.ru^
 ||viglink.com^
 ||lijit.com^
 ||mgid.com^
+||adsco.re^
 ###########################################################################################
