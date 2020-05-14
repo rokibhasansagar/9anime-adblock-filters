@@ -1,4 +1,4 @@
-! Last Update: 5/12/2020 3:40 PM EDT
+! Last Update: 5/14/2020 3:39 PM EDT
 ! Carefully placed unBlocks
 @@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 @@||plyr.io^$domain=9anime.to|9anime.ru|9anime.live|9anime.nl|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|mp4upload.com
@@ -63,6 +63,7 @@ mcloud.to,mcloud2.to##.afs_ads
 ||google-analytics.com^
 ||referrer.disqus.com^
 ||propellerclick.com^
+||0vsgqxbxk66w.com^
 ||3i1cx7b9nupt.com^
 ||otbuzvqq8fm5.com^
 ||live.rezync.com
@@ -73,12 +74,12 @@ mcloud.to,mcloud2.to##.afs_ads
 ||roustast.net^
 ||ie8eamus.com^
 ||*.adnxs.com^
-||cdn4ads.com
+||cdn4ads.com^
 ||*.mgid.com^
 ||pippio.com^
 ||popads.net^
+||*.adsco.re^
 ||lijit.com^
 ||zap.buzz^
-||adsco.re^
 ! Fix a Broken Filter from EasyList
 @@||iamcdn.net
