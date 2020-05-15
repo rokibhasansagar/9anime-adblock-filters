@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 5/12/2020 4:08 AM EDT
+# Last Update: 5/15/2020 4:18 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -65,6 +65,9 @@ tempest.services.disqus.com###ad-container
 @@||direct.apus.tech/inlive/www/delivery/*.html$subdocument,domain=mp4upload.com
 ||*^$script,third-party,domain=www.mp4upload.com
 /fuckadblock.min.js
+
+# Avoid Triggering Anti-Adblock on download page
+||assets.revcontent.com/master/delivery.js$script,domain=mp4upload.com,redirect=noopjs
 
 # This'll remove Mp4upload's advertisement overlay which tends to be invisible.
 mp4upload.com###overlay, div.container
