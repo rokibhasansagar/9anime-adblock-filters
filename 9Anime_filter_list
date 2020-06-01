@@ -1,4 +1,4 @@
-! Last Update: 5/31/2020 10:01 PM EDT
+! Last Update: 5/31/2020 10:43 PM EDT
 ! Carefully placed unBlocks
 @@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 @@||plyr.io^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|mp4upload.com
@@ -17,6 +17,7 @@
 9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,mp4upload.com#@#.pub_300x250m
 9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,mp4upload.com#@#.text-ad-links
 ! Cosmetic Filtering
+##.google-ad
 mcloud.to,mcloud2.to##.afs_ads
 9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video##div.text-center.widget
 9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,mcloud.to,mcloud2.to###jwa
@@ -27,6 +28,7 @@ mcloud.to,mcloud2.to##.afs_ads
 ! General Advertisement Popups
 ||*.com/*refer=https%3A%2F%2Fwww.mp4upload.com*$important
 ://xml.*/redirect?*&pubid=$subdocument
+/watch?key=$popup,third-party
 ||*.runative-syndicate.com
 ||*.scorecardresearch.com
 ||clksite.com^$important
@@ -46,6 +48,7 @@ mcloud.to,mcloud2.to##.afs_ads
 ||defpush.com
 ||adsrvr.org
 /www/delivery/*
+/redirect?tid=
 /pixel/purst?
 /pixel/puclc?
 .php?zoneid=
@@ -53,9 +56,11 @@ mcloud.to,mcloud2.to##.afs_ads
 ! Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
 ||r.remarketingpixel.com^$third-party
 ||adservice.google.com^$important
+||popads.net^$popup,third-party
 ||io.narrative.io/?$third-party
 ||google.com/favicon.ico$popup
 ||growthadvisors.go2cloud.org
+||erdecisesgeorg.info^$popup
 ||*.googlesyndication.com
 ||rezync.com^$third-party
 ||onclickperformance.com^
@@ -63,7 +68,6 @@ mcloud.to,mcloud2.to##.afs_ads
 ||googletagmanager.com^
 ||google-analytics.com^
 ||referrer.disqus.com^
-||erdecisesgeorg.info^
 ||propellerclick.com^
 ||0vsgqxbxk66w.com^
 ||3i1cx7b9nupt.com^
