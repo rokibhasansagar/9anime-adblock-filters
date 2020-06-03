@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 6/3/2020 10:07 PM EDT
+# Last Update: 6/3/2020 10:14 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -108,6 +108,9 @@ mcloud2.to##+js(acis, Math, zfgloaded)
 
 # StreamTape
 streamtape.com##+js(aopr, document.body.appendChild)
+streamtape.com##+js(nowoif, /^/, 1)
+streamtape.com##+js(aopw, _pop)
+
 
 # This filter stops StreamTape from disabling the right-click context menu.
 streamtape.com##+js(addEventListener-defuser.js, contextmenu)
