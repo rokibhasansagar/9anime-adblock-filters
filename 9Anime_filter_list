@@ -1,4 +1,4 @@
-! Last Update: 6/12/2020 4:04 PM EDT
+! Last Update: 6/13/2020 4:26 PM EDT
 ! Carefully placed unBlocks
 @@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 @@||plyr.io^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|mp4upload.com
@@ -26,6 +26,7 @@ mcloud.to,mcloud2.to##.afs_ads
 9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video###sidebar > div.text-center.crop.widget
 9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,tempest.services.disqus.com###ad-container
 ! General Advertisement Popups
+||*.pro$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|streamtape.com
 ||*.com/*refer=https%3A%2F%2Fwww.mp4upload.com*$important
 ://xml.*/redirect?*&pubid=$subdocument
 /watch?key=$popup,third-party
@@ -81,6 +82,7 @@ mcloud.to,mcloud2.to##.afs_ads
 ||cdn.taboola.com
 ||ueuodgnrhb.com^
 ||thogrypufe.pro^
+||nyshoptara.pro^
 ||ahqpqpdjpj.com^
 ||fthkmwrkqg.com
 ||syxylyche.pro^
