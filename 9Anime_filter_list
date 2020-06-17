@@ -1,4 +1,4 @@
-! Last Update: 6/16/2020 10:34 PM EDT
+! Last Update: 6/17/2020 10:19 AM EDT
 ! Carefully placed unBlocks
 @@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 @@||plyr.io^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|mp4upload.com
@@ -46,6 +46,7 @@ mcloud.to,mcloud2.to##.afs_ads
 ||serconmp.com
 ||ptaussee.net
 ||gruglooh.net
+||louchees.net
 ||gadspms.com
 ||defpush.com
 ||adsrvr.org
@@ -55,7 +56,6 @@ mcloud.to,mcloud2.to##.afs_ads
 /pixel/puclc?
 .php?zoneid=
 /ping.gif?
-! Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
 ||r.remarketingpixel.com^$third-party
 ||adservice.google.com^$important
 ||popads.net^$popup,third-party
@@ -96,6 +96,7 @@ mcloud.to,mcloud2.to##.afs_ads
 ||ptavizap.net^
 ||roustast.net^
 ||ie8eamus.com^
+||baubogla.com^
 ||*.adnxs.com^
 ||cdn4ads.com^
 ||*.mgid.com^
