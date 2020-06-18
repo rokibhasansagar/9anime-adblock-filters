@@ -1,4 +1,4 @@
-! Last Update: 6/18/2020 12:09 PM EDT
+! Last Update: 6/18/2020 12:54 PM EDT
 ! Carefully placed unBlocks
 @@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 @@||plyr.io^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|mp4upload.com
@@ -52,7 +52,6 @@ mcloud.to,mcloud2.to##.afs_ads
 ||serconmp.com
 ||ptaussee.net
 ||gruglooh.net
-||louchees.net
 ||gadspms.com
 ||defpush.com
 ||adsrvr.org
@@ -101,12 +100,10 @@ https://fortt-rade.com^
 ||*.zetadeo.com^
 ||ntdvjlvau.com
 ||olkrzytv.com^
-||oukreesy.net^
 ||lailitou.com^
 ||ptavizap.net^
 ||roustast.net^
 ||ie8eamus.com^
-||baubogla.com^
 ||*.adnxs.com^
 ||cdn4ads.com^
 ||*.mgid.com^
@@ -118,5 +115,10 @@ https://fortt-rade.com^
 ||adnmn.com^
 ||zap.buzz^
 ||adsco.re^
+! MyCloud Sub-Ad Servers
+||postlnk.com^$important
+||baubogla.com^$important
+||oukreesy.net^$important
+||louchees.net^$important
 ! Fix a Broken Filter from EasyList
 @@||iamcdn.net
