@@ -1,4 +1,4 @@
-! Last Update: 7/8/2020 5:06 PM EDT
+! Last Update: 7/15/2020 4:43 PM EDT
 ! Carefully placed unBlocks
 @@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 @@||plyr.io^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|mp4upload.com
@@ -26,7 +26,6 @@ mcloud.to,mcloud2.to##.afs_ads
 9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,tempest.services.disqus.com###ad-container
 9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,ffmovies.to,ffmovies.is,ffmovies.ru,ffmovies.cafe,ffmovies.coffee,ffmovies.love,ffmovies.media,ffmovies.pub,ffmovies.solar,ffmovies.taxi,ffmovies.world,ffmovies.wtf,fmovies.to,fmovies.is,fmovies.ru,fmovies.cafe,fmovies.coffee,fmovies.love,fmovies.media,fmovies.pub,fmovies.solar,fmovies.taxi,fmovies.world,fmovies.wtf,mcloud.to,mcloud2.to###jwa
 ! General Advertisement Popups
-||*.pro$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|streamtape.com|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf
 ||*.com/*refer=https%3A%2F%2Fwww.mp4upload.com*$important
 ://xml.*/redirect?*&pubid=$subdocument
 /watch?key=$popup,third-party
@@ -68,12 +67,10 @@ mcloud.to,mcloud2.to##.afs_ads
 ||io.narrative.io/?$third-party
 ||google.com/favicon.ico$popup
 ||growthadvisors.go2cloud.org
-||erdecisesgeorg.info^$popup
 ||*.googlesyndication.com
 ||rezync.com^$third-party
 ||onclickperformance.com^
 ||googletagservices.com^
-https://fortt-rade.com^
 ||googletagmanager.com^
 ||google-analytics.com^
 ||referrer.disqus.com^
@@ -96,13 +93,11 @@ https://fortt-rade.com^
 ||cdn.taboola.com
 ||ueuodgnrhb.com^
 ||thogrypufe.pro^
-||nyshoptara.pro^
 ||ahqpqpdjpj.com^
 ||fortt-rade.com^
 ||fthkmwrkqg.com
 ||mob-track.com^
 ||xtliy.rdtk.io^
-||syxylyche.pro^
 ||nirostyhe.pro^
 ||*.zetadeo.com^
 ||ntdvjlvau.com
@@ -111,11 +106,11 @@ https://fortt-rade.com^
 ||ptavizap.net^
 ||roustast.net^
 ||ie8eamus.com^
+||*.popads.net^
 ||*.adnxs.com^
 ||cdn4ads.com^
 ||*.mgid.com^
 ||pippio.com^
-||popads.net^
 ||c.adsco.re^
 ||prltmz.com^
 ||lijit.com^
@@ -128,5 +123,13 @@ https://fortt-rade.com^
 ||baubogla.com^$important
 ||oukreesy.net^$important
 ||louchees.net^$important
+! Streamtape Ad Servers
+||graizoah.com^
+||syxylyche.pro^
+||nyshoptara.pro^
+||*.adreactor.com^
+||mqsrkvcpyzvnw.com^
+||erdecisesgeorg.info^$popup
+||*.pro$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|streamtape.com|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf
 ! Fix a Broken Filter from EasyList
 @@||iamcdn.net
