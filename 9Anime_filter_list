@@ -1,4 +1,4 @@
-! Last Update: 7/17/2020 2:15 PM EDT
+! Last Update: 7/19/2020 12:22 PM EDT
 ! Carefully placed unBlocks
 @@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 @@||plyr.io^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|mp4upload.com
@@ -73,9 +73,11 @@ mcloud.to,mcloud2.to##.afs_ads
 ||googletagservices.com^
 ||googletagmanager.com^
 ||google-analytics.com^
+||c.adsco.re^$important
 ||referrer.disqus.com^
 ||socialbars-web5.com^
 ||propellerclick.com^
+||adsco.re^$important
 ||0vsgqxbxk66w.com^
 ||3i1cx7b9nupt.com^
 ||otbuzvqq8fm5.com^
@@ -110,12 +112,10 @@ mcloud.to,mcloud2.to##.afs_ads
 ||cdn4ads.com^
 ||*.mgid.com^
 ||pippio.com^
-||c.adsco.re^
 ||prltmz.com^
 ||lijit.com^
 ||adnmn.com^
 ||zap.buzz^
-||adsco.re^
 ! MyCloud Sub-Ad Servers
 ||postlnk.com^$important
 ||choglaup.com^$important
@@ -123,11 +123,15 @@ mcloud.to,mcloud2.to##.afs_ads
 ||oukreesy.net^$important
 ||louchees.net^$important
 ! Streamtape Ad Servers
+||*.o333o.com^
 ||graizoah.com^
+||nklrfqgz.com^
 ||syxylyche.pro^
 ||nyshoptara.pro^
 ||cjlqwfpkwi.com^
+||inpagepush.com^
 ||*.adreactor.com^
+||yhhbtavgpuo.com^
 ||chaglihysty.pro^
 ||pkmkkjwknvf.com^
 ||agbztxludkdx.com^
