@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 6/27/2020 5:40 PM EDT
+# Last Update: 6/27/2020 5:55 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -67,6 +67,8 @@ tempest.services.disqus.com###ad-container
 /fuckadblock.min.js
 ||*$script,third-party,domain=www.mp4upload.com
 @@||fontawesome.com^$script,domain=mp4upload.com
+@@||fontawesome.com^$stylesheet,domain=mp4upload.com
+@@||cdnjs.cloudflare.com^$script,domain=mp4upload.com
 @@||cdnjs.cloudflare.com^$stylesheet,domain=mp4upload.com
 @@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=mp4upload.com
 
@@ -82,6 +84,7 @@ mp4upload.com##.plyr__title_bar
 # StreamTape
 # Anti-Advertising
 streamtape.com#@#.google-ad
+||graizoah.com^
 ||inpagepush.com^$important
 ||streamtape.com/ad.js$other
 ###########################################################################################
