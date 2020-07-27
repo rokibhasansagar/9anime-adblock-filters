@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 6/25/2020 3:08 PM EDT
+# Last Update: 6/27/2020 5:45 PM EDT
 # Hope this works for you /u/RedditChickenWings
 ###########################################################################################
 # General 9Anime Fixes
@@ -31,20 +31,6 @@
 9anime.*##+js(aopr, AaDetector)
 9anime.*##+js(acis, Math, zfgloaded)
 ###########################################################################################
-#Disqus Fixes & Tweaks
-###########################################################################################
-#Advertising Removial
-||pippio.com^
-||rezync.com^$third-party
-127.0.0.1 adnxs.com
-||referrer.disqus.com^
-||io.narrative.io/?$third-party
-tempest.services.disqus.com###ad-container
-
-#Ensuring it continues to work on 9Anime
-@@||disqus.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
-@@||disquscdn.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
-###########################################################################################
 # External Player Tweaks
 ###########################################################################################
 # Common
@@ -58,17 +44,18 @@ tempest.services.disqus.com###ad-container
 /ping.gif?
 
 # Generics For Javascript / Fonts
-@@||*.gstatic.com^$domain=hydrax.net|mcloud.to|mcloud2.to
+@@||*.gstatic.com^$domain=mcloud.to|mcloud2.to
 @@||*.googleapis.com^
 ###########################################################################################
 # MP4Upload
 # Anti-Advertisements
+||cdn4ads.com^
+||cogleapad.com^
 /fuckadblock.min.js
 ||*$script,third-party,domain=www.mp4upload.com
-@@||fontawesome.com^$stylesheet,domain=mp4upload.com
-@@||cdnjs.cloudflare.com^$script,domain=mp4upload.com
+@@||fontawesome.com^$script,domain=mp4upload.com
+@@||cdnjs.cloudflare.com^$stylesheet,domain=mp4upload.com
 @@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=mp4upload.com
-||*$script,3p,denyallow=fontawesome.com|cloudflare.com,domain=mp4upload.com
 
 # Avoid Triggering Anti-Adblock on download page
 ||assets.revcontent.com/master/delivery.js$script,domain=mp4upload.com,redirect=noopjs
@@ -82,8 +69,8 @@ mp4upload.com##.plyr__title_bar
 # StreamTape
 # Anti-Advertising
 streamtape.com#@#.google-ad
+||inpagepush.com^$important
 ||streamtape.com/ad.js$other
-||d3v3bqdndm4erx.cloudfront.net^
 ###########################################################################################
 # MyCloud Fixes
 # Advertisement Elements
@@ -100,20 +87,19 @@ mcloud.to,mcloud2.to##.afs_ads
 # uBO Imports
 ###########################################################################################
 # MP4Upload uBO Injects
-mp4upload.com##+js(nofab)
 mp4upload.com##+js(popads-dummy)
 
 # This filter stops Mp4Upload from disabling the right-click context menu.
 mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
 
 
-#MyCloud uBO Injects
+# MyCloud uBO Injects
 mcloud.to##+js(acis, Math, zfgloaded)
 mcloud2.to##+js(acis, Math, zfgloaded)
 
 
 # StreamTape
-streamtape.com##+js(aopr, document.body.appendChild)
+streamtape.com##+js(acis, document.createElement, 'script')
 streamtape.com##+js(nowoif, /^/, 1)
 streamtape.com##+js(aopw, _pop)
 
@@ -131,7 +117,6 @@ streamtape.com##+js(addEventListener-defuser.js, contextmenu)
 ||adsrvr.org^$third-party
 ||propellerclick.com^
 ||taboola.com^$3p
-||cogleapad.com^
 ||mc.yandex.ru^
 ||viglink.com^
 .php?zoneid=
