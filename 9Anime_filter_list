@@ -1,4 +1,4 @@
-! Last Update: 7/31/2020 5:02 PM EDT
+! Last Update: 8/1/2020 1:45 PM EDT
 ! Carefully placed unBlocks
 @@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 @@||plyr.io^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|mp4upload.com
@@ -129,10 +129,13 @@ mcloud.to,mcloud2.to##.afs_ads
 ||syxylyche.pro^
 ||graxarosi.pro^
 ||gcxjczooe.com^
+||imqrxkarp.com^
+||kythodoby.pro^
 ||nyshoptara.pro^
 ||cjlqwfpkwi.com^
 ||inpagepush.com^
 ||*.adreactor.com^
+||wdvamhckdjr.com^
 ||yhhbtavgpuo.com^
 ||chaglihysty.pro^
 ||pkmkkjwknvf.com^
@@ -147,9 +150,10 @@ mcloud.to,mcloud2.to##.afs_ads
 ||cdn4ads.com$important
 ||cdn4ads.com^$important
 ||d3g5ovfngjw9bw.cloudfront.net^
-||*/uub.js$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|streamtape.com|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf|streamtape.com
-||*.com/*&minBid=*$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|streamtape.com|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf|streamtape.com
-||*.com/*2906491301*,1&v=&m=$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|streamtape.com|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf|streamtape.com
-||*.pro/*,1&v=&m=$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|streamtape.com|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf|streamtape.com
+||*.pro^$popup,domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|streamtape.com|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf|streamtape.com
+! Probabaly Won't work with Safari / IOS but hey, worth trying
+@@||google.com$domain=streamtape.com
+@@||gstatic.com$domain=streamtape.com
+||*$script,third-party,domain=streamtape.com
 ! Fix a Broken Filter from EasyList
 @@||iamcdn.net
