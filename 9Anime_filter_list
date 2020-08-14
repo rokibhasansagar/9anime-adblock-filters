@@ -1,4 +1,4 @@
-! Last Update: 8/10/2020 11:15 PM EDT
+! Last Update: 8/14/2020 3:53 PM EDT
 ! Carefully placed unBlocks
 @@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 @@||plyr.io^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|mp4upload.com
@@ -76,6 +76,7 @@ mcloud.to,mcloud2.to##.afs_ads
 ||referrer.disqus.com^
 ||socialbars-web5.com^
 ||propellerclick.com^
+||evergreensame.com^
 ||movies7.to^$popup
 ||0vsgqxbxk66w.com^
 ||3i1cx7b9nupt.com^
@@ -133,6 +134,8 @@ mcloud.to,mcloud2.to##.afs_ads
 ||gcxjczooe.com^
 ||imqrxkarp.com^
 ||kythodoby.pro^
+||xrqrpdxqpm.com^
+||urnkawsxxh.com^
 ||nyshoptara.pro^
 ||cjlqwfpkwi.com^
 ||inpagepush.com^
@@ -152,6 +155,7 @@ mcloud.to,mcloud2.to##.afs_ads
 ||c.adsco.re^$important
 ||cdn4ads.com$important
 ||cdn4ads.com^$important
+||d3v3bqdndm4erx.cloudfront.net^
 ||d3g5ovfngjw9bw.cloudfront.net^
 ||*.pro^$popup,domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|streamtape.com|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf|streamtape.com
 ! Probabaly Won't work with Safari / IOS but hey, worth trying
