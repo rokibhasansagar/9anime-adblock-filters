@@ -1,4 +1,4 @@
-! Last Update: 8/17/2020 9:01 PM EDT
+! Last Update: 8/19/2020 1:57 PM EDT
 ! Carefully placed unBlocks
 @@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
 @@||plyr.io^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|mp4upload.com
@@ -126,6 +126,7 @@ mcloud.to,mcloud2.to##.afs_ads
 ||attestationlived.com^
 ! Streamtape Ad Servers
 ||*.o333o.com^
+||popcash.net^
 ||graizoah.com^
 ||nklrfqgz.com^
 ||wqpeltrb.com^
@@ -139,6 +140,7 @@ mcloud.to,mcloud2.to##.afs_ads
 ||imqrxkarp.com^
 ||kythodoby.pro^
 ||bmwzdfrra.com^
+||bettingdb.com^
 ||xrqrpdxqpm.com^
 ||urnkawsxxh.com^
 ||nyshoptara.pro^
@@ -155,18 +157,26 @@ mcloud.to,mcloud2.to##.afs_ads
 ||mqsrkvcpyzvnw.com^
 ||hbfxmcgazuail.com^
 ||vcmrlwcafliaa.com^
+||appelinconnu.site^
 ||adsco.re$important
 ||adsco.re^$important
+||ileokscsawzzrh.com^
+||wvahelphpfnhyx.com^
 ||erdecisesgeorg.info^
+||annuairedesnum.info^
+||workstudylive2.live^
 ||streamtape.com/ad.js^
+||elitemodelescort.com^
+||dubaiescortguide.com^
 ||c.adsco.re$important
 ||c.adsco.re^$important
 ||cdn4ads.com$important
 ||cdn4ads.com^$important
+||omgekeerdemobiele.info^
 ||d3v3bqdndm4erx.cloudfront.net^
 ||d2wy8f7a9ursnm.cloudfront.net^
 ||d3g5ovfngjw9bw.cloudfront.net^
-||*.pro^$popup,domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|streamtape.com|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf|streamtape.com
+||*.pro/*&v=&m=$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|streamtape.com|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf|streamtape.com
 ! Probabaly Won't work with Safari / IOS but hey, worth trying
 @@||google.com$domain=streamtape.com
 @@||gstatic.com$domain=streamtape.com
