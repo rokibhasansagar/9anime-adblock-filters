@@ -1,33 +1,37 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.773
+! Version: 0.774
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 8/16/2020 11:44 PM EDT
+! Last Update: 8/22/2020 11:38 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
-@@||9anime.*$~third-party,domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
-@@||9anime.*$webrtc,domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
+@@||9anime.*$~third-party,domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app
+@@||9anime.*$webrtc,domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app
 
 # Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
 # This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
-@@||*.akacdn.ru$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|prettyfast.to
+@@||*.akacdn.ru$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app|prettyfast.to
 
 # Ensuring the recaptcha api always loads
-@@||google.com/recaptcha/*$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|prettyfast.to
+@@||google.com/recaptcha/*$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app|prettyfast.to
 
 # Making sure android users don't somehow get mistakenly banned
-@@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
+@@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # 9Anime Visual Tweaks
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # The following removes empty ad-windows
-9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video##div.text-center.widget
-9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video###sidebar > .widget.crop.text-center
-9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video###sidebar > div.text-center.crop.widget
+9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,9anime.app##div.text-center.widget
+9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,9anime.app###sidebar > .widget.crop.text-center
+9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,9anime.app###sidebar > div.text-center.crop.widget
+
+# Injects to fix certain popups & subwindows
+9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,9anime.app#%#//scriptlet("abort-current-inline-script", "String.fromCharCode", "zfgloaded")
+9anime.to,9anime.ru,9anime.live,9anime.one,9anime.love,9anime.life,9anime.tv,9anime.page,9anime.video,9anime.app#%#AG_abortOnPropertyWrite('bbHideDiv');
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # Disqus Fixes & Tweaks
 # Advertising Removial
@@ -39,8 +43,8 @@
 tempest.services.disqus.com###ad-container
 
 # Ensuring it continues to work on 9Anime
-@@||disqus.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
-@@||disquscdn.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video
+@@||disqus.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app
+@@||disquscdn.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # External Player Tweaks
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
@@ -60,11 +64,17 @@ tempest.services.disqus.com###ad-container
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # MP4Upload
 # Anti-Advertisements
+||rukoval.com^
 ||cogleapad.com^
+||d3g5ovfngjw9bw.cloudfront.net^
 @@||fontawesome.com^$script,stylesheet,domain=mp4upload.com
 @@||cdnjs.cloudflare.com^$script,stylesheet,domain=mp4upload.com
 |https://$script,stylesheet,third-party,xmlhttprequest,domain=mp4upload.com
 @@||direct.apus.tech/inlive/www/delivery/*.html$subdocument,domain=mp4upload.com
+
+# Mp4Upload Injects
+mp4upload.com#%#//scriptlet("abort-current-inline-script", "String.fromCharCode", "zfgloaded")
+mp4upload.com#%#AG_abortOnPropertyWrite('bbHideDiv');
 
 # Avoid Triggering Anti-Adblock on download page
 ||assets.revcontent.com/master/delivery.js$script,domain=mp4upload.com,rewrite=abp-resource:blank-js
@@ -104,6 +114,10 @@ mp4upload.com##.plyr__title_bar
 @@||google.com$domain=streamtape.com
 @@||gstatic.com$domain=streamtape.com
 ||*$script,third-party,domain=streamtape.com
+
+# Streamtape Injects
+streamtape.com#%#//scriptlet("abort-on-property-write", "_pop")
+streamtape.com#%#//scriptlet("prevent-window-open")
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # MyCloud Fixes
 # Advertisement Elements
@@ -111,8 +125,13 @@ mcloud.to,mcloud2.to###jwa
 mcloud.to,mcloud2.to##.afs_ads
 
 # Anti-Error-Logging
+|https://$subdocument,third-party,domain=mcloud.to,mcloud2.to
 ||mcloud.to/log/
 ||mcloud2.to/log/
+
+# MyCloud Injects
+mcloud.to,mcloud2.to#%#//scriptlet("abort-on-property-read", "zfgformats")
+mcloud.to,mcloud2.to#%#//scriptlet("abort-current-inline-script", "String.fromCharCode", "/emZnbG9hZGVk|break;case \$\./")
 
 # Ensure Key connections function
 @@||jwpcdn.com^$domain=mcloud.to|mcloud2.to
@@ -128,13 +147,16 @@ mcloud.to,mcloud2.to##.afs_ads
 ||tidaltv.com^$third-party
 ||moatads.com^$third-party
 ||defpush.com^$third-party
+||bidgear.com^$third-party
 ||adsrvr.org^$third-party
 ||evergreensame.com^
 ||movies7.to^$popup
 ||mc.yandex.ru^
 ||viglink.com^
+||revrtb.com^
 ||lijit.com^
 ||mgid.com^
 ||amung.us^
 ||adsco.re^
+||bebi.com^
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
