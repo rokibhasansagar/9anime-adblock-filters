@@ -1,4 +1,4 @@
-! Last Update: 9/3/2020 9:31 PM EDT
+! Last Update: 9/3/2020 10:11 PM EDT
 ! Carefully placed unBlocks
 @@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app|9anime.at
 @@||plyr.io^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app|9anime.at|mp4upload.com
@@ -129,7 +129,14 @@ mcloud.to,mcloud2.to##.afs_ads
 ||rukoval.com^
 ||attestationlived.com^
 ! Streamtape Ad Server lockdown (Blacklisting)
-*$script,domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app|9anime.at|streamtape.com|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf|streamtape.com
+||trk10.com^
+||mc.yandex.ru^
+||inpagepush.com^
+||adsco.re^$important
+||*.adsco.re^$important
+||cdn4ads.com^$important
+*.com^$script,domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app|9anime.at|streamtape.com|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf|streamtape.com
+*.pro^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app|9anime.at|streamtape.com|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf|streamtape.com
 ! Whitelisted Scripts
 ! Common Unblocks
 @@||cdnjs.cloudflare.com/ajax/libs/lazysizes/*/lazysizes.min.js$script
