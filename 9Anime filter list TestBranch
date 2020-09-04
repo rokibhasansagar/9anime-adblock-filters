@@ -1,4 +1,4 @@
-! Last Update: 9/3/2020 10:11 PM EDT
+! Last Update: 9/3/2020 10:33 PM EDT
 ! Carefully placed unBlocks
 @@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app|9anime.at
 @@||plyr.io^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app|9anime.at|mp4upload.com
@@ -130,6 +130,7 @@ mcloud.to,mcloud2.to##.afs_ads
 ||attestationlived.com^
 ! Streamtape Ad Server lockdown (Blacklisting)
 ||trk10.com^
+||advinci.uno^
 ||mc.yandex.ru^
 ||inpagepush.com^
 ||adsco.re^$important
@@ -153,8 +154,8 @@ mcloud.to,mcloud2.to##.afs_ads
 @@||*.jwpcdn.com/player/*/jwpsrv.js$script
 ! Disqus Unblocks
 @@||c.disquscdn.com.cdn.cloudflare.net$script
-@@||disquscdn.com/next/embed/*$script
-@@||disqus.com/next/config.js$script
+@@||c.disquscdn.com$script
+@@||disqus.com$script
 ! StreamTape Unblocks
 @@||streamtape.com/js/jquery.min.js$script
 @@||streamtape.com/js/player9.js$script
