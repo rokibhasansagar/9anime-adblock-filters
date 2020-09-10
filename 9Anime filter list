@@ -3,21 +3,21 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 8/22/2020 10:49 PM EDT
+# Last Update: 9/10/2020 3:29 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
-@@||9anime.*$~third-party,domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app
+@@||9anime.*$~third-party,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
 
 # Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
 # This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
-@@||*.akacdn.ru$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app
+@@||*.akacdn.ru$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
 
 # Ensuring the recaptcha api always loads
-@@||google.com/recaptcha/*$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app
+@@||google.com/recaptcha/*$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
 
 # Attempt to prevent android devices from getting bans
-@@||amung.us^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app
+@@||amung.us^domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
 ###########################################################################################
 # 9Anime Visual Tweaks
 ###########################################################################################
@@ -43,9 +43,9 @@
 tempest.services.disqus.com###ad-container
 
 #Ensuring it continues to work on 9Anime
-@@||disqus.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app
-@@||disquscdn.com^$domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app
-||tempest.services.disqus.com/ads-iframe/^$important,domain=9anime.to|9anime.ru|9anime.live|9anime.one|9anime.love|9anime.life|9anime.tv|9anime.page|9anime.video|9anime.app
+@@||disqus.com^domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
+@@||disquscdn.com^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
+||tempest.services.disqus.com/ads-iframe/^$important,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
 ###########################################################################################
 # External Player Tweaks
 ###########################################################################################
