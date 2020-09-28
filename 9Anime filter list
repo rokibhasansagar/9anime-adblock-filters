@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 9/27/2020 6:51 PM EDT
+# Last Update: 9/28/2020 3:14 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -11,7 +11,7 @@
 
 # Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
 # This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
-@@||*.akacdn.ru$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
+@@||static.9anime.*$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
 
 # Ensuring the recaptcha api always loads
 @@||google.com/recaptcha/*$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
@@ -24,75 +24,59 @@
 @@||google-analytics.com^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
 @@||bidgear.com^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
 
-# Inject scriplets to prevent rogue advertisements.
-9anime.*##+js(aopr, AaDetector)
-9anime.*##+js(window.open-defuser)
+# Inject scriplets to prevent creation of rogue advertisements.
 9anime.*##+js(abort-on-property-read, AaDetector)
 9anime.*##+js(abort-current-inline-script, window.open, Cookie)
+###########################################################################################
+#Disqus Fixes & Tweaks
+###########################################################################################
+#Advertising & Tracking Removal
+||disqus.com/api/ping
+||referrer.disqus.com^
 ###########################################################################################
 # External Player Tweaks
 ###########################################################################################
 # Common
 # Anti-Advertisements
-||runative-syndicate.com^
-||*.bidgear.com^
-||24vunvrv.com^
-||bidgear.com^
-||revrtb.com^
-||zap.buzz^
-
-# Anti-Tracking
 ||google-analytics.com^
-/ping.gif?
-
-# Generics For Javascript / Fonts
-@@||*.gstatic.com^$domain=mcloud.to|mcloud2.to
-@@||*.googleapis.com^
+||24vunvrv.com^
+||zap.buzz^
 ###########################################################################################
 # MP4Upload
-# Anti-Advertisements
-||rukoval.com^
-||cdn4ads.com^
+# Anti-Advertising & Fixes
+.php?zoneid=
+||artpever.com^
 ||cogleapad.com^
-/fuckadblock.min.js
 ||d3g5ovfngjw9bw.cloudfront.net^
-||*$script,third-party,domain=www.mp4upload.com
 @@||fontawesome.com^$script,domain=mp4upload.com
 @@||fontawesome.com^$stylesheet,domain=mp4upload.com
 @@||cdnjs.cloudflare.com^$script,domain=mp4upload.com
-@@||cdnjs.cloudflare.com^$stylesheet,domain=mp4upload.com
 @@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=mp4upload.com
 
 # Avoid Triggering Anti-Adblock on download page
 ||assets.revcontent.com/master/delivery.js$script,domain=mp4upload.com,redirect=noopjs
-
-# This'll remove Mp4upload's advertisement overlay which tends to be invisible.
-mp4upload.com###overlay, div.container
-
-# This'll remove Mp4upload's HD logo from the video player.
-mp4upload.com##.plyr__title_bar
 ###########################################################################################
 # StreamTape
-# Anti-Advertising
-streamtape.com,streamtape.net#@#.google-ad
-||graizoah.com^
-||whaiweel.com^
+# Anti-Advertising & Fixes
+streamtape.*#@#.google-ad
+||adsco.re^
+||mc.yandex.ru^
+||onergong.com^
+||roujaufu.net^
 ||inpagepush.com^$important
-||streamtape.com/ad.js$other
-||d3v3bqdndm4erx.cloudfront.net^
+||in-page-push.com^$important
+@@||google.com^$script,domain=streamtape.com|streamtape.net
+@@||gstatic.com^$script,domain=streamtape.com|streamtape.net
 ###########################################################################################
 # MyCloud Fixes
-# Advertisement Elements
-mcloud.to,mcloud2.to###jwa
-mcloud.to,mcloud2.to##.afs_ads
-
-# Anti-Error-Logging
+# Anti-Advertising & Fixes
 ||mcloud.to/log/
 ||mcloud2.to/log/
-|https://$subdocument,3p,domain=mcloud.to|mcloud2.to
+|https://$subdocument,third-party,domain=mcloud.to|mcloud2.to
 
 # Ensure Key connections function
-@@||jwpcdn.com^$domain=mcloud.to|mcloud2.to
+@@||mcloud.to^$generichide
+@@||mcloud2.to^$generichide
 ###########################################################################################
 # uBO Imports
 ###########################################################################################
@@ -103,12 +87,11 @@ mp4upload.com##+js(popads-dummy)
 mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
 
 # StreamTape
-streamtape.com,streamtape.net##+js(acis, document.createElement, 'script')
-streamtape.com,streamtape.net##+js(nowoif, /^/, 1)
-streamtape.com,streamtape.net##+js(aopw, _pop)
+streamtape.*##+js(abort-current-inline-script, Math, XMLHttpRequest)
+streamtape.*##+js(window.open-defuser)
 
 # This filter stops StreamTape from disabling the right-click context menu.
-streamtape.com,streamtape.net##+js(addEventListener-defuser.js, contextmenu)
+streamtape.*##+js(addEventListener-defuser.js, contextmenu)
 
 # MyCloud
 mcloud.to##+js(abort-on-property-read, open)
@@ -120,7 +103,7 @@ mcloud.to##+js(abort-current-inline-script, Math, XMLHttpRequest)
 ||popmonetizer.net^$third-party
 ||defpush.com^$third-party
 ||evergreensame.com^
-||movies7.to^$popup
+||advinci.uno^
 
 # Tracking Websites (Generally found on Peter Lowe's Ad and tracking server list)
 ||scorecardresearch.com^$third-party
