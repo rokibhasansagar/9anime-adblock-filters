@@ -1,0 +1,112 @@
+[Adblock Plus 2.0]
+! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
+! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
+! Version: 0.800
+! Expires: 1 days
+! Description: Filters to fix common issues with 9Anime and block malicious code
+! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
+! Last Update: 9/28/2020 4:36 PM EDT
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# General 9Anime Fixes
+# Average user experence fixes (Fixes the website)
+@@||9anime.*$~third-party,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
+
+# Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
+# This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
+@@||static.9anime.*$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
+
+# Ensuring the recaptcha api always loads
+@@||google.com/recaptcha/*$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
+!###########################################################################################
+# 9Anime Visual Tweaks
+!###########################################################################################
+# The following removes empty ad-windows
+9anime.*##section.sda
+
+# Inject scriplets to prevent creation of sidebar ads & rogue advertisements.
+9anime.*#%#//scriptlet('abort-on-property-read', 'AaDetector')
+9anime.*#%#//scriptlet('abort-current-inline-script', 'window.open', 'Cookie')
+!###########################################################################################
+#Disqus Fixes & Tweaks
+!###########################################################################################
+#Advertising & Tracking Removal
+||disqus.com/api/ping
+||referrer.disqus.com^
+@@||referrer.disqus.com/juggler/stat.gif^
+!###########################################################################################
+# External Player Tweaks
+!###########################################################################################
+# Common
+# Anti-Advertisements
+||google-analytics.com^
+||24vunvrv.com^
+||zap.buzz^
+!###########################################################################################
+# MP4Upload
+# Anti-Advertising & Fixes
+.php?zoneid=
+||cdn4ads.com^
+||artpever.com^
+||cogleapad.com^
+||d3g5ovfngjw9bw.cloudfront.net^
+@@||fontawesome.com^$script,domain=mp4upload.com
+@@||fontawesome.com^$stylesheet,domain=mp4upload.com
+@@||cdnjs.cloudflare.com^$script,domain=mp4upload.com
+@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=mp4upload.com
+
+# Avoid Triggering Anti-Adblock on download page
+||assets.revcontent.com/master/delivery.js$script,domain=mp4upload.com,redirect=noopjs
+!###########################################################################################
+# StreamTape
+# Anti-Advertising & Fixes
+streamtape.*#@#.google-ad
+||adsco.re^
+||mc.yandex.ru^
+||onergong.com^
+||roujaufu.net^
+||inpagepush.com^$important
+||in-page-push.com^$important
+@@||google.com^$script,domain=streamtape.com|streamtape.net
+@@||gstatic.com^$script,domain=streamtape.com|streamtape.net
+!###########################################################################################
+# MyCloud Fixes
+# Anti-Advertising & Fixes
+||mcloud.to/log/
+||mcloud2.to/log/
+|https://$subdocument,third-party,domain=mcloud.to|mcloud2.to
+
+# Ensure Key connections function
+@@||mcloud.to^$generichide
+@@||mcloud2.to^$generichide
+!###########################################################################################
+# AdGuard Imports
+!###########################################################################################
+# MP4Upload
+mp4upload.com#%#//scriptlet('set-popads-dummy')
+
+# This filter stops Mp4Upload from disabling the right-click context menu.
+mp4upload.com#%#//scriptlet('prevent-addEventListener', 'contextmenu')
+
+# StreamTape
+streamtape.*#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'script')
+streamtape.*#%#//scriptlet('abort-current-inline-script', 'Math', 'XMLHttpRequest')
+streamtape.*#%#//scriptlet('abort-on-property-write', '_pop')
+streamtape.*#%#//scriptlet('prevent-window-open')
+
+# This filter stops StreamTape from disabling the right-click context menu.
+streamtape.*#%#//scriptlet('prevent-addEventListener', 'contextmenu')
+
+# MyCloud
+mcloud.to#%#//scriptlet('abort-on-property-read', 'open')
+mcloud.to#%#//scriptlet('abort-current-inline-script', 'Math', 'XMLHttpRequest')
+!###########################################################################################
+# Standalone imports from other filter-lists
+!###########################################################################################
+# 9Anime Ads & Ad-Trackers
+||evergreensame.com^
+||bidgear.com^
+||advinci.uno^
+||revrtb.com^
+||amung.us^
+||bebi.com^
+!###########################################################################################
