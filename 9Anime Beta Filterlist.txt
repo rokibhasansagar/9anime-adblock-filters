@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.800
+! Version: 0.801
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 9/28/2020 4:36 PM EDT
+! Last Update: 9/28/2020 4:52 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -21,7 +21,7 @@
 # 9Anime Visual Tweaks
 !###########################################################################################
 # The following removes empty ad-windows
-9anime.*##section.sda
+9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw##section.sda
 
 # Inject scriplets to prevent creation of sidebar ads & rogue advertisements.
 9anime.*#%#//scriptlet('abort-on-property-read', 'AaDetector')
@@ -56,16 +56,23 @@
 
 # Avoid Triggering Anti-Adblock on download page
 ||assets.revcontent.com/master/delivery.js$script,domain=mp4upload.com,redirect=noopjs
+
+# Block Select Visual Elements
+mp4upload.com###overlay
+mp4upload.com###plyr__title_bar
 !###########################################################################################
 # StreamTape
 # Anti-Advertising & Fixes
 streamtape.*#@#.google-ad
 ||adsco.re^
+||achaithe.com^
 ||mc.yandex.ru^
 ||onergong.com^
 ||roujaufu.net^
 ||inpagepush.com^$important
 ||in-page-push.com^$important
+*$popup,domain=streamtape.com|streamtape.net
+||*$script,third-party,domain=streamtape.com|streamtape.net
 @@||google.com^$script,domain=streamtape.com|streamtape.net
 @@||gstatic.com^$script,domain=streamtape.com|streamtape.net
 !###########################################################################################
