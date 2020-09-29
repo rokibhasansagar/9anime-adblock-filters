@@ -1,4 +1,4 @@
-! Last Update: 9/28/2020 3:56 PM EDT
+! Last Update: 9/29/2020 2:58 AM EDT
 ! Carefully placed unBlocks
 @@||amung.us^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
 @@||plyr.io^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|mp4upload.com
@@ -109,6 +109,7 @@ mcloud.to,mcloud2.to##.afs_ads
 ||*.mgid.com^
 ||pippio.com^
 ||prltmz.com^
+||flixhq.net^
 ||lijit.com^
 ||adnmn.com^
 ! Common Ad Servers
@@ -142,7 +143,9 @@ mcloud.to,mcloud2.to##.afs_ads
 ||graizoah.com^
 ||whaiweel.com^
 ||onergong.com^
+||achaithe.com^
 ||roujaufu.net^
+||nortaumi.net^
 ||graxarosi.pro^
 ||nehodyshy.pro^
 ||inpagepush.com^
