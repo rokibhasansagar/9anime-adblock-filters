@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 9/28/2020 3:44 PM EDT
+# Last Update: 9/29/2020 8:16 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -100,6 +100,7 @@ mcloud.to##+js(abort-current-inline-script, Math, XMLHttpRequest)
 ###########################################################################################
 # 9Anime Ads & Ad-Trackers
 ||evergreensame.com^
+||flixhq.net^$popup
 ||bidgear.com^
 ||advinci.uno^
 ||revrtb.com^
