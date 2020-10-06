@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.805
+! Version: 0.806
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 10/6/2020 2:54 PM EDT
+! Last Update: 10/6/2020 3:06 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -57,12 +57,13 @@ streamtape.*#@#.google-ad
 ||mc.yandex.ru^
 ||onergong.com^
 ||roujaufu.net^
+||maudawhy.com^
 ||inpagepush.com^$important
 ||in-page-push.com^$important
 *$popup,domain=streamtape.com|streamtape.net
-||*$script,third-party,domain=streamtape.com|streamtape.net
 @@||google.com^$script,domain=streamtape.com|streamtape.net
 @@||gstatic.com^$script,domain=streamtape.com|streamtape.net
+||*$third-party,script,subdocument,domain=streamtape.net|streamtape.com
 !###########################################################################################
 # MyCloud Fixes
 # Anti-Advertising & Fixes
