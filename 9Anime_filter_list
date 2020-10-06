@@ -1,4 +1,4 @@
-! Last Update: 10/6/2020 5:52 PM EDT
+! Last Update: 10/6/2020 6:29 PM EDT
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|Vidstream.pro|mp4upload.com
 @@||9anime.*^$script,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
@@ -160,13 +160,10 @@ about:blank$popup
 @@||streamtape.net^$subdocument
 ! Whitelisted Scripts
 ! Common Unblocks
-@@||cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/*/js/bootstrap.min.js$script
-@@||cdnjs.cloudflare.com/ajax/libs/popper.js/*/umd/popper.min.js$script
-@@||cdnjs.cloudflare.com/ajax/libs/lazysizes/*/lazysizes.min.js$script
-@@||cdnjs.cloudflare.com/ajax/libs/Swiper/*/js/swiper.min.js$script
-@@||cdnjs.cloudflare.com/ajax/libs/jquery/*/jquery.min.js$script
 @@||ajax.googleapis.com/ajax/libs/jquery/*$script
 @@||gstatic.com/recaptcha/releases/*$script
+@@||cdnjs.cloudflare.com/ajax/libs/*$script
+@@||*.jwpcdn.com/player/*/jwpsrv.js$script
 @@||google.com/js/bg/*$script
 @@||google.com/recaptcha/*
 ! Mp4Upload Unblocks
@@ -177,7 +174,6 @@ about:blank$popup
 @@||mcloud.to/assets/player/jwplayer-*/provider.hlsjs.js$script
 @@||mcloud.to/assets/player/jwplayer-*/jwplayer.js$script
 @@||mcloud.to/assets/mcloud/cache/app.js$script
-@@||*.jwpcdn.com/player/*/jwpsrv.js$script
 @@||mcloud.to/key$script
 ! Disqus Unblocks
 @@||c.disquscdn.com.cdn.cloudflare.net$script
@@ -188,12 +184,10 @@ about:blank$popup
 @@||streamtape.com/js/player9.js$script
 @@||streamtape.net/js/jquery.min.js$script
 @@||streamtape.net/js/player9.js$script
-! Vidstream Unblocks
-@@||cdnjs.cloudflare.com/ajax/libs/videojs-contrib-quality-levels/*/videojs-contrib-quality-levels.min.js
-@@||vidstream.pro/assets/player/videojs/videojs-hls-quality-selector.min.js$script
-@@||cdnjs.cloudflare.com/ajax/libs/plyr/*/plyr.polyfilled.min.js$script
-@@||cdnjs.cloudflare.com/ajax/libs/video.js/*/video.min.js$script
-@@||cdnjs.cloudflare.com/ajax/libs/hls.js/*/hls.min.js$script
+! Vidstream Unblock
 @@||vidstream.pro/assets/vidstream/cache/scripts.js$script
+@@||vidstream.pro/assets/player/jwplayer-*/jwplayer.core.controls.js$script
+@@||vidstream.pro/assets/player/jwplayer-*/provider.hlsjs.js$script
+@@||vidstream.pro/assets/player/jwplayer-*/jwplayer.js$script
 ! Fix a Broken Filter from EasyList
 @@||iamcdn.net
