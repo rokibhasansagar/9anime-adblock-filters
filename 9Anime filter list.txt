@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.804
+! Version: 0.805
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 9/29/2020 8:18 PM EDT
+! Last Update: 10/6/2020 2:54 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -42,24 +42,12 @@
 ||24vunvrv.com^
 ||zap.buzz^
 !###########################################################################################
-# MP4Upload
+# Vidstream
 # Anti-Advertising & Fixes
-.php?zoneid=
-||cdn4ads.com^
-||artpever.com^
-||cogleapad.com^
-||d3g5ovfngjw9bw.cloudfront.net^
-@@||fontawesome.com^$script,domain=mp4upload.com
-@@||fontawesome.com^$stylesheet,domain=mp4upload.com
-@@||cdnjs.cloudflare.com^$script,domain=mp4upload.com
-@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=mp4upload.com
-
-# Avoid Triggering Anti-Adblock on download page
-||assets.revcontent.com/master/delivery.js$script,domain=mp4upload.com,rewrite=abp-resource:blank-js
-
-# Block Select Visual Elements
-mp4upload.com###overlay
-mp4upload.com##.plyr__title_bar
+||runnersgunpowder.com^$script,third-party,domain=vidstream.pro
+||squeezedthoughtfully.com^$script,third-party,domain=vidstream.pro
+@@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro
+@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro
 !###########################################################################################
 # StreamTape
 # Anti-Advertising & Fixes
@@ -88,11 +76,8 @@ streamtape.*#@#.google-ad
 !###########################################################################################
 # AdGuard Imports
 !###########################################################################################
-# MP4Upload
-mp4upload.com#%#//scriptlet('set-popads-dummy')
-
-# This filter stops Mp4Upload from disabling the right-click context menu.
-mp4upload.com#%#//scriptlet('prevent-addEventListener', 'contextmenu')
+# This filter stops Vidstream from disabling the right-click context menu.
+Vidstream.*#%#//scriptlet('prevent-addEventListener', 'contextmenu')
 
 # StreamTape
 streamtape.*#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'script')
