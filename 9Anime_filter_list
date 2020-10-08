@@ -1,12 +1,12 @@
-! Last Update: 10/6/2020 6:29 PM EDT
+! Last Update: 10/8/2020 11:32 PM EDT
 ! Carefully placed unBlocks
-@@||plyr.io^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|Vidstream.pro|mp4upload.com
+@@||plyr.io^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|Vidstream.pro
 @@||9anime.*^$script,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
 @@||9anime.*/ajax/*^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
 @@||static.9anime.*^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
 ! Cosmetic Filtering
 ##.google-ad
-9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw,mp4upload.com##.plyr__title_bar
+9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw,mp4upload.com##.vjs-logo
 mcloud.to,mcloud2.to##.afs_ads
 9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw##section.sda
 9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw,tempest.services.disqus.com###ad-container
@@ -108,9 +108,11 @@ mcloud.to,mcloud2.to##.afs_ads
 ||referrer.disqus.com^
 ! Mp4Upload Sub-Ad Servers
 .php?zoneid=
+||acacdn.com^
 ||rukoval.com^
 ||artpever.com^
 ||cogleapad.com^
+||beefraidmob.com^
 ||attestationlived.com^
 ||d3g5ovfngjw9bw.cloudfront.net^
 ||*.com/*refer=https%3A%2F%2Fwww.mp4upload.com*$important
@@ -169,6 +171,8 @@ about:blank$popup
 ! Mp4Upload Unblocks
 @@||cdn.mp4upload.com/pl/plyr1.js$script
 @@||mp4upload.com/pl/plyr1.js$script
+@@||cdn.mp4upload.com/nue/videojs/*$script
+@@||mp4upload.com/nue/videojs/*$script
 ! MyCloud Unblocks
 @@||mcloud.to/assets/player/jwplayer-*/jwplayer.core.controls.js$script
 @@||mcloud.to/assets/player/jwplayer-*/provider.hlsjs.js$script
