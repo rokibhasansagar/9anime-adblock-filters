@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 12/02/2020 6:55 PM EDT
+# Last Update: 12/11/2020 7:40 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -76,6 +76,9 @@ streamtape.*#@#.google-ad
 ||in-page-push.com^$important
 @@||google.com^$script,domain=streamtape.com|streamtape.net
 @@||gstatic.com^$script,domain=streamtape.com|streamtape.net
+# Temp Fix for reCaptcha
+*$3p,denyallow=tapecontent.net|google.com|gstatic.com|hcaptcha.com|recaptcha.net,domain=streamtape.*,badfilter
+*$third-party,denyallow=tapecontent.net|google.com|gstatic.com|hcaptcha.com|recaptcha.net|jquery.com|hwcdn.net,domain=streamtape.*
 ###########################################################################################
 # MyCloud Fixes
 # Anti-Advertising & Fixes
@@ -107,6 +110,8 @@ streamtape.*##+js(abort-current-inline-script, document.createElement, 'script')
 streamtape.*##+js(abort-current-inline-script, Math, XMLHttpRequest)
 streamtape.*##+js(abort-on-property-write, _pop)
 streamtape.*##+js(window.open-defuser)
+# Temp Fix for reCaptcha
+streamtape.*#@#+js(set-constant, btoa, null)
 
 # This filter stops StreamTape from disabling the right-click context menu.
 streamtape.*##+js(addEventListener-defuser.js, contextmenu)
