@@ -5,7 +5,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 12/02/2020 7:04 PM EDT
+! Last Update: 12/11/2020 7:44 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -84,6 +84,9 @@ streamtape.*#@#.google-ad
 @@||google.com^$script,domain=streamtape.com|streamtape.net
 @@||gstatic.com^$script,domain=streamtape.com|streamtape.net
 ||*$third-party,script,subdocument,domain=streamtape.net|streamtape.com
+# Temp Fix for reCaptcha
+@@||code.jquery.com$script,domain=streamtape.net|streamtape.com
+@@||hwcdn.net$script,domain=streamtape.net|streamtape.com
 !###########################################################################################
 # MyCloud Fixes
 # Anti-Advertising & Fixes
