@@ -48,24 +48,6 @@
 @@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro
 @@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro
 ###########################################################################################
-# MP4Upload
-# Anti-Advertising & Fixes
-.php?zoneid=
-||artpever.com^
-||cogleapad.com^
-||d3g5ovfngjw9bw.cloudfront.net^
-@@||fontawesome.com^$script,domain=mp4upload.com
-@@||fontawesome.com^$stylesheet,domain=mp4upload.com
-@@||cdnjs.cloudflare.com^$script,domain=mp4upload.com
-@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=mp4upload.com
-
-# Avoid Triggering Anti-Adblock on download page
-||assets.revcontent.com/master/delivery.js$script,domain=mp4upload.com,redirect=noopjs
-
-# Block Select Visual Elements
-mp4upload.com###lay
-mp4upload.com##.vjs-logo
-###########################################################################################
 # StreamTape
 # Anti-Advertising & Fixes
 streamtape.*#@#.google-ad
@@ -98,12 +80,6 @@ Vidstream.*##+js(window.open-defuser, /(click|cv)\.php/, 10, obj)
 
 # This filter stops Vidstream from disabling the right-click context menu.
 vidstream.*##+js(aopr, HTMLElement.prototype.oncontextmenu)
-
-# MP4Upload uBO Injects
-mp4upload.com##+js(popads-dummy)
-
-# This filter stops Mp4Upload from disabling the right-click context menu.
-mp4upload.com##+js(addEventListener-defuser.js, contextmenu)
 
 # StreamTape
 streamtape.*##+js(abort-current-inline-script, document.createElement, 'script')
