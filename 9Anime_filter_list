@@ -1,4 +1,4 @@
-! Last Update: 12/27/2020 2:02 PM EDT
+! Last Update: 12/27/2020 2:38 PM EDT
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|Vidstream.pro
 @@||9anime.*^$script,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
@@ -45,12 +45,12 @@ mcloud.to,mcloud2.to##.afs_ads
 /pixel/purst?
 /pixel/puclc?
 /ping.gif?
+https://www.google.com/favicon.ico^$popup
 ||g.jwpsrv.com/g/gcid-*.html?notrack
 ||r.remarketingpixel.com^$third-party
 ||adservice.google.com^$important
 ||popads.net^$popup,third-party
 ||io.narrative.io/?$third-party
-||google.com/favicon.ico$popup
 ||growthadvisors.go2cloud.org
 ||*.googlesyndication.com
 ||rezync.com^$third-party
@@ -148,11 +148,15 @@ mcloud.to,mcloud2.to##.afs_ads
 ||ptywajofa.pro^
 ||graxarosi.pro^
 ||nehodyshy.pro^
+||ptywajofa.pro^
+||glegatemi.pro^
 ||thogrypufe.pro^
 ||tiglesoshi.pro^
 ||inpagepush.com^
 ||abluvdiscr.com^
+||agacelebir.com^
 ||gfcowlrmdt.com^
+||lowtyroguer.com^
 about:blank$popup
 ||adsco.re^$important
 ||*.adsco.re^$important
@@ -206,8 +210,6 @@ about:blank$popup
 @@||streamtape.net/js/player9.js$script
 ! Vidstream Unblock
 @@||vidstream.pro/assets/vidstream/cache/scripts.js$script
-@@||vidstream.pro/assets/player/jwplayer-*/jwplayer.core.controls.js$script
-@@||vidstream.pro/assets/player/jwplayer-*/provider.hlsjs.js$script
-@@||vidstream.pro/assets/player/jwplayer-*/jwplayer.js$script
+@@||vidstream.pro/assets/player/jwplayer-*/*$script
 ! Fix a Broken Filter from EasyList
 @@||iamcdn.net
