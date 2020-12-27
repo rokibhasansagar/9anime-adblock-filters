@@ -1,4 +1,4 @@
-! Last Update: 12/27/2020 1:24 PM EDT
+! Last Update: 12/27/2020 1:36 PM EDT
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|Vidstream.pro
 @@||9anime.*^$script,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
@@ -130,14 +130,19 @@ mcloud.to,mcloud2.to##.afs_ads
 ||trk10.com^
 ||advinci.uno^
 ||mc.yandex.ru^
+||roujaufu.net^
+||whugesto.net^
+||ptairtug.net^
+||nortaumi.net^
+||iwhugaul.com^
+||pignuwoa.com^
+||zuphaims.com^
+||shoagnie.com^
 ||graizoah.com^
 ||whaiweel.com^
 ||onergong.com^
 ||achaithe.com^
 ||maudawhy.com^
-||roujaufu.net^
-||shoagnie.com^
-||nortaumi.net^
 ||nirostyhe.pro^
 ||ptywajofa.pro^
 ||graxarosi.pro^
