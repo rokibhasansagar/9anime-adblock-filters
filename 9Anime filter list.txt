@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.809
+! Version: 0.810
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 12/11/2020 7:44 PM EDT
+! Last Update: 12/27/2020 2:49 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -71,6 +71,7 @@ mp4upload.com##.vjs-logo
 !###########################################################################################
 # StreamTape
 # Anti-Advertising & Fixes
+streamta.pe#@#.google-ad
 streamtape.*#@#.google-ad
 ||adsco.re^
 ||achaithe.com^
@@ -80,13 +81,13 @@ streamtape.*#@#.google-ad
 ||maudawhy.com^
 ||inpagepush.com^$important
 ||in-page-push.com^$important
-*$popup,domain=streamtape.com|streamtape.net
-@@||google.com^$script,domain=streamtape.com|streamtape.net
-@@||gstatic.com^$script,domain=streamtape.com|streamtape.net
-||*$third-party,script,subdocument,domain=streamtape.net|streamtape.com
+*$popup,domain=streamtape.com|streamtape.net|streamta.pe
+@@||google.com^$script,domain=streamtape.com|streamtape.net|streamta.pe
+@@||gstatic.com^$script,domain=streamtape.com|streamtape.net|streamta.pe
+||*$third-party,script,subdocument,domain=streamtape.net|streamtape.com|streamta.pe
 # Temp Fix for reCaptcha
-@@||code.jquery.com$script,domain=streamtape.net|streamtape.com
-@@||hwcdn.net$script,domain=streamtape.net|streamtape.com
+@@||code.jquery.com$script,domain=streamtape.net|streamtape.com|streamta.pe
+@@||hwcdn.net$script,domain=streamtape.net|streamtape.com|streamta.pe
 !###########################################################################################
 # MyCloud Fixes
 # Anti-Advertising & Fixes
@@ -112,9 +113,14 @@ streamtape.*#%#//scriptlet('abort-current-inline-script', 'document.createElemen
 streamtape.*#%#//scriptlet('abort-current-inline-script', 'Math', 'XMLHttpRequest')
 streamtape.*#%#//scriptlet('abort-on-property-write', '_pop')
 streamtape.*#%#//scriptlet('prevent-window-open')
+streamta.pe#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'script')
+streamta.pe#%#//scriptlet('abort-current-inline-script', 'Math', 'XMLHttpRequest')
+streamta.pe#%#//scriptlet('abort-on-property-write', '_pop')
+streamta.pe#%#//scriptlet('prevent-window-open')
 
 # This filter stops StreamTape from disabling the right-click context menu.
 streamtape.*#%#//scriptlet('prevent-addEventListener', 'contextmenu')
+streamta.pe*#%#//scriptlet('prevent-addEventListener', 'contextmenu')
 
 # MyCloud
 mcloud.to#%#//scriptlet('abort-on-property-read', 'open')
