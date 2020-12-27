@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.810
+! Version: 0.811
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 12/27/2020 2:49 PM EDT
+! Last Update: 12/27/2020 2:57 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -49,25 +49,6 @@
 ||squeezedthoughtfully.com^$script,third-party,domain=vidstream.pro
 @@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro
 @@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro
-!###########################################################################################
-# MP4Upload
-# Anti-Advertising & Fixes
-.php?zoneid=
-||cdn4ads.com^
-||artpever.com^
-||cogleapad.com^
-||d3g5ovfngjw9bw.cloudfront.net^
-@@||fontawesome.com^$script,domain=mp4upload.com
-@@||fontawesome.com^$stylesheet,domain=mp4upload.com
-@@||cdnjs.cloudflare.com^$script,domain=mp4upload.com
-@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=mp4upload.com
-
-# Avoid Triggering Anti-Adblock on download page
-||assets.revcontent.com/master/delivery.js$script,domain=mp4upload.com,rewrite=abp-resource:blank-js
-
-# Block Select Visual Elements
-mp4upload.com###lay
-mp4upload.com##.vjs-logo
 !###########################################################################################
 # StreamTape
 # Anti-Advertising & Fixes
