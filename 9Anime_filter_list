@@ -1,4 +1,4 @@
-! Last Update: 1/4/2020 2:50 PM EDT
+! Last Update: 1/4/2020 4:01 PM EDT
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|Vidstream.pro
 @@||9anime.*^$script,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
@@ -145,6 +145,7 @@ https://www.google.com/favicon.ico^$popup
 ||achaithe.com^
 ||maudawhy.com^
 ||luvaihoo.com^
+||gahapule.pro^
 ||ahzdlvsli.com^
 ||hedrvszms.com^
 ||ilohfbiph.com^
@@ -173,9 +174,9 @@ about:blank$popup
 ||*rsz=3580092*
 ||*pubid=3580092*
 ||*zoneid=3580092*
-*.com^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|streamtape.com|streamtape.net|streamta.pe|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf
-*.pro^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|streamtape.com|streamtape.net|streamta.pe|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf
-*.net^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|streamtape.com|streamtape.net|streamta.pe|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf
+*.com^$script,subdocument,xmlhttprequest,stylesheet,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|streamtape.com|streamtape.net|streamta.pe|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf
+*.pro^$script,subdocument,xmlhttprequest,stylesheet,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|streamtape.com|streamtape.net|streamta.pe|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf
+*.net^$script,subdocument,xmlhttprequest,stylesheet,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|streamtape.com|streamtape.net|streamta.pe|ffmovies.to|ffmovies.is|ffmovies.ru|ffmovies.cafe|ffmovies.coffee|ffmovies.love|ffmovies.media|ffmovies.pub|ffmovies.solar|ffmovies.taxi|ffmovies.world|ffmovies.wtf|fmovies.to|fmovies.is|fmovies.ru|fmovies.cafe|fmovies.coffee|fmovies.love|fmovies.media|fmovies.pub|fmovies.solar|fmovies.taxi|fmovies.world|fmovies.wtf
 ! Whitelisted subdocuments
 @@||disqus.com^$subdocument
 @@||mycloud.to^$subdocument
