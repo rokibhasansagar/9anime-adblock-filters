@@ -1,10 +1,11 @@
-! Last Update: 1/4/2020 7:14 PM EDT
+! Last Update: 1/4/2020 8:26 PM EDT
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|Vidstream.pro
 @@||9anime.*^$script,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
 @@||9anime.*/ajax/*^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
-@@||s1.bunnycdn.ru^
-@@||static.bunnycdn.ru^
+@@||s1.bunnycdn.ru/assets1/*/min/all.css$stylesheet
+@@||s1.bunnycdn.ru/assets1/*/min/all.js$script
+@@||static.bunnycdn.ru^$image
 ! Cosmetic Filtering
 ##.google-ad
 9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw##.vjs-logo
@@ -142,6 +143,7 @@ mcloud.to,mcloud2.to##.afs_ads
 ||ouftukoo.net^
 ||iwhugaul.com^
 ||pignuwoa.com^
+||stawhoph.com^
 ||zuphaims.com^
 ||shoagnie.com^
 ||graizoah.com^
@@ -167,10 +169,13 @@ mcloud.to,mcloud2.to##.afs_ads
 ||abluvdiscr.com^
 ||agacelebir.com^
 ||gfcowlrmdt.com^
+||zerolullaby.com^
 ||buipovexhav.com^
 ||lowtyroguer.com^
 ||streamta.pe/ad.js
+||streamtape.com/ad.js
 about:blank$popup,subdocument
+about:blank#blocked$popup
 ||adsco.re^$important
 ||*.adsco.re^$important
 ||cdn4ads.com^$important
