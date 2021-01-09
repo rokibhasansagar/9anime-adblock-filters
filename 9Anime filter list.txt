@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.812
+! Version: 0.815
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 1/4/2020 2:51 PM EDT
+! Last Update: 1/9/2020 5:28 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -60,15 +60,16 @@ streamtape.*#@#.google-ad
 ||onergong.com^
 ||roujaufu.net^
 ||maudawhy.com^
+||streamtape.*/ad.js
 ||inpagepush.com^$important
 ||in-page-push.com^$important
-*$popup,domain=streamtape.com|streamtape.net|streamta.pe
-@@||google.com^$script,domain=streamtape.com|streamtape.net|streamta.pe
-@@||gstatic.com^$script,domain=streamtape.com|streamtape.net|streamta.pe
-||*$third-party,script,subdocument,domain=streamtape.net|streamtape.com|streamta.pe
+*$popup,domain=streamtape.com|streamtape.net|streamta.pe|streamtape.site
+@@||google.com^$script,domain=streamtape.com|streamtape.net|streamta.pe|streamtape.site
+@@||gstatic.com^$script,domain=streamtape.com|streamtape.net|streamta.pe|streamtape.site
+||*$third-party,script,subdocument,domain=streamtape.net|streamtape.com|streamta.pe|streamtape.site
 # Temp Fix for reCaptcha
 @@||code.jquery.com$script,domain=streamtape.net|streamtape.com|streamta.pe
-@@||hwcdn.net$script,domain=streamtape.net|streamtape.com|streamta.pe
+@@||hwcdn.net$script,domain=streamtape.net|streamtape.com|streamta.pe|streamtape.site
 !###########################################################################################
 # MyCloud Fixes
 # Anti-Advertising & Fixes
@@ -110,6 +111,7 @@ mcloud.to#%#//scriptlet('abort-current-inline-script', 'Math', 'XMLHttpRequest')
 # Standalone imports from other filter-lists
 !###########################################################################################
 # 9Anime Ads & Ad-Trackers
+||hurawatch.com^$popup
 ||evergreensame.com^
 ||flixhq.net^$popup
 ||bidgear.com^
