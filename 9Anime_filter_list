@@ -1,4 +1,4 @@
-! Last Update: 1/11/2020 1:05 PM EDT
+! Last Update: 1/11/2020 1:39 PM EDT
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|Vidstream.pro
 @@||9anime.*^$script,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
@@ -15,6 +15,7 @@ mcloud.to,mcloud2.to##.afs_ads
 9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw,tempest.services.disqus.com###ad-container
 9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw,ffmovies.to,ffmovies.co,ffmovies.wtf,ffmovies.taxi,ffmovies.pub,ffmovies.cafe,ffmovies.love,ffmovies.world,ffmovies.media,ffmovies.solar,ffmovies.name,fmovies.to,fmovies.co,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.solar,fmovies.name,mcloud.to,mcloud2.to###jwa
 9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw,ffmovies.to,ffmovies.co,ffmovies.wtf,ffmovies.taxi,ffmovies.pub,ffmovies.cafe,ffmovies.love,ffmovies.world,ffmovies.media,ffmovies.solar,ffmovies.name,fmovies.to,fmovies.co,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.solar,fmovies.name,streamtape.cc,streamtape.com,streamtape.net,streamtape.site,streamtape.to,streamtape.xyz##.google-ad
+domain=9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw,ffmovies.to,ffmovies.co,ffmovies.wtf,ffmovies.taxi,ffmovies.pub,ffmovies.cafe,ffmovies.love,ffmovies.world,ffmovies.media,ffmovies.solar,ffmovies.name,fmovies.to,fmovies.co,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.solar,fmovies.name,streamtape.cc,streamtape.com,streamtape.net,streamtape.site,streamtape.to,streamtape.xyz##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
 ! General Advertisement Popups
 ://xml.*/redirect?*&pubid=$subdocument
 /watch?key=$popup,third-party
@@ -138,6 +139,7 @@ mcloud.to,mcloud2.to##.afs_ads
 ||advinci.uno^
 ||startos.win^
 ||mc.yandex.ru^
+||pouluwie.net^
 ||roujaufu.net^
 ||whugesto.net^
 ||ptairtug.net^
@@ -160,12 +162,14 @@ mcloud.to,mcloud2.to##.afs_ads
 ||hedrvszms.com^
 ||ilohfbiph.com^
 ||onstunkyr.com^
+||*.viglink.com^
 ||nirostyhe.pro^
 ||ptywajofa.pro^
 ||graxarosi.pro^
 ||nehodyshy.pro^
 ||glegatemi.pro^
 ||talazywho.pro^
+||whos.amung.us^
 ||thogrypufe.pro^
 ||tiglesoshi.pro^
 ||inpagepush.com^
@@ -180,12 +184,11 @@ mcloud.to,mcloud2.to##.afs_ads
 ||adspredictiv.com^
 ||streamta.pe/ad.js
 ||streamtape.*/ad.js
-about:blank$popup,subdocument
-about:blank#blocked$popup
 ||adsco.re^$important
 ||*.adsco.re^$important
 ||cdn4ads.com^$important
 ||in-page-push.com^$important
+||dp2drdtly304p.cloudfront.net^
 ||*var=3580092*
 ||*rzi=3580092*
 ||*rsz=3580092*
@@ -242,7 +245,3 @@ about:blank#blocked$popup
 @@||vidstream.pro$xmlhttprequest
 ! Fix a Broken Filter from EasyList
 @@||iamcdn.net
-! Fix Generic About:Blank, favicon, and other such popups
-/about:blank#/$popup,domain=domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|ffmovies.to|ffmovies.co|ffmovies.wtf|ffmovies.taxi|ffmovies.pub|ffmovies.cafe|ffmovies.love|ffmovies.world|ffmovies.media|ffmovies.solar|ffmovies.name|fmovies.to|fmovies.co|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.solar|fmovies.name|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz
-/^https?:\/\/.*\.(jpg|png|html|svg|ico)/$popup,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|ffmovies.to|ffmovies.co|ffmovies.wtf|ffmovies.taxi|ffmovies.pub|ffmovies.cafe|ffmovies.love|ffmovies.world|ffmovies.media|ffmovies.solar|ffmovies.name|fmovies.to|fmovies.co|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.solar|fmovies.name|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz
-/^https?:\/\/.*\.(info|pro|icu|app|xyz|pet|win|live|me|io|cc|pw|is|zone|bid|cf|ovh|site|review|ml)\.?(\/|:|$)/$popup,domain=domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|ffmovies.to|ffmovies.co|ffmovies.wtf|ffmovies.taxi|ffmovies.pub|ffmovies.cafe|ffmovies.love|ffmovies.world|ffmovies.media|ffmovies.solar|ffmovies.name|fmovies.to|fmovies.co|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.solar|fmovies.name|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz
