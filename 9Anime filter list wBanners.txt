@@ -8,7 +8,7 @@
 ! Last Update: 1/21/2020 3:56 PM EDT
 !##########################################################################################
 ! Trying to save myself some work in the future by importing the base filter list.
-!#include file_path https://gitlab.com/Sorrow-San/9anime-adblock-filters/-/raw/master_EasyListFormat/9Anime%20filter%20list.txt
+!#include file_path /9Anime filter list.txt
 !##########################################################################################
 # 9Anime Banner Unblocking
 # Allow the banner advertisers
