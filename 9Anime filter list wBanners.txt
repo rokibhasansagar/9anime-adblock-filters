@@ -1,14 +1,14 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: Banner Ads Allowed
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.010
+! Version: 0.015
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 1/21/2020 3:56 PM EDT
+! Last Update: 1/21/2020 4:07 PM EDT
 !##########################################################################################
 ! Trying to save myself some work in the future by importing the base filter list.
-!#include file_path /9Anime filter list.txt
+!#include file_path https://gitlab.com/Sorrow-San/9anime-adblock-filters/-/raw/master_EasyListFormat/9Anime%20filter%20list.txt
 !##########################################################################################
 # 9Anime Banner Unblocking
 # Allow the banner advertisers
@@ -20,6 +20,9 @@
 @@||bidgear.com^$subdocument,image,css,script,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
 
 # Unblock cosmetic filtering
+9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw#@#iframe[width="300"][height="250"]
+9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw#@#a[href^="https://www.bebi.com"]
+9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw#@#[href*=".revrtb.com/"]
 9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw#@#section.sda
 !##########################################################################################
 # Standalone imports from other filter-lists
