@@ -1,0 +1,35 @@
+[Adblock Plus 2.0]
+! Title: 9Anime Filter-list: Banner Ads Allowed
+! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
+! Version: 0.010
+! Expires: 1 days
+! Description: Filters to fix common issues with 9Anime and block malicious code
+! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
+! Last Update: 1/21/2020 3:56 PM EDT
+!##########################################################################################
+! Trying to save myself some work in the future by importing the base filter list.
+!#include file_path https://gitlab.com/Sorrow-San/9anime-adblock-filters/-/raw/master_EasyListFormat/9Anime%20filter%20list.txt
+!##########################################################################################
+# 9Anime Banner Unblocking
+# Allow the banner advertisers
+@@||revrtb.net^$frame,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
+@@||revrtb.com^$image,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
+@@||zap.buzz^$subdocument,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
+@@||bebi.com^$subdocument,image,script,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
+@@||stats.g.doubleclick.net^$xhr,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
+@@||bidgear.com^$subdocument,image,css,script,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
+
+# Unblock cosmetic filtering
+9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw#@#section.sda
+!##########################################################################################
+# Standalone imports from other filter-lists
+# Advertisement Blocking
+://xml.*/redirect?*&pubid=$subdocument
+||hurawatch.com^$popup
+||popmonetizer.net^$3p
+||evergreensame.com^
+||flixhq.net^$popup
+||adxnexus.com^
+||advinci.uno^
+||acertb.com^
+!##########################################################################################
