@@ -1,14 +1,17 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: Banner Ads Allowed
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.015
+! Version: 0.020
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 1/21/2020 4:07 PM EDT
+! Last Update: 1/21/2020 4:10 PM EDT
 !##########################################################################################
-! Trying to save myself some work in the future by importing the base filter list.
-!#include file_path https://gitlab.com/Sorrow-San/9anime-adblock-filters/-/raw/master_EasyListFormat/9Anime%20filter%20list.txt
+! Because of "spacing" regulations I can't use a #include line... I'll overhaul everything at some point.
+! Sorry to people going through here and getting annoyed at it being sub-par.
+!
+! Anyways, please use the following filter-list alongside this one. For keeping the less desirable (non banner) ads away too.
+! https://gitlab.com/Sorrow-San/9anime-adblock-filters/-/raw/master_EasyListFormat/9Anime%20filter%20list.txt
 !##########################################################################################
 # 9Anime Banner Unblocking
 # Allow the banner advertisers
