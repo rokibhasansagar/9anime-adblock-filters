@@ -1,4 +1,4 @@
-! Last Update: 2/11/2020 1:42 PM EDT
+! Last Update: 2/11/2020 2:18 PM EDT
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|Vidstream.pro
 @@||9anime.*^$script,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
@@ -225,13 +225,13 @@ domain=9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime
 @@||streamtape.*^$subdocument
 ! Whitelisted Scripts
 ! Common Unblocks
+@@||google.com/recaptcha/*$script,subdocument,xmlhttprequest
 @@||accounts.google.com$xmlhttprequest,subdocument
 @@||ajax.googleapis.com/ajax/libs/jquery/*$script
 @@||gstatic.com/recaptcha/releases/*$script
 @@||cdnjs.cloudflare.com/ajax/libs/*$script
 @@||*.jwpcdn.com/player/*/jwpsrv.js$script
 @@||google.com/js/bg/*$script
-@@||google.com/recaptcha/*
 ! Mp4Upload Unblocks
 @@||cdn.mp4upload.com/pl/plyr1.js$script
 @@||mp4upload.com/pl/plyr1.js$script
@@ -254,9 +254,14 @@ domain=9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime
 @@||disqus.com$script,xmlhttprequest
 ! StreamTape Unblocks
 @@||streamta.pe/js/jquery.min.js$script
-@@||streamta.pe/js/player9.js$script
+@@||streamta.pe/mainstream*.js$script
+@@||streamta.pe/js/player.*.js$script
 @@||streamtape.*/js/jquery.min.js$script
-@@||streamtape.*/js/player9.js$script
+@@||streamtape.*/mainstream*.js$script
+@@||streamtape.*/js/player.*.js$script
+@@||strtape.tech/js/jquery.min.js$script
+@@||strtape.tech/mainstream*.js$script
+@@||strtape.tech/js/player.*.js$script
 ! Vidstream Unblock
 @@||vidstream.pro/assets/vidstream/cache/scripts.js$script
 @@||vidstream.pro/assets/player/jwplayer-*/*$script
