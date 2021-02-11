@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.818
+! Version: 0.820
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 1/12/2020 8:37 PM EDT
+! Last Update: 2/11/2020 2:48 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -53,6 +53,7 @@
 # StreamTape
 # Anti-Advertising & Fixes
 streamta.pe#@#.google-ad
+strtape.tech#@#.google-ad
 streamtape.*#@#.google-ad
 ||adsco.re^
 ||achaithe.com^
@@ -60,16 +61,18 @@ streamtape.*#@#.google-ad
 ||onergong.com^
 ||roujaufu.net^
 ||maudawhy.com^
+||streamta.pe/ad.js
 ||streamtape.*/ad.js
+||strtape.tech/ad.js
 ||inpagepush.com^$important
 ||in-page-push.com^$important
-*$popup,domain=streamtape.com|streamtape.net|streamta.pe|streamtape.site
-@@||google.com^$script,domain=streamtape.com|streamtape.net|streamta.pe|streamtape.site
-@@||gstatic.com^$script,domain=streamtape.com|streamtape.net|streamta.pe|streamtape.site
-||*$third-party,script,subdocument,domain=streamtape.net|streamtape.com|streamta.pe|streamtape.site
+*$popup,domain=streamtape.com|streamtape.net|streamta.pe|streamtape.site|strtape.tech
+@@||google.com^$script,domain=streamtape.com|streamtape.net|streamta.pe|streamtape.site|strtape.tech
+@@||gstatic.com^$script,domain=streamtape.com|streamtape.net|streamta.pe|streamtape.site|strtape.tech
+||*$third-party,script,subdocument,xmlhttprequest,domain=streamtape.net|streamtape.com|streamta.pe|streamtape.site|strtape.tech
 # Temp Fix for reCaptcha
-@@||code.jquery.com$script,domain=streamtape.net|streamtape.com|streamta.pe
-@@||hwcdn.net$script,domain=streamtape.net|streamtape.com|streamta.pe|streamtape.site
+@@||code.jquery.com$script,domain=streamtape.net|streamtape.com|streamta.pe|strtape.tech
+@@||hwcdn.net$script,domain=streamtape.net|streamtape.com|streamta.pe|streamtape.site|strtape.tech
 !###########################################################################################
 # MyCloud Fixes
 # Anti-Advertising & Fixes
@@ -99,10 +102,15 @@ streamta.pe#%#//scriptlet('abort-current-inline-script', 'document.createElement
 streamta.pe#%#//scriptlet('abort-current-inline-script', 'Math', 'XMLHttpRequest')
 streamta.pe#%#//scriptlet('abort-on-property-write', '_pop')
 streamta.pe#%#//scriptlet('prevent-window-open')
+strtape.tech#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'script')
+strtape.tech#%#//scriptlet('abort-current-inline-script', 'Math', 'XMLHttpRequest')
+strtape.tech#%#//scriptlet('abort-on-property-write', '_pop')
+strtape.tech#%#//scriptlet('prevent-window-open')
 
 # This filter stops StreamTape from disabling the right-click context menu.
 streamtape.*#%#//scriptlet('prevent-addEventListener', 'contextmenu')
 streamta.pe*#%#//scriptlet('prevent-addEventListener', 'contextmenu')
+strtape.tech*#%#//scriptlet('prevent-addEventListener', 'contextmenu')
 
 # MyCloud
 mcloud.to#%#//scriptlet('abort-on-property-read', 'open')
