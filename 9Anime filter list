@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 1/12/2020 11:51 PM EDT
+# Last Update: 5/17/2021 5:48 PM EDT
 # Hope this works for you /u/RedditChickenWings
 ###########################################################################################
 # General 9Anime Fixes
@@ -23,6 +23,8 @@
 9anime.*##section.sda
 
 # Inject scriplets to prevent creation of sidebar ads & rogue advertisements.
+9anime.*##+js(window.open-defuser)
+9anime.*##+js(no-setInterval-if, break)
 9anime.*##+js(abort-on-property-read, AaDetector)
 9anime.*##+js(abort-current-inline-script, window.open, Cookie)
 ###########################################################################################
@@ -43,8 +45,9 @@
 ###########################################################################################
 # Vidstream
 # Anti-Advertising & Fixes
-||runnersgunpowder.com^$script,third-party,domain=vidstream.pro
-||squeezedthoughtfully.com^$script,third-party,domain=vidstream.pro
+||adgrx.com^
+||jwpltx.com^
+||raspberryareaurge.com^
 @@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro
 @@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro
 ###########################################################################################
@@ -61,38 +64,50 @@ streamta.pe*#@#.google-ad
 @@||google.com^$script,domain=streamtape.com|streamtape.net|streamta.pe
 @@||gstatic.com^$script,domain=streamtape.com|streamtape.net|streamta.pe
 ###########################################################################################
-# MyCloud Fixes
+# MyCloud
 # Anti-Advertising & Fixes
 ||mcloud.to/log/
 ||mcloud2.to/log/
-|https://$subdocument,third-party,domain=mcloud.to|mcloud2.to
+||runnersgunpowder.com^
 
 # Ensure Key connections function
 @@||mcloud.to^$generichide
 @@||mcloud2.to^$generichide
 ###########################################################################################
+# Mp4Upload 
+# Anti-Advertising & Fixes
+||snagbaudhulas.com^
+|https://$script,third-party,domain=mp4upload.com
+*$script,redirect-rule=noopjs,domain=mp4upload.com
+
+# Visual Tweaks (Overlay removal, Logo removal)
+mp4upload.com###lay.lay
+mp4upload.com##.vjs-logo
+mp4upload.com###overlay, div.container
+###########################################################################################
 # uBO Imports
 ###########################################################################################
 # Vidstream uBO Injects
-vidstream.*##+js(no-setInterval-if, break)
-vidstream.*#@#+js(window.open-defuser, !api?call=, 10, obj)
 Vidstream.*##+js(window.open-defuser, /(click|cv)\.php/, 10, obj)
+vidstream.*#@#+js(window.open-defuser, !api?call=, 10, obj)
+vidstream.*##+js(no-setInterval-if, break)
 
 # This filter stops Vidstream from disabling the right-click context menu.
 vidstream.*##+js(aopr, HTMLElement.prototype.oncontextmenu)
 
 # StreamTape
 streamtape.*##+js(abort-current-inline-script, document.createElement, 'script')
-streamtape.*##+js(abort-current-inline-script, Math, XMLHttpRequest)
+streamtape.*##+js(abort-on-stack-trace, Math.random, /\st\.[a-zA-Z]*\s/)
 streamtape.*##+js(abort-on-property-write, _pop)
+streamtape.*##+js(no-setInterval-if, adblock)
+streamtape.*##+js(set-constant, towait, 0)
 streamtape.*##+js(window.open-defuser)
 streamta.pe##+js(abort-current-inline-script, document.createElement, 'script')
-streamta.pe##+js(abort-current-inline-script, Math, XMLHttpRequest)
+streamta.pe##+js(abort-on-stack-trace, Math.random, /\st\.[a-zA-Z]*\s/)
 streamta.pe##+js(abort-on-property-write, _pop)
+streamta.pe##+js(no-setInterval-if, adblock)
+streamta.pe##+js(set-constant, towait, 0)
 streamta.pe##+js(window.open-defuser)
-# Temp Fix for reCaptcha
-streamtape.*#@#+js(set-constant, btoa, null)
-streamta.pe#@#+js(set-constant, btoa, null)
 
 # This filter stops StreamTape from disabling the right-click context menu.
 streamtape.*##+js(addEventListener-defuser.js, contextmenu)
@@ -101,15 +116,21 @@ streamta.pe##+js(addEventListener-defuser.js, contextmenu)
 # MyCloud
 mcloud.to##+js(abort-on-property-read, open)
 mcloud.to##+js(abort-current-inline-script, Math, XMLHttpRequest)
+
+# Mp4Upload
+mp4upload.com##+js(abort-on-property-write, adcashMacros)
+mp4upload.com##+js(abort-on-property-write, _pop)
+mp4upload.com##+js(popads-dummy)
 ###########################################################################################
 # Standalone imports from other filter-lists
 ###########################################################################################
 # 9Anime Ads & Ad-Trackers
 ||evergreensame.com^
-||flixhq.net^$popup
+||onesignal.com^
 ||bidgear.com^
 ||advinci.uno^
 ||revrtb.com^
+||apus.tech^
 ||amung.us^
 ||bebi.com^
 ###########################################################################################
