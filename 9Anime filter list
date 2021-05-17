@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 5/17/2021 5:38 PM EDT
+# Last Update: 5/17/2021 5:46 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -44,8 +44,9 @@
 ###########################################################################################
 # Vidstream
 # Anti-Advertising & Fixes
-||runnersgunpowder.com^$script,third-party,domain=vidstream.pro
-||squeezedthoughtfully.com^$script,third-party,domain=vidstream.pro
+||adgrx.com^
+||jwpltx.com^
+||raspberryareaurge.com^
 @@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro
 @@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro
 ###########################################################################################
@@ -67,7 +68,6 @@ streamta.pe*#@#.google-ad
 ||mcloud.to/log/
 ||mcloud2.to/log/
 ||runnersgunpowder.com^
-|https://$subdocument,third-party,domain=mcloud.to|mcloud2.to
 
 # Ensure Key connections function
 @@||mcloud.to^$generichide
@@ -76,6 +76,7 @@ streamta.pe*#@#.google-ad
 # Mp4Upload 
 # Anti-Advertising & Fixes
 ||snagbaudhulas.com^
+|https://$script,third-party,domain=mp4upload.com
 *$script,redirect-rule=noopjs,domain=mp4upload.com
 
 # Visual Tweaks (Overlay removal, Logo removal)
