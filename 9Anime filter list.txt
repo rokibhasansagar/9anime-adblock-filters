@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.903
+! Version: 0.904
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 6/22/2021 12:55 PM EDT
+! Last Update: 6/22/2021 1:03 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -161,7 +161,7 @@ mp4upload.com#%#//scriptlet('set-popads-dummy')
 # Standalone imports from other filter-lists
 !###########################################################################################
 # 9Anime Ads & Ad-Trackers
-/^https?:\/\/.*\/[?]/$popup,domain=9anime.ru|flixhq.net|kick4ss.com|kick4ss.net|movies7.to|tvshows88.com|hurawatch.com
+/^https?:\/\/.*\/[?]/$popup,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|flixhq.net|kick4ss.com|kick4ss.net|movies7.to|tvshows88.com|hurawatch.com
 ||tvshows88.com^$popup
 ||evergreensame.com^
 ||onesignal.com^
