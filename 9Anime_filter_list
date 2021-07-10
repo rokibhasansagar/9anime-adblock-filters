@@ -1,4 +1,4 @@
-! Last Update: 6/7/2021 5:12 PM EDT
+! Last Update: 7/10/2021 12:38 PM EDT
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|Vidstream.pro
 @@||9anime.*^$script,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
@@ -87,6 +87,7 @@ about:blank$popup
 ||w7zglmcdreij.com^
 ||d6jfiirio372.com^
 ||ogzdcghzpwos.com^
+||flixhq.ru^$popup
 ||live.rezync.com
 ||*.omnitagjs.com
 ||cdn.taboola.com
