@@ -1,27 +1,27 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.904
+! Version: 0.910
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 6/22/2021 1:03 PM EDT
+! Last Update: 8/24/2021 7:12 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
-@@||9anime.*$~third-party,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
+@@||9anime.*$~third-party,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|9anime.ws|9anime.me
 
 # Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
 # This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
-@@||bunnycdn.*$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
+@@||bunnycdn.*
 
 # Ensuring the recaptcha api always loads
-@@||google.com/recaptcha/*$domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw
+@@||google.com/recaptcha/*
 !###########################################################################################
 # 9Anime Visual Tweaks
 !###########################################################################################
 # The following removes empty ad-windows
-9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw##section.sda
+9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw,9anime.ws,9anime.me##section.sda
 
 # Tries to reduce the amount of popups on non-script enabled devices
 ##[href*=".revrtb.com/"]
@@ -30,6 +30,7 @@
 9anime.*#%#//scriptlet('prevent-window-open')
 9anime.*#%#//scriptlet('no-setInterval-if', 'break')
 9anime.*#%#//scriptlet('abort-on-property-read', 'AaDetector')
+9anime.*#%#//scriptlet('abort-on-property-write', '_pop')
 9anime.*#%#//scriptlet('abort-current-inline-script', 'window.open', 'Cookie')
 !###########################################################################################
 #Disqus Fixes & Tweaks
@@ -44,6 +45,7 @@
 # Common
 # Anti-Advertisements
 ||google-analytics.com^
+||glamourgreek.com^
 ||beefraidmob.com^
 ||24vunvrv.com^
 ||zap.buzz^
@@ -52,12 +54,16 @@
 # Anti-Advertising & Fixes
 ||adgrx.com^
 ||jwpltx.com^
+||worldspromising.com^
 ||raspberryareaurge.com^
 @@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro
 @@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro
 !###########################################################################################
 # StreamTape
 # Anti-Advertising & Fixes
+streamtape.*##[class*="bn-container"], div[style*="z-index: 300000;"]
+strtape.tech##[class*="bn-container"], div[style*="z-index: 300000;"]
+streamta.pe##[class*="bn-container"], div[style*="z-index: 300000;"]
 streamta.pe#@#.google-ad
 strtape.tech#@#.google-ad
 streamtape.*#@#.google-ad
@@ -150,6 +156,7 @@ streamta.pe*#%#//scriptlet('prevent-addEventListener', 'contextmenu')
 strtape.tech*#%#//scriptlet('prevent-addEventListener', 'contextmenu')
 
 # MyCloud
+mcloud.to#%#//scriptlet('no-setInterval-if', 'break')
 mcloud.to#%#//scriptlet('abort-on-property-read', 'open')
 mcloud.to#%#//scriptlet('abort-current-inline-script', 'Math', 'XMLHttpRequest')
 
@@ -161,7 +168,7 @@ mp4upload.com#%#//scriptlet('set-popads-dummy')
 # Standalone imports from other filter-lists
 !###########################################################################################
 # 9Anime Ads & Ad-Trackers
-/^https?:\/\/.*\/[?]/$popup,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|flixhq.net|kick4ss.com|kick4ss.net|movies7.to|tvshows88.com|hurawatch.com
+/^https?:\/\/.*\/[?]/$popup,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|9anime.me|9anime.ws|flixhq.net|kick4ss.com|kick4ss.net|movies7.to|tvshows88.com|hurawatch.com
 ||tvshows88.com^$popup
 ||evergreensame.com^
 ||onesignal.com^
