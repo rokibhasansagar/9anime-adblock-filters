@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.911
+! Version: 0.920
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 8/24/2021 7:38 PM EDT
+! Last Update: 9/23/2021 2:54 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -120,6 +120,19 @@ strtapeadblock.club#@#.google-ad
 mp4upload.com###lay.lay
 mp4upload.com##.vjs-logo
 mp4upload.com###overlay, div.container
+###########################################################################################
+# VideoVard
+# Anti-Advertising & Fixes
+||pubtrack.co^
+||cagothie.net^
+||octaviancontrast.com^
+||questionsadjournasleep.com^
+@@/js/prebid-ads.js$script,1p
+@@||cdnjs.cloudflare.com/ajax/libs/fuckadblock$script
+
+# Visual Tweaks (Overlay removal)
+videovard.sx##.kwasnacki
+videovard.sx##.ruperg
 !###########################################################################################
 # AdGuard Imports
 !###########################################################################################
@@ -175,6 +188,10 @@ mcloud.to#%#//scriptlet('abort-current-inline-script', 'Math', 'XMLHttpRequest')
 mp4upload.com#%#//scriptlet('abort-on-property-write', 'adcashMacros')
 mp4upload.com#%#//scriptlet('abort-on-property-write', '_pop')
 mp4upload.com#%#//scriptlet('set-popads-dummy')
+
+# VideoVard
+videovard.sx#%#//scriptlet('prevent-window-open')
+videovard.sx#%#//scriptlet('prevent-setInterval', '0x')
 !###########################################################################################
 # Standalone imports from other filter-lists
 !###########################################################################################
