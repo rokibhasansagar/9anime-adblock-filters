@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 8/24/2021 7:01 PM EDT
+# Last Update: 9/23/2021 2:43 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -97,6 +97,19 @@ mp4upload.com###lay.lay
 mp4upload.com##.vjs-logo
 mp4upload.com###overlay, div.container
 ###########################################################################################
+# VideoVard
+# Anti-Advertising & Fixes
+||pubtrack.co^
+||cagothie.net^
+||octaviancontrast.com^
+||questionsadjournasleep.com^
+@@/js/prebid-ads.js$script,1p
+@@||cdnjs.cloudflare.com/ajax/libs/fuckadblock$script
+
+# Visual Tweaks (Overlay removal)
+videovard.sx##.kwasnacki
+videovard.sx##.ruperg
+###########################################################################################
 # uBO Imports
 ###########################################################################################
 # Vidstream uBO Injects
@@ -134,6 +147,11 @@ mcloud.to##+js(abort-current-inline-script, Math, XMLHttpRequest)
 mp4upload.com##+js(abort-on-property-write, adcashMacros)
 mp4upload.com##+js(abort-on-property-write, _pop)
 mp4upload.com##+js(popads-dummy)
+
+# VideoVard
+videovard.sx#@#+js(addEventListener-defuser, mouseup, catch)
+videovard.sx##+js(no-setInterval-if, 0x)
+videovard.sx##+js(window.open-defuser)
 ###########################################################################################
 # Standalone imports from other filter-lists
 # Advertisement Blocking
