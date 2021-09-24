@@ -1,4 +1,4 @@
-! Last Update: 9/23/2021 2:50 PM EDT
+! Last Update: 9/23/2021 8:52 PM EDT
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me|Vidstream.pro
 @@||9anime.*^$script,domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me
@@ -148,7 +148,10 @@ about:blank$popup
 ||worldspromising.com^
 ||raspberryareaurge.com^
 ! VideoVard Sub-Ad Servers
+||getbitly.*^
 ||pubtrack.co^
+||hetapus.com^
+||gapscult.com^
 ||cagothie.net^
 ||octaviancontrast.com^
 ||questionsadjournasleep.com^
