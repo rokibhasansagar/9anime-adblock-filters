@@ -1,4 +1,4 @@
-! Last Update: 9/23/2021 8:52 PM EDT
+! Last Update: 9/25/2021 2:56 PM EDT
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me|Vidstream.pro
 @@||9anime.*^$script,domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me
@@ -14,7 +14,7 @@
 9anime.to,9anime.ru,9anime.cz,9anime.ws,9anime.me,mcloud.to,mcloud2.to##.afs_ads
 9anime.to,9anime.ru,9anime.cz,9anime.ws,9anime.me,tempest.services.disqus.com###ad-container
 9anime.to,9anime.ru,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,mcloud.to,mcloud2.to###jwa
-9anime.to,9anime.ru,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.cc,streamtape.com,streamtape.net,streamtape.site,streamtape.to,streamtape.xyz,strtape.tech,strtapeadblock.club,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
+9anime.to,9anime.ru,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.cc,streamtape.com,streamtape.net,streamtape.site,streamtape.to,streamtape.xyz,strtape.tech,strtapeadblock.club,adblockstrtech.link,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
 ! Image or Page Redirect Popups
 about:blank$popup
 ||*/favicon.ico^$popup
@@ -240,11 +240,10 @@ about:blank$popup
 ||vobquhydgvyqf.com^
 ||fdrptpyxchzjk.com^
 ||erdecisesgeorg.com^
-||streamta.pe/ad.js
+||streamtape.*/adult^
+||adblockstrtech.link/adult^
 ||streamtape.*/ad.js
-||strtape.tech/ad.js
-||strcloud.club/ad.js
-||strtapeadblock.club/ad.js
+||adblockstrtech.link/ad.js
 ||adsco.re^$important
 ||*.adsco.re^$important
 ||cdn4ads.com^$important
@@ -256,9 +255,9 @@ about:blank$popup
 ||*rsz=3580092*
 ||*pubid=3580092*
 ||*zoneid=3580092*
-*.com^$script,subdocument,domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club
-*.pro^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club
-*.net^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club
+*.com^$script,subdocument,domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club|adblockstrtech.link
+*.pro^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club|adblockstrtech.link
+*.net^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club|adblockstrtech.link
 ! Whitelisted subdocuments
 @@||disqus.com^$subdocument
 @@||mycloud.to^$subdocument
@@ -298,18 +297,13 @@ about:blank$popup
 @@||c.disquscdn.com$script
 @@||disqus.com$script,xmlhttprequest
 ! StreamTape Unblocks
-@@||streamta.pe/js/jquery.min.js$script
-@@||streamta.pe/mainstream*.js$script
-@@||streamta.pe/js/player.*.js$script
+@@||*.tapecontent.net^
 @@||streamtape.*/js/jquery.min.js$script
 @@||streamtape.*/mainstream*.js$script
 @@||streamtape.*/js/player.*.js$script
-@@||strtape.tech/js/jquery.min.js$script
-@@||strtape.tech/mainstream*.js$script
-@@||strtape.tech/js/player.*.js$script
-@@||strtapeadblock.club/js/jquery.min.js$script
-@@||strtapeadblock.club/mainstream*.js$script
-@@||strtapeadblock.club/js/player.*.js$script
+@@||adblockstrtech.link/js/jquery.min.js$script
+@@||adblockstrtech.link/mainstream*.js$script
+@@||adblockstrtech.link/js/player.*.js$script
 ! Vidstream Unblock
 @@||vidstream.pro/assets/vidstream/cache/scripts.js$script
 @@||vidstream.pro/assets/player/jwplayer-*/*$script
