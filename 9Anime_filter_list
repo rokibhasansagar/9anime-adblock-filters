@@ -1,4 +1,4 @@
-! Last Update: 9/25/2021 3:13 PM EDT
+! Last Update: 9/25/2021 6:20 PM EDT
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me|Vidstream.pro
 @@||9anime.*^$script,domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me
@@ -323,5 +323,5 @@ about:blank$popup
 @@||*/js/prebid-ads.js$script
 @@||videovard.sx/js/*$script
 @@||videovard.sx/css/*
-! Fix a Broken Filter from EasyList
-@@||iamcdn.net
+! Fix Broken Filter from EasyList (Again)
+@@||adblockstrtech.link^$popup,domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me|streamtape.com
