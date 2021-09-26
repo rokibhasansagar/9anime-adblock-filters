@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 9/23/2021 2:43 PM EDT
+# Last Update: 9/26/2021 3:28 AM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -58,8 +58,9 @@
 ||jwpltx.com^
 ||worldspromising.com^
 ||raspberryareaurge.com^
-@@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro
-@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro
+||bootsuserstruthful.com^
+@@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro,vidstreamz.online
+@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro,vidstreamz.online
 ###########################################################################################
 # StreamTape
 # Anti-Advertising & Fixes
@@ -116,9 +117,13 @@ videovard.sx##.ruperg
 vidstream.*##+js(no-setInterval-if, break)
 Vidstream.*##+js(window.open-defuser, /(click|cv)\.php/, 10, obj)
 vidstream.*#@#+js(window.open-defuser, !api?call=, 10, obj)
+vidstreamz.online##+js(no-setInterval-if, break)
+vidstreamz.online##+js(window.open-defuser, /(click|cv)\.php/, 10, obj)
+vidstreamz.online#@#+js(window.open-defuser, !api?call=, 10, obj)
 
 # This filter stops Vidstream from disabling the right-click context menu.
 vidstream.*##+js(aopr, HTMLElement.prototype.oncontextmenu)
+vidstreamz.online##+js(aopr, HTMLElement.prototype.oncontextmenu)
 
 # StreamTape
 streamtape.*##+js(abort-current-inline-script, document.createElement, 'script')
