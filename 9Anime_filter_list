@@ -1,6 +1,6 @@
-! Last Update: 9/25/2021 6:44 PM EDT
+! Last Update: 9/26/2021 3:31 PM EDT
 ! Carefully placed unBlocks
-@@||plyr.io^$domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me|Vidstream.pro
+@@||plyr.io^$domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me|Vidstream.pro|vidstreamz.online
 @@||9anime.*^$script,domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me
 @@||9anime.*/ajax/*^$domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me
 @@||*.bunnycdn.ru^$domain=9anime.to|9anime.ru|9anime.cz|9anime.ws|9anime.me
@@ -147,6 +147,7 @@ about:blank$popup
 ||jwpltx.com^
 ||worldspromising.com^
 ||raspberryareaurge.com^
+||bootsuserstruthful.com^
 ! VideoVard Sub-Ad Servers
 ||getbitly.*^
 ||pubtrack.co^
@@ -275,6 +276,7 @@ about:blank$popup
 @@||strtape.tech^$subdocument
 @@||mp4upload.com^$subdocument
 @@||vidstream.pro^$subdocument
+@@||vidstreamz.online^$subdocument
 @@||streamtape.*^$subdocument
 ! Whitelisted Scripts
 ! Common Unblocks
@@ -318,6 +320,10 @@ about:blank$popup
 @@||vidstream.pro/assets/player/jwplayer-*/*$script
 @@||*.vidstream.pro$xmlhttprequest
 @@||vidstream.pro$xmlhttprequest
+@@||vidstreamz.online/assets/vidstream/cache/scripts.js$script
+@@||vidstreamz.online/assets/player/jwplayer-*/*$script
+@@||*.vidstreamz.online$xmlhttprequest
+@@||vidstreamz.online$xmlhttprequest
 ! VideoVard UnBlocks
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock$script
 @@||content-videovard-delivery-*.videovard.to
