@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.920
+! Version: 0.922
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 9/23/2021 2:54 PM EDT
+! Last Update: 9/26/2021 3:32 AM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -56,8 +56,9 @@
 ||jwpltx.com^
 ||worldspromising.com^
 ||raspberryareaurge.com^
-@@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro
-@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro
+||bootsuserstruthful.com^
+@@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro,vidstreamz.online
+@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro,vidstreamz.online
 !###########################################################################################
 # StreamTape
 # Anti-Advertising & Fixes
@@ -140,9 +141,12 @@ videovard.sx##.ruperg
 # General Vidstream Fixes
 vidstream.*#%#//scriptlet('prevent-window-open', '/(click|cv)\.php/', '10', 'obj')
 vidstream.*#%#//scriptlet('no-setInterval-if', 'break')
+vidstreamz.*#%#//scriptlet('prevent-window-open', '/(click|cv)\.php/', '10', 'obj')
+vidstreamz.*#%#//scriptlet('no-setInterval-if', 'break')
 
 # This filter stops Vidstream from disabling the right-click context menu.
 vidstream.*#%#//scriptlet('abort-on-property-read', 'HTMLElement.prototype.oncontextmenu')
+vidstreamz.*#%#//scriptlet('abort-on-property-read', 'HTMLElement.prototype.oncontextmenu')
 
 # StreamTape
 streamtape.*#%#//scriptlet('abort-current-inline-script', 'document.createElement', 'script')
