@@ -1,15 +1,15 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.922
+! Version: 0.925
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 9/26/2021 3:32 AM EDT
+! Last Update: 9/29/2021 1:38 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
-@@||9anime.*$~third-party,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|9anime.ws|9anime.me
+@@||9anime.*$~third-party,domain=9anime.to|9anime.id|9anime.me
 
 # Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
 # This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
@@ -21,7 +21,7 @@
 # 9Anime Visual Tweaks
 !###########################################################################################
 # The following removes empty ad-windows
-9anime.to,9anime.tv,9anime.live,9anime.life,9anime.love,9anime.one,9anime.page,9anime.ru,9anime.video,9anime.app,9anime.at,9anime.bar,9anime.zone,9anime.cz,9anime.pw,9anime.ws,9anime.me##section.sda
+9anime.to,9anime.id,9anime.me##section.sda
 
 # Tries to reduce the amount of popups on non-script enabled devices
 ##[href*=".revrtb.com/"]
@@ -200,7 +200,7 @@ videovard.sx#%#//scriptlet('prevent-setInterval', '0x')
 # Standalone imports from other filter-lists
 !###########################################################################################
 # 9Anime Ads & Ad-Trackers
-/^https?:\/\/.*\/[?]/$popup,domain=9anime.to|9anime.tv|9anime.live|9anime.life|9anime.love|9anime.one|9anime.page|9anime.ru|9anime.video|9anime.app|9anime.at|9anime.bar|9anime.zone|9anime.cz|9anime.pw|9anime.me|9anime.ws|flixhq.net|kick4ss.com|kick4ss.net|movies7.to|tvshows88.com|hurawatch.com
+/^https?:\/\/.*\/[?]/$popup,domain=9anime.to|9anime.id|9anime.me|flixhq.net|kick4ss.com|kick4ss.net|movies7.to|tvshows88.com|hurawatch.com
 ||tvshows88.com^$popup
 ||evergreensame.com^
 ||onesignal.com^
