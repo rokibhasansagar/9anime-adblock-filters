@@ -1,4 +1,4 @@
-! Last Update: 10/02/2021 2:28 PM EDT
+! Last Update: 10/02/2021 2:35 PM EDT
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.me|Vidstream.pro|vidstreamz.online
 @@||9anime.*^$script,domain=9anime.to|9anime.id|9anime.me
@@ -326,6 +326,9 @@ about:blank$popup
 @@||*.vidstreamz.online$xmlhttprequest
 @@||vidstreamz.online$xmlhttprequest
 ! VideoVard UnBlocks
+@@||jwpcdn.com/player/v/*/jwplayer.core.controls.js$script,domain=9anime.to|9anime.id|9anime.me|videovard.sx
+@@||jwpcdn.com/player/v/*/provider.cast.js$script,domain=9anime.to|9anime.id|9anime.me|videovard.sx
+@@||jwpcdn.com/player/v/*/jwpsrv.js$script,domain=9anime.to|9anime.id|9anime.me|videovard.sx
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock$script
 @@||content-videovard-delivery-*.videovard.to
 @@||vjs.zencdn.net/*/video-js.css
