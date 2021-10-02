@@ -1,4 +1,4 @@
-! Last Update: 10/02/2021 3:09 PM EDT
+! Last Update: 10/02/2021 4:45 PM EDT
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.me|Vidstream.pro|vidstreamz.online
 @@||9anime.*^$script,domain=9anime.to|9anime.id|9anime.me
@@ -38,17 +38,20 @@ about:blank$popup
 ||*.addthisedge.com^
 ||glamourgreek.com^
 ||sanddevelto.fun^
-||fontawesome.com
-||viatepigan.com
+||venetrigni.com^
+||toromclick.com^
+||viatepigan.com^
 ||bulendrie.com^
 ||rowoardog.com^
 ||onesignal.com^
+||adplatform.io^
 ||*.addthis.com^
 ||*.bidgear.com
 ||*.cmpstar.com
 ||*.moatads.com
 ||*.taboola.com
 ||crwdcntrl.net
+||xmllover.com^
 ||pushyfen.com
 ||grooksom.com
 ||jistaumt.com
@@ -58,6 +61,7 @@ about:blank$popup
 ||gadspms.com
 ||defpush.com
 ||revrtb.com^
+||xmlrtb.com^
 ||adsrvr.org
 ||bebi.com^
 /www/delivery/*
