@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.925
+! Version: 0.930
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 9/29/2021 1:38 PM EDT
+! Last Update: 10/02/2021 4:54 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -28,10 +28,12 @@
 
 # Inject scriplets to prevent creation of sidebar ads & rogue advertisements.
 9anime.*#%#//scriptlet('prevent-window-open')
-9anime.*#%#//scriptlet('no-setInterval-if', 'break')
-9anime.*#%#//scriptlet('abort-on-property-read', 'AaDetector')
+9anime.*#%#//scriptlet('abort-on-property-read', 'mm')
 9anime.*#%#//scriptlet('abort-on-property-write', '_pop')
+9anime.*#%#//scriptlet('set-constant', 'console.clear', 'undefined')
 9anime.*#%#//scriptlet('abort-current-inline-script', 'window.open', 'Cookie')
+!# 9anime.*#%#//scriptlet('abort-current-script', 'Math', 'break;case $.') Scripplet NYI
+!# 9anime.*#%#//scriptlet('abort-current-script', 'setTimeout', 'String.fromCharCode') Scripplet NYI
 !###########################################################################################
 #Disqus Fixes & Tweaks
 !###########################################################################################
@@ -47,7 +49,12 @@
 ||google-analytics.com^
 ||glamourgreek.com^
 ||beefraidmob.com^
+||venetrigni.com^
+||toromclick.com^
+||adplatform.io^
+||xmllover.com^
 ||24vunvrv.com^
+||xmlrtb.com^
 ||zap.buzz^
 !###########################################################################################
 # Vidstream
@@ -88,6 +95,7 @@ strtapeadblock.club#@#.google-ad
 ||streamtape.*/ad.js
 ||strtape.tech/ad.js
 ||strcloud.club/ad.js
+||streamtape.com/adult
 ||strtapeadblock.club/ad.js
 ||inpagepush.com^$important
 ||in-page-push.com^$important
