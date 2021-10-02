@@ -1,8 +1,8 @@
-! Last Update: 10/02/2021 3:01 PM EDT
+! Last Update: 10/02/2021 3:06 PM EDT
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.me|Vidstream.pro|vidstreamz.online
 @@||9anime.*^$script,domain=9anime.to|9anime.id|9anime.me
-@@||9anime.*/ajax/*^$domain=9anime.to|9anime.id|9anime.me
+@@||9anime.*/ajax/^$domain=9anime.to|9anime.id|9anime.me
 @@||*.bunnycdn.ru^$domain=9anime.to|9anime.id|9anime.me
 ! Cosmetic Filtering
 ##.google-ad
@@ -280,20 +280,18 @@ about:blank$popup
 @@||streamtape.*^$subdocument
 ! Whitelisted Scripts
 ! Common Unblocks
-@@||google.com/recaptcha/*$script,subdocument,xmlhttprequest
+@@||google.com/recaptcha/^$script,subdocument,xmlhttprequest
 @@||accounts.google.com$xmlhttprequest,subdocument
-@@||ajax.googleapis.com/ajax/libs/jquery/*$script
-@@||gstatic.com/recaptcha/releases/*$script
-@@||cdnjs.cloudflare.com/ajax/libs/*$script
-@@||*.jwpcdn.com/player/*/jwpsrv.js$script
-@@||*.jwpcdn.com/player/*/provider.cast.js$script
-@@||*.jwpcdn.com/player/*/jwplayer.core.controls.js$script
-@@||google.com/js/bg/*$script
+@@||ajax.googleapis.com/ajax/libs/jquery/^$script
+@@||gstatic.com/recaptcha/releases/^$script
+@@||cdnjs.cloudflare.com/ajax/libs/^$script
+@@||*.jwpcdn.com/player/^$script
+@@||google.com/js/bg/^$script
 ! Mp4Upload Unblocks
 @@||cdn.mp4upload.com/pl/plyr1.js$script
 @@||mp4upload.com/pl/plyr1.js$script
-@@||cdn.mp4upload.com/nue/videojs/*$script
-@@||mp4upload.com/nue/videojs/*$script
+@@||cdn.mp4upload.com/nue/videojs/^$script
+@@||mp4upload.com/nue/videojs/^$script
 ! MyCloud Unblocks
 @@||mcloud.to/assets/player/jwplayer-*/jwplayer.core.controls.js$script
 @@||mcloud.to/assets/player/jwplayer-*/provider.hlsjs.js$script
@@ -319,19 +317,19 @@ about:blank$popup
 @@||adblockstrtech.link/js/player.*.js$script
 ! Vidstream Unblock
 @@||vidstream.pro/assets/vidstream/cache/scripts.js$script
-@@||vidstream.pro/assets/player/jwplayer-*/*$script
+@@||vidstream.pro/assets/player/jwplayer-*/^$script
 @@||*.vidstream.pro$xmlhttprequest
 @@||vidstream.pro$xmlhttprequest
 @@||vidstreamz.online/assets/vidstream/cache/scripts.js$script
-@@||vidstreamz.online/assets/player/jwplayer-*/*$script
+@@||vidstreamz.online/assets/player/jwplayer-*/^$script
 @@||*.vidstreamz.online$xmlhttprequest
 @@||vidstreamz.online$xmlhttprequest
 ! VideoVard UnBlocks
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock$script
 @@||content-videovard-delivery-*.videovard.to
 @@||vjs.zencdn.net/*/video-js.css
-@@||videovard.sx/_nuxt/*$script
-@@||videovard.sx/js/*$script
-@@||videovard.sx/css/*
+@@||videovard.sx/_nuxt/^$script
+@@||videovard.sx/js/^$script
+@@||videovard.sx/css/^
 ! Fix Broken Filter from EasyList (Again)
 @@||adblockstrtech.link^$popup,domain=9anime.to|9anime.id|9anime.me|streamtape.com
