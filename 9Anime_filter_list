@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.102
+! Version: 0.103
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 10/10/2021 6:15 PM EDT
+! Last Update: 10/13/2021 7:55 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.me|Vidstream.pro|vidstreamz.online
@@ -168,9 +168,11 @@ about:blank$popup
 ||poppy.*.xyz^
 ||pubtrack.co^
 ||hetapus.com^
+||getbitly.com^$third-party
 ||gapscult.com^
 ||cagothie.net^
 ||abdittoan.com^
+||flipboardsports.com^
 ||fullhealthycare.com^
 ||octaviancontrast.com^
 ||mignished-sility.com^
@@ -204,6 +206,10 @@ about:blank$popup
 ||ausoafab.net^
 ||glootang.net^
 ||aimairou.net^
+||jomtingi.net^
+||ykxipfcg.com^
+||denetsuk.com^
+||glersakr.com^
 ||psoageeb.com^
 ||iwhugaul.com^
 ||pignuwoa.com^
@@ -253,6 +259,7 @@ about:blank$popup
 ||offerimage.com^
 ||ampproject.org^
 ||reenginee.club^
+||yfyfvdufluu.xyz^
 ||zerolullaby.com^
 ||buipovexhav.com^
 ||lowtyroguer.com^
@@ -270,6 +277,7 @@ about:blank$popup
 ||fdrptpyxchzjk.com^
 ||yasiwngdihnfe.com^
 ||erdecisesgeorg.com^
+||ralijqugghwqil.com^
 ||streamtape.*/adult^
 ||adblockstrtech.link/adult^
 ||streamtape.*/ad.js
