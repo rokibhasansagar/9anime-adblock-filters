@@ -5,7 +5,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 10/13/2021 8:28 PM EDT
+! Last Update: 10/13/2021 8:44 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.me|Vidstream.pro|vidstreamz.online
@@ -316,8 +316,8 @@ about:blank$popup
 @@||google.com/recaptcha/*$script,subdocument,xmlhttprequest
 @@||accounts.google.com$xmlhttprequest,subdocument
 @@||ajax.googleapis.com/ajax/libs/jquery/*$script
-@@||gstatic.com/recaptcha/releases/*$script
-@@||cdnjs.cloudflare.com/ajax/libs/*$script
+@@||gstatic.com/recaptcha/releases/*$script,xmlhttprequest
+@@||cdnjs.cloudflare.com/ajax/libs/*$script,xmlhttprequest
 @@||*.jwpcdn.com/player/*$script
 @@||google.com/js/bg/*$script
 ! Mp4Upload Unblocks
