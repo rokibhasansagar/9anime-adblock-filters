@@ -1,14 +1,14 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.113
+! Version: 0.114
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 10/14/2021 2:37 AM EDT
+! Last Update: 10/14/2021 2:55 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
-@@||plyr.io^$domain=9anime.to|9anime.id|9anime.me|Vidstream.pro|vidstreamz.online
+@@||plyr.io^$domain=9anime.to|9anime.id|9anime.me|vidstream.pro|vidstreamz.online
 @@||9anime.*^$script,domain=9anime.to|9anime.id|9anime.me
 @@||9anime.*/ajax/*$domain=9anime.to|9anime.id|9anime.me
 @@||*.bunnycdn.ru^$domain=9anime.to|9anime.id|9anime.me
@@ -22,6 +22,7 @@
 9anime.to,9anime.id,9anime.me,videovard.sx##.ruperg
 9anime.to,9anime.id,9anime.me,videovard.sx##.kwasnacki
 9anime.to,9anime.id,9anime.me,mcloud.to,mcloud2.to##.afs_ads
+9anime.to,9anime.id,9anime.me,vidstreamz.online##.ad-placement
 9anime.to,9anime.id,9anime.me,tempest.services.disqus.com###ad-container
 9anime.to,9anime.id,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,mcloud.to,mcloud2.to###jwa
 9anime.to,9anime.id,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.cc,streamtape.com,streamtape.net,streamtape.site,streamtape.to,streamtape.xyz,strtape.tech,streamta.pe,strtapeadblock.club,adblockstrtech.link,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
@@ -158,10 +159,11 @@ about:blank$popup
 ||louchees.net^$important
 ! Vidstream Sub-Ad Servers
 ||adgrx.com^
-||jwpltx.com^
+||*.jwpltx.com^
+||getcaptcha21.com^
 ||worldspromising.com^
 ||raspberryareaurge.com^
-||bootsuserstruthful.com^
+||bootsuserstruthful.com^$important
 ! VideoVard Sub-Ad Servers
 ||getbitly.*^
 ||e2ertt.com^
