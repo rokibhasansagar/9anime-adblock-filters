@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.104
+! Version: 0.106
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 10/13/2021 8:04 PM EDT
+! Last Update: 10/13/2021 8:16 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.me|Vidstream.pro|vidstreamz.online
@@ -238,6 +238,7 @@ about:blank$popup
 ||onstunkyr.com^
 ||syxylyche.com^
 ||guvivqlbh.com^
+||hovoptelo.com^
 ||*.viglink.com^
 ||nirostyhe.pro^
 ||ptywajofa.pro^
@@ -246,7 +247,7 @@ about:blank$popup
 ||glegatemi.pro^
 ||talazywho.pro^
 ||whos.amung.us^
-||hovoptelo.com^
+||ihwfqfhtl.xyz^
 ||thogrypufe.pro^
 ||tiglesoshi.pro^
 ||rothoglyro.pro^
@@ -298,6 +299,7 @@ about:blank$popup
 *.com^$script,subdocument,domain=9anime.to|9anime.id|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club|adblockstrtech.link|streamta.pe
 *.pro^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club|adblockstrtech.link|streamta.pe
 *.net^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club|adblockstrtech.link|streamta.pe
+*.xyz^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club|adblockstrtech.link|streamta.pe
 ! Whitelisted subdocuments
 @@||disqus.com^$subdocument
 @@||mycloud.to^$subdocument
