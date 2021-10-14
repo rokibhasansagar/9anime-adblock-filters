@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.103
+! Version: 0.104
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 10/13/2021 7:55 PM EDT
+! Last Update: 10/13/2021 8:04 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.me|Vidstream.pro|vidstreamz.online
@@ -24,7 +24,7 @@
 9anime.to,9anime.id,9anime.me,mcloud.to,mcloud2.to##.afs_ads
 9anime.to,9anime.id,9anime.me,tempest.services.disqus.com###ad-container
 9anime.to,9anime.id,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,mcloud.to,mcloud2.to###jwa
-9anime.to,9anime.id,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.cc,streamtape.com,streamtape.net,streamtape.site,streamtape.to,streamtape.xyz,strtape.tech,strtapeadblock.club,adblockstrtech.link,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
+9anime.to,9anime.id,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.cc,streamtape.com,streamtape.net,streamtape.site,streamtape.to,streamtape.xyz,strtape.tech,streamta.pe,strtapeadblock.club,adblockstrtech.link,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
 ! Image or Page Redirect Popups
 about:blank$popup
 ||*/favicon.ico^$popup
@@ -279,8 +279,10 @@ about:blank$popup
 ||erdecisesgeorg.com^
 ||ralijqugghwqil.com^
 ||streamtape.*/adult^
+||streamta.pe/adult^
 ||adblockstrtech.link/adult^
 ||streamtape.*/ad.js
+||streamta.pe/ad.js
 ||adblockstrtech.link/ad.js
 ||adsco.re^$important
 ||*.adsco.re^$important
@@ -293,9 +295,9 @@ about:blank$popup
 ||*rsz=3580092*
 ||*pubid=3580092*
 ||*zoneid=3580092*
-*.com^$script,subdocument,domain=9anime.to|9anime.id|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club|adblockstrtech.link
-*.pro^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club|adblockstrtech.link
-*.net^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club|adblockstrtech.link
+*.com^$script,subdocument,domain=9anime.to|9anime.id|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club|adblockstrtech.link|streamta.pe
+*.pro^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club|adblockstrtech.link|streamta.pe
+*.net^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtapeadblock.club|adblockstrtech.link|streamta.pe
 ! Whitelisted subdocuments
 @@||disqus.com^$subdocument
 @@||mycloud.to^$subdocument
@@ -340,6 +342,9 @@ about:blank$popup
 @@||streamtape.*/js/jquery.min.js$script
 @@||streamtape.*/mainstream*.js$script
 @@||streamtape.*/js/player.*.js$script
+@@||streamta.pe/js/jquery.min.js$script
+@@||streamta.pe/mainstream*.js$script
+@@||streamta.pe/js/player.*.js$script
 @@||adblockstrtech.link/js/jquery.min.js$script
 @@||adblockstrtech.link/mainstream*.js$script
 @@||adblockstrtech.link/js/player.*.js$script
@@ -360,4 +365,4 @@ about:blank$popup
 @@||videovard.sx/js/*$script
 @@||videovard.sx/css/*
 ! Fix Broken Filter from EasyList (Again)
-@@||adblockstrtech.link^$popup,domain=9anime.to|9anime.id|9anime.me|streamtape.com
+@@||adblockstrtech.link^$popup,domain=9anime.to|9anime.id|9anime.me|streamtape.com|streamta.pe
