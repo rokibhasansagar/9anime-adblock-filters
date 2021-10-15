@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.114
+! Version: 0.115
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 10/14/2021 2:55 PM EDT
+! Last Update: 10/15/2021 1:27 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.me|vidstream.pro|vidstreamz.online
@@ -19,8 +19,6 @@
 9anime.to,9anime.id,9anime.me##section.sda
 9anime.to,9anime.id,9anime.me,videovard.sx##.malam
 9anime.to,9anime.id,9anime.me,videovard.sx##.saddam
-9anime.to,9anime.id,9anime.me,videovard.sx##.ruperg
-9anime.to,9anime.id,9anime.me,videovard.sx##.kwasnacki
 9anime.to,9anime.id,9anime.me,mcloud.to,mcloud2.to##.afs_ads
 9anime.to,9anime.id,9anime.me,vidstreamz.online##.ad-placement
 9anime.to,9anime.id,9anime.me,tempest.services.disqus.com###ad-container
@@ -152,6 +150,7 @@ about:blank$popup
 ||mcloud.to/log/
 ||mcloud2.to/log/
 ||runnersgunpowder.com^
+||absolutionbravery.com^
 ||postlnk.com^$important
 ||choglaup.com^$important
 ||baubogla.com^$important
@@ -167,6 +166,7 @@ about:blank$popup
 ! VideoVard Sub-Ad Servers
 ||getbitly.*^
 ||e2ertt.com^
+||hetaint.com^
 ||poppy.*.xyz^
 ||pubtrack.co^
 ||hetapus.com^
@@ -174,10 +174,13 @@ about:blank$popup
 ||gapscult.com^
 ||cagothie.net^
 ||abdittoan.com^
+||infercapture.com^
 ||flipboardsports.com^
 ||fullhealthycare.com^
 ||octaviancontrast.com^
 ||mignished-sility.com^
+||landingpagesecure.com^
+||videovard.sx/ad/advert/*
 ||antennacountingfloor.com^
 ||questionsadjournasleep.com^
 ! Streamtape Ad Server lockdown (Blacklisting)
