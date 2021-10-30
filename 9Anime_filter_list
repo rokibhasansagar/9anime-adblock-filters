@@ -1,29 +1,29 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.115
+! Version: 0.120
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 10/15/2021 1:27 PM EDT
+! Last Update: 10/30/2021 3:56 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
-@@||plyr.io^$domain=9anime.to|9anime.id|9anime.me|vidstream.pro|vidstreamz.online
-@@||9anime.*^$script,domain=9anime.to|9anime.id|9anime.me
-@@||9anime.*/ajax/*$domain=9anime.to|9anime.id|9anime.me
-@@||*.bunnycdn.ru^$domain=9anime.to|9anime.id|9anime.me
+@@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|vidstream.pro|vidstreamz.online
+@@||9anime.*^$script,domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me
+@@||9anime.*/ajax/*$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me
+@@||*.bunnycdn.ru^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me
 ! Cosmetic Filtering
 ##.google-ad
-9anime.to,9anime.id,9anime.me###lay
-9anime.to,9anime.id,9anime.me##.vjs-logo
-9anime.to,9anime.id,9anime.me##section.sda
-9anime.to,9anime.id,9anime.me,videovard.sx##.malam
-9anime.to,9anime.id,9anime.me,videovard.sx##.saddam
-9anime.to,9anime.id,9anime.me,mcloud.to,mcloud2.to##.afs_ads
-9anime.to,9anime.id,9anime.me,vidstreamz.online##.ad-placement
-9anime.to,9anime.id,9anime.me,tempest.services.disqus.com###ad-container
-9anime.to,9anime.id,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,mcloud.to,mcloud2.to###jwa
-9anime.to,9anime.id,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.cc,streamtape.com,streamtape.net,streamtape.site,streamtape.to,streamtape.xyz,strtape.tech,streamta.pe,strtapeadblock.club,adblockstrtech.link,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me###lay
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me##.vjs-logo
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me##section.sda
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx##.rulezco
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx##.kalamana
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,mcloud.to,mcloud2.to##.afs_ads
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,vidstreamz.online##.ad-placement
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,tempest.services.disqus.com###ad-container
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,mcloud.to,mcloud2.to###jwa
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.cc,streamtape.com,streamtape.net,streamtape.site,streamtape.to,streamtape.xyz,strtape.tech,streamta.pe,strtapeadblock.club,adblockstrtech.link,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
 ! Image or Page Redirect Popups
 about:blank$popup
 ||*/favicon.ico^$popup
@@ -173,8 +173,10 @@ about:blank$popup
 ||getbitly.com^$third-party
 ||gapscult.com^
 ||cagothie.net^
+||news-easy.org^
 ||abdittoan.com^
 ||infercapture.com^
+||collidetunnel.com^
 ||flipboardsports.com^
 ||fullhealthycare.com^
 ||octaviancontrast.com^
@@ -182,6 +184,7 @@ about:blank$popup
 ||landingpagesecure.com^
 ||videovard.sx/ad/advert/*
 ||antennacountingfloor.com^
+||kolkwi4tzicraamabilis.com^
 ||questionsadjournasleep.com^
 ! Streamtape Ad Server lockdown (Blacklisting)
 ||trk10.com^
@@ -373,4 +376,4 @@ about:blank$popup
 @@||videovard.sx/js/*$script
 @@||videovard.sx/css/*
 ! Fix Broken Filter from EasyList (Again)
-@@||adblockstrtech.link^$popup,domain=9anime.to|9anime.id|9anime.me|streamtape.com|streamta.pe
+@@||adblockstrtech.link^$popup,domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|streamtape.com|streamta.pe
