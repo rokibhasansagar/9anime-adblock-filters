@@ -3,11 +3,11 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 10/02/2021 4:28 PM EDT
+# Last Update: 10/30/2021 4:00 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
-@@||9anime.*$~third-party,domain=9anime.to|9anime.id|9anime.me
+@@||9anime.*$~third-party,domain=9anime.to|9anime.id|9anime.id|9anime.ws|9anime.me
 
 # Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
 # This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
@@ -102,14 +102,17 @@ mp4upload.com###overlay, div.container
 # Anti-Advertising & Fixes
 ||pubtrack.co^
 ||cagothie.net^
+||news-easy.org^
+||collidetunnel.com^
 ||octaviancontrast.com^
+||kolkwi4tzicraamabilis.com^
 ||questionsadjournasleep.com^
 @@/js/prebid-ads.js$script,1p
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock$script
 
 # Visual Tweaks (Overlay removal)
-videovard.sx##.kwasnacki
-videovard.sx##.ruperg
+videovard.sx##.rulezco
+videovard.sx##.kalamana
 ###########################################################################################
 # uBO Imports
 ###########################################################################################
