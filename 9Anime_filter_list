@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.125
+! Version: 0.130
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 11/22/2021 4:31 PM EDT
+! Last Update: 11/22/2021 5:15 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|vidstream.pro|vidstreamz.online
@@ -23,14 +23,15 @@
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,vidstreamz.online##.ad-placement
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,tempest.services.disqus.com###ad-container
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,mcloud.to,mcloud2.to###jwa
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.cc,streamtape.com,streamtape.net,streamtape.site,streamtape.to,streamtape.xyz,strtape.tech,strtpe.link​,streamta.pe,strtapeadblock.club,adblockstrtech.link,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.cc,streamtape.com,streamtape.net,streamtape.site,streamtape.to,streamtape.xyz,strtape.tech,strtpe.link,streamta.pe,strtapeadblock.club,adblockstrtech.link,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
 ! Image or Page Redirect Popups
-about:blank$popup
-||*/favicon.ico^$popup
+*/favicon.ico^$popup
+|about:$popup,third-party
 ||static.bunnycdn.ru^$popup
 /watch?key=$popup,third-party
 ! Direct Popups
 ||popads.net^$popup,third-party
+||nonegrysu.pro^$popup
 ||tvshows88.com^$popup
 ||hurawatch.*^$popup
 ||movies7.to^$popup
@@ -192,136 +193,32 @@ about:blank$popup
 ||kolkwi4tzicraamabilis.com^
 ||questionsadjournasleep.com^
 ! Streamtape Ad Server lockdown (Blacklisting)
-||trk10.com^
 ||rtmark.net^
-||advinci.uno^
-||startos.win^
-||hetapus.com^
-||mesucces.top^
-||mc.yandex.ru^
-||vignerez.net^
-||kaurouby.net^
-||ilinouck.net^
-||pouluwie.net^
+||cdn4ads.com^
 ||jomtingi.net^
-||roujaufu.net^
-||woawouru.net^
-||mainauko.net^
-||whugesto.net^
-||caustouy.net^
-||ptairtug.net^
-||nortaumi.net^
-||ouftukoo.net^
-||stovoori.net^
-||nicmoomp.net^
-||wheeshoo.net^
-||oaftaijo.net^
-||ausoafab.net^
-||glootang.net^
-||aimairou.net^
-||jomtingi.net^
-||ykxipfcg.com^
+||faipeeji.com^
 ||denetsuk.com^
 ||glersakr.com^
+||likooste.com^
 ||wcjlsohd.com^
-||psoageeb.com^
-||iwhugaul.com^
-||pignuwoa.com^
-||jeehathu.com^
-||oorunsey.com^
-||stawhoph.com^
-||zuphaims.com^
-||shoagnie.com^
-||graizoah.com^
-||whaiweel.com^
-||onergong.com^
-||achaithe.com^
-||maudawhy.com^
-||luvaihoo.com^
-||greeptax.com^
-||faipeeji.com^
-||zyhifata.pro^
-||gahapule.pro^
-||berowumy.pro^
-||itgiblean.com^
-||ahzdlvsli.com^
-||hedrvszms.com^
-||ilohfbiph.com^
-||secopereb.com^
-||trafficee.com^
-||gapsavyfo.com^
-||onstunkyr.com^
-||syxylyche.com^
-||guvivqlbh.com^
-||hovoptelo.com^
-||*.viglink.com^
-||nirostyhe.pro^
-||ptywajofa.pro^
-||graxarosi.pro^
-||nehodyshy.pro^
-||glegatemi.pro^
-||talazywho.pro^
 ||nonegrysu.pro^
-||whos.amung.us^
-||ihwfqfhtl.xyz^
-||thogrypufe.pro^
-||tiglesoshi.pro^
-||rothoglyro.pro^
-||chigloxixa.com^
-||inpagepush.com^
-||hallhesyaw.com^
-||jcqwzssqks.com^
-||abluvdiscr.com^
-||agacelebir.com^
-||gfcowlrmdt.com^
-||offerimage.com^
-||ofnumeltor.com^
-||ampproject.org^
-||reenginee.club^
-||yfyfvdufluu.xyz^
-||zerolullaby.com^
-||buipovexhav.com^
-||lowtyroguer.com^
-||betotodilea.com^
-||dzienkudrow.com^
 ||offfurreton.com^
-||jmuaoupnykie.com^
-||cjezgbjbltos.com^
-||cdnativepush.com^
-||dnemkhkbsdbl.com^
-||dutorterraom.com^
-||adspredictiv.com^
-||wlengrclxzypf.com^
-||dtcstcltwzuno.com^
-||vobquhydgvyqf.com^
-||fdrptpyxchzjk.com^
-||yasiwngdihnfe.com^
-||erdecisesgeorg.com^
-||ralijqugghwqil.com^
 ||spzqxefawfeubq.com^
 ||oirwfeglpoupyc.top^
+||d3g5ovfngjw9bw.cloudfront.net^
 ||streamtape.*/adult^
 ||streamta.pe/adult^
+||strtpe.link/adult^
 ||adblockstrtech.link/adult^
 ||streamtape.*/ad.js
 ||streamta.pe/ad.js
 ||strtpe.link/ad.js
 ||adblockstrtech.link/ad.js
-||adsco.re^$important
-||*.adsco.re^$important
-||cdn4ads.com^$important
-||kotikinar2ko8tiki09.com^
-||in-page-push.com^$important
-||dp2drdtly304p.cloudfront.net^
-||*var=3580092*
-||*rzi=3580092*
-||*rsz=3580092*
-||*pubid=3580092*
-||*zoneid=3580092*
 *.com^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtpe.link|strtapeadblock.club|adblockstrtech.link|streamta.pe
 *.pro^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtpe.link|strtapeadblock.club|adblockstrtech.link|streamta.pe
 *.net^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtpe.link|strtapeadblock.club|adblockstrtech.link|streamta.pe
 *.xyz^$domain=9anime.to|9anime.id|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtpe.link|strtapeadblock.club|adblockstrtech.link|streamta.pe
+*.top^$domain=9anime.to|9anime.id|9anime.me|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.cc|streamtape.com|streamtape.net|streamtape.site|streamtape.to|streamtape.xyz|strtape.tech|strtpe.link|strtapeadblock.club|adblockstrtech.link|streamta.pe
 ! Whitelisted subdocuments
 @@||disqus.com^$subdocument
 @@||mycloud.to^$subdocument
@@ -334,10 +231,10 @@ about:blank$popup
 @@||streamtape.*^$subdocument
 ! Whitelisted Scripts
 ! Common Unblocks
+@@||gstatic.com^$script,xmlhttprequest
 @@||google.com/recaptcha/*$script,subdocument,xmlhttprequest
 @@||accounts.google.com$xmlhttprequest,subdocument
 @@||ajax.googleapis.com/ajax/libs/jquery/*$script
-@@||gstatic.com/recaptcha/releases/*$script,xmlhttprequest
 @@||cdnjs.cloudflare.com/ajax/libs/*$script,xmlhttprequest
 @@||*.jwpcdn.com/player/*$script
 @@||google.com/js/bg/*$script
