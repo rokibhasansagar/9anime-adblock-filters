@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.131
+! Version: 0.135
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 11/22/2021 5:23 PM EDT
+! Last Update: 12/12/2021 4:55 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|vidstream.pro|vidstreamz.online
@@ -17,8 +17,8 @@
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me###lay
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me##.vjs-logo
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me##section.sda
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx##.MyDickIsFat
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx##.NotReallyYouHaveSmallOne
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to###MyDickIsFat
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to###NotReallyYouHaveSmallOne
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,mcloud.to,mcloud2.to##.afs_ads
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,vidstreamz.online##.ad-placement
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,tempest.services.disqus.com###ad-container
@@ -182,13 +182,14 @@
 ||viralsparks.io^
 ||infercapture.com^
 ||collidetunnel.com^
+||opcharizardon.com^
 ||flipboardsports.com^
 ||fullhealthycare.com^
 ||octaviancontrast.com^
 ||mignished-sility.com^
 ||landingpagesecure.com^
 ||carbonatemourning.com^
-||videovard.sx/ad/advert/*
+||videovard.*/ad/advert/*
 ||antennacountingfloor.com^
 ||kolkwi4tzicraamabilis.com^
 ||questionsadjournasleep.com^
@@ -224,7 +225,7 @@
 @@||disqus.com^$subdocument
 @@||mycloud.to^$subdocument
 @@||streamta.pe^$subdocument
-@@||videovard.sx^$subdocument
+@@||videovard.*^$subdocument
 @@||strtape.*^$subdocument
 @@||mp4upload.com^$subdocument
 @@||vidstream.pro^$subdocument
@@ -286,8 +287,8 @@
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock$script
 @@||content-videovard-delivery-*.videovard.to
 @@||vjs.zencdn.net/*/video-js.css
-@@||videovard.sx/_nuxt/*$script
-@@||videovard.sx/js/*$script
-@@||videovard.sx/css/*
+@@||videovard.*/_nuxt/*$script
+@@||videovard.*/js/*$script
+@@||videovard.*/css/*
 ! Fix Broken Filter from EasyList (Again)
 @@||adblockstrtech.link^$popup,domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|streamtape.com|streamta.pe|strtpe.link
