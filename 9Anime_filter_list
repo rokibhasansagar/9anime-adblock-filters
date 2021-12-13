@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.135
+! Version: 0.140
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 12/12/2021 4:55 PM EDT
+! Last Update: 12/13/2021 10:18 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|vidstream.pro|vidstreamz.online
@@ -19,8 +19,9 @@
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me##section.sda
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to###MyDickIsFat
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to###NotReallyYouHaveSmallOne
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to##.jw-reset.jw-wrapper:style(z-index:2147483647 !important)
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,mcloud.to,mcloud2.to##.afs_ads
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,vidstreamz.online##.ad-placement
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,vidstreamz.online,videovard.sx,videovard.to##.ad-placement
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,tempest.services.disqus.com###ad-container
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,mcloud.to,mcloud2.to###jwa
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.cc,streamtape.com,streamtape.net,streamtape.site,streamtape.to,streamtape.xyz,strtape.tech,strtpe.link,streamta.pe,strtapeadblock.club,adblockstrtech.link,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
@@ -180,6 +181,8 @@
 ||news-easy.org^
 ||abdittoan.com^
 ||viralsparks.io^
+||betotodilea.com^
+||*.hetartwtg.com^
 ||infercapture.com^
 ||collidetunnel.com^
 ||opcharizardon.com^
@@ -189,6 +192,7 @@
 ||mignished-sility.com^
 ||landingpagesecure.com^
 ||carbonatemourning.com^
+||videovard.*/ad-inject/*
 ||videovard.*/ad/advert/*
 ||antennacountingfloor.com^
 ||kolkwi4tzicraamabilis.com^
