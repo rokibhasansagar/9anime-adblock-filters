@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.141
+! Version: 0.145
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 12/13/2021 11:12 PM EDT
+! Last Update: 1/07/2021 12:51 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|vidstream.pro|vidstreamz.online
@@ -20,10 +20,10 @@
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to###MyDickIsFat
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to###NotReallyYouHaveSmallOne
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to##.jw-reset.jw-wrapper:style(z-index:2147483647 !important)
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,mcloud.to,mcloud2.to##.afs_ads
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,vidstreamz.online,videovard.sx,videovard.to##.ad-placement
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,mcloud.to,mcloud2.to,mzcloud.life##.afs_ads
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,vidstream.pro,vidstreamz.online,videovard.sx,videovard.to##.ad-placement
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,tempest.services.disqus.com###ad-container
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,mcloud.to,mcloud2.to###jwa
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,mcloud.to,mcloud2.to,mzcloud.life###jwa
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.cc,streamtape.com,streamtape.net,streamtape.site,streamtape.to,streamtape.xyz,strtape.tech,strtpe.link,streamta.pe,strtapeadblock.club,adblockstrtech.link,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
 ! Image or Page Redirect Popups
 */favicon.ico^$popup
@@ -152,6 +152,11 @@
 ! MyCloud Sub-Ad Servers
 ||mcloud.to/log/
 ||mcloud2.to/log/
+||mzcloud.life/log/
+||mcloud.to/A/*.js^
+||mcloud2.to/A/*.js^
+||mzcloud.life/A/*.js^
+||addresseepaper.com^
 ||runnersgunpowder.com^
 ||absolutionbravery.com^
 ||postlnk.com^$important
@@ -159,12 +164,15 @@
 ||baubogla.com^$important
 ||oukreesy.net^$important
 ||louchees.net^$important
+||regulationprivilegescan.top^
 ! Vidstream Sub-Ad Servers
 ||adgrx.com^
 ||*.jwpltx.com^
 ||getcaptcha21.com^
 ||worldspromising.com^
+||vidstream.pro/a/*.js^
 ||raspberryareaurge.com^
+||vidstreamz.online/a/*.js^
 ||bootsuserstruthful.com^$important
 ! VideoVard Sub-Ad Servers
 ||pinkz.xyz^
@@ -191,6 +199,7 @@
 ||opcharizardon.com^
 ||flipboardsports.com^
 ||fullhealthycare.com^
+||fendhaunteddelay.com^
 ||octaviancontrast.com^
 ||mignished-sility.com^
 ||landingpagesecure.com^
@@ -231,6 +240,7 @@
 ! Whitelisted subdocuments
 @@||disqus.com^$subdocument
 @@||mycloud.to^$subdocument
+@@||mzcloud.life^$subdocument
 @@||streamta.pe^$subdocument
 @@||videovard.*^$subdocument
 @@||strtape.*^$subdocument
@@ -263,6 +273,11 @@
 @@||mcloud2.to/assets/player/jwplayer-*/jwplayer.js$script
 @@||mcloud2.to/assets/mcloud/cache/app.js$script
 @@||mcloud2.to/key$script
+@@||mzcloud.life/assets/player/jwplayer-*/jwplayer.core.controls.js$script
+@@||mzcloud.life/assets/player/jwplayer-*/provider.hlsjs.js$script
+@@||mzcloud.life/assets/player/jwplayer-*/jwplayer.js$script
+@@||mzcloud.life/assets/mcloud/cache/app.js$script
+@@||mzcloud.life/key$script
 ! Disqus Unblocks
 @@||c.disquscdn.com.cdn.cloudflare.net$script
 @@||c.disquscdn.com$script
