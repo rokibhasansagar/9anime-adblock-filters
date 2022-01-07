@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 1/7/2022 12:40 PM EDT
+# Last Update: 1/7/2022 12:53 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -64,6 +64,8 @@
 ||worldspromising.com^
 ||raspberryareaurge.com^
 ||bootsuserstruthful.com^
+||vidstream.pro/a/*.js^
+||vidstreamz.online/a/*.js^
 @@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro,vidstreamz.online
 @@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro,vidstreamz.online
 ###########################################################################################
