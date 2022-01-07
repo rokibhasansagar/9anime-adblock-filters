@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 11/23/2021 3:10 PM EDT
+# Last Update: 1/7/2022 12:40 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -86,11 +86,18 @@ streamta.pe*#@#.google-ad
 # Anti-Advertising & Fixes
 ||mcloud.to/log/
 ||mcloud2.to/log/
+||mzcloud.life/log/
+||mcloud.to/A/*.js^
+||mcloud2.to/A/*.js^
+||mzcloud.life/A/*.js^
+||addresseepaper.com^
 ||runnersgunpowder.com^
+||regulationprivilegescan.top^
 
 # Ensure Key connections function
 @@||mcloud.to^$generichide
 @@||mcloud2.to^$generichide
+@@||mzcloud.life^$generichide
 ###########################################################################################
 # Mp4Upload 
 # Anti-Advertising & Fixes
@@ -110,6 +117,7 @@ mp4upload.com###overlay, div.container
 ||cagothie.net^
 ||news-easy.org^
 ||collidetunnel.com^
+||fendhaunteddelay.com^
 ||octaviancontrast.com^
 ||kolkwi4tzicraamabilis.com^
 ||questionsadjournasleep.com^
@@ -117,18 +125,18 @@ mp4upload.com###overlay, div.container
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock$script
 
 # Visual Tweaks (Overlay removal)
-videovard.sx##.rulezco
-videovard.sx##.kalamana
+videovard.to,videovard.sx###MyDickIsFat
+videovard.to,videovard.sx###NotReallyYouHaveSmallOne
+videovard.to,videovard.sx###nux > div > div > div[id]
+videovard.to,videovard.sx##.jw-reset.jw-wrapper:style(z-index:2147483647 !important)
 ###########################################################################################
 # uBO Imports
 ###########################################################################################
 # Vidstream uBO Injects
 vidstream.*##+js(no-setInterval-if, break)
-Vidstream.*##+js(window.open-defuser, /(click|cv)\.php/, 10, obj)
-vidstream.*#@#+js(window.open-defuser, !api?call=, 10, obj)
+Vidstream.*##+js(window.open-defuser)
 vidstreamz.online##+js(no-setInterval-if, break)
-vidstreamz.online##+js(window.open-defuser, /(click|cv)\.php/, 10, obj)
-vidstreamz.online#@#+js(window.open-defuser, !api?call=, 10, obj)
+vidstreamz.online##+js(window.open-defuser)
 
 # This filter stops Vidstream from disabling the right-click context menu.
 vidstream.*##+js(aopr, HTMLElement.prototype.oncontextmenu)
@@ -156,6 +164,9 @@ streamta.pe##+js(addEventListener-defuser.js, contextmenu)
 mcloud.to##+js(no-setInterval-if, break)
 mcloud.to##+js(abort-on-property-read, open)
 mcloud.to##+js(abort-current-inline-script, Math, XMLHttpRequest)
+mzcloud.life##+js(no-setInterval-if, break)
+mzcloud.life##+js(abort-on-property-read, open)
+mzcloud.life##+js(abort-current-inline-script, Math, XMLHttpRequest)
 
 # Mp4Upload
 mp4upload.com##+js(abort-on-property-write, adcashMacros)
@@ -163,9 +174,10 @@ mp4upload.com##+js(abort-on-property-write, _pop)
 mp4upload.com##+js(popads-dummy)
 
 # VideoVard
-videovard.sx#@#+js(addEventListener-defuser, mouseup, catch)
-videovard.sx##+js(no-setInterval-if, 0x)
-videovard.sx##+js(window.open-defuser)
+videovard.*#@#+js(addEventListener-defuser, mouseup, catch)
+videovard.*##+js(abort-on-property-read, FuckAdBlock)
+videovard.*##+js(no-setInterval-if, 0x)
+videovard.*##+js(window.open-defuser)
 ###########################################################################################
 # Standalone imports from other filter-lists
 # Advertisement Blocking
