@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.940
+! Version: 0.944
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 10/30/2021 3:59 PM EDT
+! Last Update: 1/07/2021 12:57 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -64,6 +64,8 @@
 ||worldspromising.com^
 ||raspberryareaurge.com^
 ||bootsuserstruthful.com^
+||vidstream.pro/a/*.js^
+||vidstreamz.online/a/*.js^
 @@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro,vidstreamz.online
 @@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro,vidstreamz.online
 !###########################################################################################
@@ -110,13 +112,18 @@ strtapeadblock.club#@#.google-ad
 !###########################################################################################
 # MyCloud Fixes
 # Anti-Advertising & Fixes
-||mcloud.to/log/
-||mcloud2.to/log/
+||mzcloud.life/log/
+||mcloud.to/A/*.js^
+||mcloud2.to/A/*.js^
+||mzcloud.life/A/*.js^
+||addresseepaper.com^
 ||runnersgunpowder.com^
+||regulationprivilegescan.top^
 
 # Ensure Key connections function
 @@||mcloud.to^$generichide
 @@||mcloud2.to^$generichide
+@@||mzcloud.life^$generichide
 ###########################################################################################
 # Mp4Upload 
 # Anti-Advertising & Fixes
@@ -136,6 +143,7 @@ mp4upload.com###overlay, div.container
 ||cagothie.net^
 ||news-easy.org^
 ||collidetunnel.com^
+||fendhaunteddelay.com^
 ||octaviancontrast.com^
 ||kolkwi4tzicraamabilis.com^
 ||questionsadjournasleep.com^
@@ -143,8 +151,10 @@ mp4upload.com###overlay, div.container
 @@||cdnjs.cloudflare.com/ajax/libs/fuckadblock$script
 
 # Visual Tweaks (Overlay removal)
-videovard.sx##.kalamana
-videovard.sx##.rulezco
+videovard.to,videovard.sx###MyDickIsFat
+videovard.to,videovard.sx###NotReallyYouHaveSmallOne
+videovard.to,videovard.sx###nux > div > div > div[id]
+videovard.to,videovard.sx##.jw-reset.jw-wrapper:style(z-index:2147483647 !important)
 !###########################################################################################
 # AdGuard Imports
 !###########################################################################################
@@ -198,6 +208,9 @@ strtapeadblock.club#%#//scriptlet('prevent-addEventListener', 'contextmenu')
 mcloud.to#%#//scriptlet('no-setInterval-if', 'break')
 mcloud.to#%#//scriptlet('abort-on-property-read', 'open')
 mcloud.to#%#//scriptlet('abort-current-inline-script', 'Math', 'XMLHttpRequest')
+mzcloud.life#%#//scriptlet('no-setInterval-if', 'break')
+mzcloud.life#%#//scriptlet('abort-on-property-read', 'open')
+mzcloud.life#%#//scriptlet('abort-current-inline-script', 'Math', 'XMLHttpRequest')
 
 # Mp4Upload
 mp4upload.com#%#//scriptlet('abort-on-property-write', 'adcashMacros')
@@ -205,8 +218,8 @@ mp4upload.com#%#//scriptlet('abort-on-property-write', '_pop')
 mp4upload.com#%#//scriptlet('set-popads-dummy')
 
 # VideoVard
-videovard.sx#%#//scriptlet('prevent-window-open')
-videovard.sx#%#//scriptlet('prevent-setInterval', '0x')
+videovard.*#%#//scriptlet('prevent-window-open')
+videovard.*#%#//scriptlet('prevent-setInterval', '0x')
 !###########################################################################################
 # Standalone imports from other filter-lists
 !###########################################################################################
