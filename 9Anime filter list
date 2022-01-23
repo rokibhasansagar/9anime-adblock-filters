@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 1/7/2022 12:54 PM EDT
+# Last Update: 1/23/2022 4:14 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -165,6 +165,7 @@ mzcloud.life##+js(abort-on-property-read, open)
 mzcloud.life##+js(abort-current-inline-script, Math, XMLHttpRequest)
 
 # Mp4Upload
+mp4upload.com##+js(set, document.documentElement.appendChild, noopFunc)
 mp4upload.com##+js(abort-on-property-write, adcashMacros)
 mp4upload.com##+js(abort-on-property-write, _pop)
 mp4upload.com##+js(popads-dummy)
