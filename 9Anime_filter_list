@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.181
+! Version: 0.182
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 1/24/2021 7:37 PM EDT
+! Last Update: 1/24/2021 7:56 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|vidstream.pro|vidstreamz.online
@@ -27,10 +27,24 @@
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,mcloud.to,mcloud2.to,mzcloud.life###jwa
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.com,stape.fun,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
 ! Image or Page Redirect Popups
+*/favicon.ico^$popup
 |about:$popup,third-party
-*$popup,third-party,domain=9anime.to|9anime.id|9anime.me|9anime.cz|9anime.ws|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|stape.fun|mp4upload.com
+||static.bunnycdn.ru^$popup
+/watch?key=$popup,third-party
 ! Direct Popups
 ||google.com/favicon.ico^$popup
+||popads.net^$popup,third-party
+||*.hetartwtg.com^$popup
+||*.astarboka.com^$popup
+||nonegrysu.pro^$popup
+||tvshows88.com^$popup
+||mp4upload.com^$popup
+||xytinusu.pro^$popup
+||hurawatch.*^$popup
+||movies7.to^$popup
+||kick4ss.*^$popup
+||9anime.*^$popup,third-party
+||flixhq.*^$popup
 ! General Advertisements
 ://xml.*/redirect?*&pubid=$subdocument
 ||*.runative-syndicate.com
