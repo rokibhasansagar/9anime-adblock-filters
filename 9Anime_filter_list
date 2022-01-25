@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.183
+! Version: 0.184
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 1/24/2021 8:34 PM EDT
+! Last Update: 1/25/2021 2:34 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|vidstream.pro|vidstreamz.online
@@ -32,10 +32,11 @@
 ||static.bunnycdn.ru^$popup
 /watch?key=$popup,third-party
 ! Direct Popups
+||mp4upload.com/images/hdblue.png^$popup
 ||google.com/favicon.ico^$popup
 ||popads.net^$popup,third-party
 ||*.hetartwtg.com^$popup
-||*.astarboka.com^$popup
+||ak.astarboka.com^$popup
 ||nonegrysu.pro^$popup
 ||tvshows88.com^$popup
 ||mp4upload.com^$popup
@@ -52,9 +53,12 @@
 ||clksite.com^$important
 ||frightfuljourney.com^
 ||*.spotscenered.info^
+||fastestvolcano.com^
 ||*.realtime-bid.com^
 ||*.addthisedge.com^
 ||glamourgreek.com^
+||studabsently.com^
+||itchytidying.com^
 ||sanddevelto.fun^
 ||venetrigni.com^
 ||toromclick.com^
@@ -76,6 +80,7 @@
 ||serconmp.com
 ||ptaussee.net
 ||gruglooh.net
+||hairoak.com^
 ||gadspms.com
 ||defpush.com
 ||revrtb.com^
@@ -156,6 +161,7 @@
 ||kpgngamrbwsyfd.com^
 ||hlviygodbawutb.com^
 ||attestationlived.com^
+||d3g5ovfngjw9bw.cloudfront.net^
 ||*.com/*refer=https%3A%2F%2Fwww.mp4upload.com*$important
 ! MyCloud Sub-Ad Servers
 ||mcloud.to/log/
@@ -195,13 +201,15 @@
 ||gapscult.com^
 ||cagothie.net^
 ||nuleedsa.net^
+||hetaruvg.com^
 ||hetartwtg.com^
-||news-easy.org^
 ||abdittoan.com^
+||adstellar.icu^
+||news-easy.org^
 ||viralsparks.io^
 ||betotodilea.com^
 ||*.hetartwtg.com^
-||*.astarboka.com^
+||ak.astarboka.com^
 ||ak.hetartwtg.com^
 ||infercapture.com^
 ||collidetunnel.com^
@@ -240,11 +248,15 @@
 ||xdvsijtlhr.com^
 ||offfurreton.com^
 ||mxyxgkuexjr.com^
+||ymbgepcphum.com^
 ||dddpvctclvdg.com^
 ||cwxxumyrvngok.com^
 ||ykxgjldxwffak.com^
+||zlajnpfqgsleo.com^
 ||spzqxefawfeubq.com^
+||nxuktkuoazvizd.com^
 ||oirwfeglpoupyc.top^
+||wghkmbokxxlklan.com^
 ||jmaafgdxxdtehld.com^
 ||predominantaugustchapter.com^
 ||d3g5ovfngjw9bw.cloudfront.net^
