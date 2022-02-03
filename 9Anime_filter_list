@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.185
+! Version: 0.186
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 1/28/2022 3:25 PM EDT
+! Last Update: 2/3/2022 5:10 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|vidstream.pro|vidstreamz.online
@@ -157,12 +157,16 @@
 ||geedoovu.net^
 ||cogleapad.com^
 ||beefraidmob.com^
+||ninobkfvyxdot.com^
+||qcsurwyviqlue.com^
 ||snagbaudhulas.com^
 ||kpgngamrbwsyfd.com^
 ||hlviygodbawutb.com^
 ||attestationlived.com^
 ||d3g5ovfngjw9bw.cloudfront.net^
+||mp4upload.com/images/hdblue.png
 ||*.com/*refer=https%3A%2F%2Fwww.mp4upload.com*$important
+||mp4upload.com/nue/videojs/plugins/vast.vpaid.min.js$important
 ! MyCloud Sub-Ad Servers
 ||mcloud.to/log/
 ||mcloud2.to/log/
@@ -228,7 +232,6 @@
 ||questionsadjournasleep.com^
 ! Streamtape Ad Server lockdown (Blacklisting)
 ||c.adsco.re^
-||rtmark.net^
 ||cdnads.com^
 ||cdn4ads.com^
 ||hidelen.com^
@@ -243,6 +246,7 @@
 ||wcjlsohd.com^
 ||glainsee.com^
 ||waisheph.com^
+||*.rtmark.net^
 ||vgfutxwgq.com^
 ||nonegrysu.pro^
 ||xdvsijtlhr.com^
