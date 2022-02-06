@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.947
+! Version: 0.948
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 2/5/2022 2:51 AM EDT
+! Last Update: 2/6/2022 3:05 AM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -61,15 +61,23 @@
 # Anti-Advertising & Fixes
 ||adgrx.com^
 ||jwpltx.com^
+||venetrigni.com^
+||marijuanaturf.com^
+||addresseepaper.com^
 ||worldspromising.com^
 ||gaietyastonished.com^
 ||raspberryareaurge.com^
 ||bootsuserstruthful.com^
 ||regulationprivilegescan.top^
-||vidstream.pro/a/*.js^
-||vidstreamz.online/a/*.js^
-@@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro,vidstreamz.online
-@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro,vidstreamz.online
+||vizstream.ru/B/*.js^
+||vidstream.pro/B/*.js^
+||vidstreamz.online/B/*.js^
+vizstream.ru##[target="_blank"][style]:upward([style])
+vidstream.pro##[target="_blank"][style]:upward([style])
+vidstreamz.online##[target="_blank"][style]:upward([style])
+
+@@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro,vidstreamz.online,vizstream.ru
+@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro,vidstreamz.online,vizstream.ru
 !###########################################################################################
 # StreamTape
 # Anti-Advertising & Fixes
@@ -162,12 +170,12 @@ videovard.to,videovard.sx##.jw-reset.jw-wrapper:style(z-index:2147483647 !import
 !###########################################################################################
 # Vidstream
 # General Vidstream Fixes
-vidstream.*#%#//scriptlet('prevent-window-open', '/(click|cv)\.php/', '10', 'obj')
-vidstream.*#%#//scriptlet('no-setInterval-if', 'break')
-vidstreamz.*#%#//scriptlet('prevent-window-open', '/(click|cv)\.php/', '10', 'obj')
-vidstreamz.*#%#//scriptlet('no-setInterval-if', 'break')
+vidstream.#%#//scriptlet('abort-on-property-read', 'open')
+vizstream.#%#//scriptlet('abort-on-property-read', 'open')
+vidstreamz.#%#//scriptlet('abort-on-property-read', 'open')
 
 # This filter stops Vidstream from disabling the right-click context menu.
+vizstream.*#%#//scriptlet('abort-on-property-read', 'HTMLElement.prototype.oncontextmenu')
 vidstream.*#%#//scriptlet('abort-on-property-read', 'HTMLElement.prototype.oncontextmenu')
 vidstreamz.*#%#//scriptlet('abort-on-property-read', 'HTMLElement.prototype.oncontextmenu')
 
