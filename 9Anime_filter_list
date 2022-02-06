@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.189
+! Version: 0.190
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 2/6/2022 3:03 AM EDT
+! Last Update: 2/6/2022 10:45 AM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|vidstream.pro|vidstreamz.online|vizstream.ru
@@ -36,6 +36,7 @@
 ||*.mp4upload.com/images/hdblue.png^$popup
 ||google.com/favicon.ico^$popup
 ||popads.net^$popup,third-party
+||ak.alklinker.com^$popup
 ||ak.astarboka.com^$popup
 ||*.hetartwtg.com^$popup
 ||*.mp4upload.com^$popup
@@ -57,6 +58,7 @@
 ||fastestvolcano.com^
 ||*.realtime-bid.com^
 ||*.addthisedge.com^
+||lousebankroll.com^
 ||marijuanaturf.com^
 ||glamourgreek.com^
 ||studabsently.com^
@@ -74,6 +76,7 @@
 ||*.cmpstar.com
 ||*.moatads.com
 ||*.taboola.com
+||makespram.com^
 ||crwdcntrl.net
 ||xmllover.com^
 ||pushyfen.com
@@ -156,6 +159,9 @@
 ||acacdn.com^
 ||rukoval.com^
 ||artpever.com^
+||tdmpoinu.com^
+||glersakr.com^
+||ribsaiji.com^
 ||geedoovu.net^
 ||cogleapad.com^
 ||beefraidmob.com^
@@ -268,10 +274,13 @@
 ||offfurreton.com^
 ||mxyxgkuexjr.com^
 ||ymbgepcphum.com^
+||ak.alklinker.com^
+||rqqbwimhcbge.com^
 ||dddpvctclvdg.com^
 ||cwxxumyrvngok.com^
 ||ykxgjldxwffak.com^
 ||zlajnpfqgsleo.com^
+||*.gloonseetaih.com^
 ||spzqxefawfeubq.com^
 ||nxuktkuoazvizd.com^
 ||oirwfeglpoupyc.top^
