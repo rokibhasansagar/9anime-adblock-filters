@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 2/5/2022 2:48 AM EDT
+# Last Update: 2/6/2022 2:57 AM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -61,13 +61,23 @@
 # Anti-Advertising & Fixes
 ||adgrx.com^
 ||jwpltx.com^
+||venetrigni.com^
+||marijuanaturf.com^
+||addresseepaper.com^
 ||worldspromising.com^
+||gaietyastonished.com^
 ||raspberryareaurge.com^
 ||bootsuserstruthful.com^
-||vidstream.pro/a/*.js^
-||vidstreamz.online/a/*.js^
-@@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro,vidstreamz.online
-@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro,vidstreamz.online
+||regulationprivilegescan.top^
+||vizstream.ru/B/*.js^
+||vidstream.pro/B/*.js^
+||vidstreamz.online/B/*.js^
+vizstream.ru##[target="_blank"][style]:upward([style])
+vidstream.pro##[target="_blank"][style]:upward([style])
+vidstreamz.online##[target="_blank"][style]:upward([style])
+
+@@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro,vidstreamz.online,vizstream.ru
+@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro,vidstreamz.online,vizstream.ru
 ###########################################################################################
 # StreamTape
 # Anti-Advertising & Fixes
@@ -137,13 +147,13 @@ videovard.to,videovard.sx##.jw-reset.jw-wrapper:style(z-index:2147483647 !import
 # uBO Imports
 ###########################################################################################
 # Vidstream uBO Injects
-vidstream.*##+js(no-setInterval-if, break)
-Vidstream.*##+js(window.open-defuser)
-vidstreamz.online##+js(no-setInterval-if, break)
-vidstreamz.online##+js(window.open-defuser)
+vidstream.*##+js(abort-on-property-read, open)
+vizstream.*##+js(abort-on-property-read, open)
+vidstreamz.online##+js(abort-on-property-read, open)
 
 # This filter stops Vidstream from disabling the right-click context menu.
 vidstream.*##+js(aopr, HTMLElement.prototype.oncontextmenu)
+vizstream.*##+js(aopr, HTMLElement.prototype.oncontextmenu)
 vidstreamz.online##+js(aopr, HTMLElement.prototype.oncontextmenu)
 
 # StreamTape
