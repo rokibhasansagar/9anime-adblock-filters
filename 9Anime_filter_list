@@ -1,31 +1,31 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.190
+! Version: 0.192
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 2/6/2022 10:45 AM EDT
+! Last Update: 2/6/2022 5:11 AM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
-@@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|vidstream.pro|vidstreamz.online|vizstream.ru
-@@||9anime.*^$script,domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me
-@@||9anime.*/ajax/*$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me
-@@||*.bunnycdn.ru^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me
-@@||*.fastcache.ru^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me
+@@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|vidstream.pro|vidstreamz.online|vizstream.ru
+@@||9anime.*^$script,domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center
+@@||9anime.*/ajax/*$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center
+@@||*.bunnycdn.ru^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center
+@@||*.fastcache.ru^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center
 ! Cosmetic Filtering
 ##.google-ad
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me###lay
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me##.vjs-logo
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me##section.sda
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to###MyDickIsFat
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to###NotReallyYouHaveSmallOne
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to##.jw-reset.jw-wrapper:style(z-index:2147483647 !important)
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,mcloud.to,mcloud2.to,mzcloud.life##.afs_ads
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,vidstream.pro,vizstream.ru,vidstreamz.online,videovard.sx,videovard.to##.ad-placement
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,tempest.services.disqus.com###ad-container
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,mcloud.to,mcloud2.to,mzcloud.life###jwa
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.com,stape.fun,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
+9anime.to,9anime.id,9anime.center,9anime.cz,9anime.ws,9anime.me###lay
+9anime.to,9anime.id,9anime.center,9anime.cz,9anime.ws,9anime.me##.vjs-logo
+9anime.to,9anime.id,9anime.center,9anime.cz,9anime.ws,9anime.me##section.sda
+9anime.to,9anime.id,9anime.center,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to###MyDickIsFat
+9anime.to,9anime.id,9anime.center,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to###NotReallyYouHaveSmallOne
+9anime.to,9anime.id,9anime.center,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to##.jw-reset.jw-wrapper:style(z-index:2147483647 !important)
+9anime.to,9anime.id,9anime.center,9anime.cz,9anime.ws,9anime.me,mcloud.to,mcloud2.to,mzcloud.life##.afs_ads
+9anime.to,9anime.id,9anime.center,9anime.cz,9anime.ws,9anime.me,vidstream.pro,vizstream.ru,vidstreamz.online,videovard.sx,videovard.to##.ad-placement
+9anime.to,9anime.id,9anime.center,9anime.cz,9anime.ws,9anime.me,tempest.services.disqus.com###ad-container
+9anime.to,9anime.id,9anime.center,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,mcloud.to,mcloud2.to,mzcloud.life###jwa
+9anime.to,9anime.id,9anime.center,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.com,stape.fun,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
 ! Image or Page Redirect Popups
 */favicon.ico^$popup
 ||jomtingi.net^$popup
@@ -292,13 +292,13 @@
 ||streamtape.*/adult^
 ||stape.fun/ad.js
 ||streamtape.*/ad.js
-*.com/*.css?^$stylesheet,domain=9anime.to|9anime.id|9anime.me|9anime.cz|9anime.ws|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|stape.fun
+*.com/*.css?^$stylesheet,domain=9anime.to|9anime.id|9anime.me|9anime.cz|9anime.ws|9anime.center|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|stape.fun
 ! Major Lockdowns
-*.com^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|9anime.cz|9anime.ws|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|stape.fun|mp4upload.com
-*.pro^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|9anime.cz|9anime.ws|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|stape.fun|mp4upload.com
-*.net^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|9anime.cz|9anime.ws|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|stape.fun|mp4upload.com
-*.xyz^$domain=9anime.to|9anime.id|9anime.me|9anime.cz|9anime.ws|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|stape.fun|mp4upload.com
-*.top^$domain=9anime.to|9anime.id|9anime.me|9anime.cz|9anime.ws|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|stape.fun|mp4upload.com
+*.com^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|9anime.cz|9anime.ws|9anime.center|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|stape.fun|mp4upload.com
+*.pro^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|9anime.cz|9anime.ws|9anime.center|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|stape.fun|mp4upload.com
+*.net^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|9anime.cz|9anime.ws|9anime.center|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|stape.fun|mp4upload.com
+*.xyz^$domain=9anime.to|9anime.id|9anime.me|9anime.cz|9anime.ws|9anime.center|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|stape.fun|mp4upload.com
+*.top^$domain=9anime.to|9anime.id|9anime.me|9anime.cz|9anime.ws|9anime.center|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|stape.fun|mp4upload.com
 ! Whitelisted subdocuments
 @@||disqus.com^$subdocument
 @@||mycloud.to^$subdocument
@@ -382,4 +382,4 @@
 @@||videovard.*/js/*$script
 @@||videovard.*/css/*
 ! Fix Broken Filter from EasyList (Again)
-@@||adblockstrtech.link^$popup,domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|streamtape.com|streamta.pe|strtpe.link
+@@||adblockstrtech.link^$popup,domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.center|9anime.me|streamtape.com|streamta.pe|strtpe.link
