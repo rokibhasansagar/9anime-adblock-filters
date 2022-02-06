@@ -1,14 +1,14 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.188
+! Version: 0.189
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 2/5/2022 2:51 AM EDT
+! Last Update: 2/6/2022 3:03 AM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
-@@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|vidstream.pro|vidstreamz.online
+@@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|vidstream.pro|vidstreamz.online|vizstream.ru
 @@||9anime.*^$script,domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me
 @@||9anime.*/ajax/*$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me
 @@||*.bunnycdn.ru^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me
@@ -22,12 +22,13 @@
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to###NotReallyYouHaveSmallOne
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to##.jw-reset.jw-wrapper:style(z-index:2147483647 !important)
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,mcloud.to,mcloud2.to,mzcloud.life##.afs_ads
-9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,vidstream.pro,vidstreamz.online,videovard.sx,videovard.to##.ad-placement
+9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,vidstream.pro,vizstream.ru,vidstreamz.online,videovard.sx,videovard.to##.ad-placement
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,tempest.services.disqus.com###ad-container
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,mcloud.to,mcloud2.to,mzcloud.life###jwa
 9anime.to,9anime.id,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.com,stape.fun,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
 ! Image or Page Redirect Popups
 */favicon.ico^$popup
+||jomtingi.net^$popup
 |about:$popup,third-party
 ||static.bunnycdn.ru^$popup
 /watch?key=$popup,third-party
@@ -56,6 +57,7 @@
 ||fastestvolcano.com^
 ||*.realtime-bid.com^
 ||*.addthisedge.com^
+||marijuanaturf.com^
 ||glamourgreek.com^
 ||studabsently.com^
 ||itchytidying.com^
@@ -183,15 +185,25 @@
 ||oukreesy.net^$important
 ||louchees.net^$important
 ||regulationprivilegescan.top^
+!A Little Fmovies Compatability
+||graifugh.net^
+||dacmaiss.com^
+||thekromp.com^
+||shoagooy.net^
+||oaftaijo.net^
+||my.rtmark.net^
+||rmjagipucb.com^
+||rndskittytor.com^
 ! Vidstream Sub-Ad Servers
 ||adgrx.com^
 ||*.jwpltx.com^
 ||getcaptcha21.com^
 ||worldspromising.com^
 ||gaietyastonished.com^
-||vidstream.pro/a/*.js^
+||vizstream.ru/B/*.js^
+||vidstream.pro/B/*.js^
 ||raspberryareaurge.com^
-||vidstreamz.online/a/*.js^
+||vidstreamz.online/B/*.js^
 ||regulationprivilegescan.top^
 ||bootsuserstruthful.com^$important
 ! VideoVard Sub-Ad Servers
@@ -249,6 +261,7 @@
 ||glainsee.com^
 ||waisheph.com^
 ||*.rtmark.net^
+||jipfvqusm.com^
 ||vgfutxwgq.com^
 ||nonegrysu.pro^
 ||xdvsijtlhr.com^
@@ -286,6 +299,7 @@
 @@||stape.*^$subdocument
 @@||strtape.*^$subdocument
 @@||*.mp4upload.com^$subdocument
+@@||vizstream.ru^$subdocument
 @@||vidstream.pro^$subdocument
 @@||vidstreamz.online^$subdocument
 @@||streamtape.*^$subdocument
@@ -339,6 +353,10 @@
 @@||adblockstrtech.link/mainstream*.js$script
 @@||adblockstrtech.link/js/player.*.js$script
 ! Vidstream Unblock
+@@||vizstream.ru/assets/vidstream/cache/scripts.js$script
+@@||vizstream.ru/assets/player/jwplayer-*/*$script
+@@||*.vizstream.ru$xmlhttprequest
+@@||vizstream.ru$xmlhttprequest
 @@||vidstream.pro/assets/vidstream/cache/scripts.js$script
 @@||vidstream.pro/assets/player/jwplayer-*/*$script
 @@||*.vidstream.pro$xmlhttprequest
