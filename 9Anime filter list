@@ -3,12 +3,12 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 2/6/2022 10:40 AM EDT
+# Last Update: 2/6/2022 5:08 PM EDT
 # Hope this works for you /u/RedditChickenWings
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
-@@||9anime.*$~third-party,domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me
+@@||9anime.*$~third-party,domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center
 
 # Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
 # This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
@@ -207,5 +207,5 @@ videovard.*##+js(window.open-defuser)
 ###########################################################################################
 # CUSTOM rules start here
 # Unblock traffic which originates from 9Anime and isn't blocked for being malicious as seen above.
-@@||*^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me
+@@||*^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center
 ###########################################################################################
