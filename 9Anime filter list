@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 2/6/2022 5:06 PM EDT
+# Last Update: 2/7/2022 1:48 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -113,7 +113,6 @@ streamta.pe*#@#.google-ad
 ||geedoovu.net^
 ||snagbaudhulas.com^
 ||mp4upload.com/images/hdblue.png$popup
-||mp4upload.com/nue/videojs/plugins/vast.vpaid.min.js
 |https://$script,third-party,domain=mp4upload.com
 *$script,redirect-rule=noopjs,domain=mp4upload.com
 
