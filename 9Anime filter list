@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 2/6/2022 5:08 PM EDT
+# Last Update: 2/7/2022 1:49 PM EDT
 # Hope this works for you /u/RedditChickenWings
 ###########################################################################################
 # General 9Anime Fixes
@@ -114,7 +114,6 @@ streamta.pe*#@#.google-ad
 ||geedoovu.net^
 ||snagbaudhulas.com^
 ||mp4upload.com/images/hdblue.png$popup
-||mp4upload.com/nue/videojs/plugins/vast.vpaid.min.js
 |https://$script,third-party,domain=mp4upload.com
 *$script,redirect-rule=noopjs,domain=mp4upload.com
 
