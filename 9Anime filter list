@@ -3,12 +3,12 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/912zfv/ublock_fixes_for_server_error_login_and_the
-# Last Update: 2/7/2022 1:49 PM EDT
+# Last Update: 3/2/2022 4:01 PM EDT
 # Hope this works for you /u/RedditChickenWings
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
-@@||9anime.*$~third-party,domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center
+@@||9anime.*$~third-party,domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|9anime.club
 
 # Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
 # This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
@@ -67,10 +67,14 @@
 ||vizstream.ru/B/*.js^
 ||vidstream.pro/B/*.js^
 ||vidstreamz.online/B/*.js^
+vidstream.ru##.xad-wrapper
+vidstream.pro##.xad-wrapper
+vidstreamz.online##.xad-wrapper
 vizstream.ru##[target="_blank"][style]:upward([style])
 vidstream.pro##[target="_blank"][style]:upward([style])
 vidstreamz.online##[target="_blank"][style]:upward([style])
 
+/ad-inject/*$~image
 @@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro,vidstreamz.online,vizstream.ru
 @@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro,vidstreamz.online,vizstream.ru
 ###########################################################################################
@@ -181,6 +185,7 @@ mzcloud.life##+js(abort-current-inline-script, Math, XMLHttpRequest)
 
 # Mp4Upload
 mp4upload.com##+js(set, document.documentElement.appendChild, noopFunc)
+mp4upload.com##+js(abort-current-script, JSON.parse, break;case $.)
 mp4upload.com##+js(abort-on-property-write, adcashMacros)
 mp4upload.com##+js(abort-on-property-write, _pop)
 mp4upload.com##+js(popads-dummy)
@@ -206,5 +211,5 @@ videovard.*##+js(window.open-defuser)
 ###########################################################################################
 # CUSTOM rules start here
 # Unblock traffic which originates from 9Anime and isn't blocked for being malicious as seen above.
-@@||*^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center
+@@||*^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|9anime.club
 ###########################################################################################
