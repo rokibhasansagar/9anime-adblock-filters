@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 3/2/2022 1:48 PM EDT
+# Last Update: 3/4/2022 10:53 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -65,17 +65,20 @@
 ||regulationprivilegescan.top^
 ||vizstream.ru/B/*.js^
 ||vidstream.pro/B/*.js^
+||vizcloud2.online/B/*.js^
 ||vidstreamz.online/B/*.js^
 vidstream.ru##.xad-wrapper
 vidstream.pro##.xad-wrapper
+vizcloud2.online##.xad-wrapper
 vidstreamz.online##.xad-wrapper
 vizstream.ru##[target="_blank"][style]:upward([style])
 vidstream.pro##[target="_blank"][style]:upward([style])
+vizcloud2.online##[target="_blank"][style]:upward([style])
 vidstreamz.online##[target="_blank"][style]:upward([style])
 
 /ad-inject/*$~image
-@@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro,vidstreamz.online,vizstream.ru
-@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro,vidstreamz.online,vizstream.ru
+@@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro|vidstreamz.online|vizstream.ru|vizcloud2.online
+@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro|vidstreamz.online|vizstream.ru|vizcloud2.online
 ###########################################################################################
 # StreamTape
 # Anti-Advertising & Fixes
@@ -149,11 +152,13 @@ videovard.to,videovard.sx##.jw-reset.jw-wrapper:style(z-index:2147483647 !import
 # Vidstream uBO Injects
 vidstream.*##+js(abort-on-property-read, open)
 vizstream.*##+js(abort-on-property-read, open)
+vizcloud2.online##+js(abort-on-property-read, open)
 vidstreamz.online##+js(abort-on-property-read, open)
 
 # This filter stops Vidstream from disabling the right-click context menu.
 vidstream.*##+js(aopr, HTMLElement.prototype.oncontextmenu)
 vizstream.*##+js(aopr, HTMLElement.prototype.oncontextmenu)
+vizcloud2.online##+js(aopr, HTMLElement.prototype.oncontextmenu)
 vidstreamz.online##+js(aopr, HTMLElement.prototype.oncontextmenu)
 
 # StreamTape
