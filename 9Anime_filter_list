@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.195
+! Version: 0.196
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 3/2/2022 3:58 PM EDT
+! Last Update: 3/4/2022 10:57 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|9anime.club
@@ -22,8 +22,8 @@
 9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to###NotReallyYouHaveSmallOne
 9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,videovard.sx,videovard.to##.jw-reset.jw-wrapper:style(z-index:2147483647 !important)
 9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,mcloud.to,mcloud2.to,mzcloud.life##.afs_ads
-9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,vidstream.pro,vizstream.ru,vidstreamz.online,videovard.sx,videovard.to##.ad-placement
-9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,vidstream.pro,vizstream.ru,vidstreamz.online##.xad-wrapper
+9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,vidstream.pro,vizstream.ru,vizcloud2.online,vidstreamz.online,videovard.sx,videovard.to##.ad-placement
+9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,vidstream.pro,vizstream.ru,vizcloud2.online,vidstreamz.online##.xad-wrapper
 9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,tempest.services.disqus.com###ad-container
 9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,mcloud.to,mcloud2.to,mzcloud.life###jwa
 9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,streamtape.com,adblockstreamtape.fr,stape.fun,dood.to##a[href^="//"][rel="nofollow norefferer noopener"][style^="position: fixed; z-index:"]
@@ -212,6 +212,7 @@
 ||vizstream.ru/B/*.js^
 ||vidstream.pro/B/*.js^
 ||raspberryareaurge.com^
+||vizcloud2.online/B/*.js^
 ||vidstreamz.online/B/*.js^
 ||regulationprivilegescan.top^
 ||bootsuserstruthful.com^$important
