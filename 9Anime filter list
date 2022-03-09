@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 3/4/2022 10:53 PM EDT
+# Last Update: 3/9/2022 4:25 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -106,6 +106,11 @@ streamta.pe*#@#.google-ad
 ||addresseepaper.com^
 ||runnersgunpowder.com^
 ||regulationprivilegescan.top^
+
+# Pause Ads
+mcloud.to##.xad-wrapper
+mcloud2.to##.xad-wrapper
+mzcloud.life##.xad-wrapper
 
 # Ensure Key connections function
 @@||mcloud.to^$generichide
