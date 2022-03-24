@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: No Banner Ads (Easylist TEST Edition)
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.952
+! Version: 0.953
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 3/4/2022 10:58 PM EDT
+! Last Update: 3/24/2022 5:14 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -70,9 +70,11 @@
 ||bootsuserstruthful.com^
 ||regulationprivilegescan.top^
 ||vizstream.ru/B/*.js^
+||vizcloud.xyz/B/*.js^
 ||vidstream.pro/B/*.js^
 ||vizcloud2.online/B/*.js^
 ||vidstreamz.online/B/*.js^
+vizcloud.xyz##.xad-wrapper
 vidstream.ru##.xad-wrapper
 vidstream.pro##.xad-wrapper
 vizcloud2.online##.xad-wrapper
@@ -180,12 +182,14 @@ videovard.to,videovard.sx##.jw-reset.jw-wrapper:style(z-index:2147483647 !import
 vidstream.*#%#//scriptlet('abort-on-property-read', 'open')
 vizstream.*#%#//scriptlet('abort-on-property-read', 'open')
 vizcloud2.*#%#//scriptlet('abort-on-property-read', 'open')
+vizcloud.*#%#//scriptlet('abort-on-property-read', 'open')
 vidstreamz.*#%#//scriptlet('abort-on-property-read', 'open')
 
 # This filter stops Vidstream from disabling the right-click context menu.
 vizstream.*#%#//scriptlet('abort-on-property-read', 'HTMLElement.prototype.oncontextmenu')
 vidstream.*#%#//scriptlet('abort-on-property-read', 'HTMLElement.prototype.oncontextmenu')
 vizcloud2.*#%#//scriptlet('abort-on-property-read', 'HTMLElement.prototype.oncontextmenu')
+vizcloud.*#%#//scriptlet('abort-on-property-read', 'HTMLElement.prototype.oncontextmenu')
 vidstreamz.*#%#//scriptlet('abort-on-property-read', 'HTMLElement.prototype.oncontextmenu')
 
 # StreamTape
