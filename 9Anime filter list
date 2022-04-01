@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 3/9/2022 4:25 PM EDT
+# Last Update: 4/1/2022 2:54 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -63,22 +63,13 @@
 ||raspberryareaurge.com^
 ||bootsuserstruthful.com^
 ||regulationprivilegescan.top^
-||vizstream.ru/B/*.js^
-||vidstream.pro/B/*.js^
-||vizcloud2.online/B/*.js^
-||vidstreamz.online/B/*.js^
-vidstream.ru##.xad-wrapper
-vidstream.pro##.xad-wrapper
-vizcloud2.online##.xad-wrapper
-vidstreamz.online##.xad-wrapper
-vizstream.ru##[target="_blank"][style]:upward([style])
-vidstream.pro##[target="_blank"][style]:upward([style])
-vizcloud2.online##[target="_blank"][style]:upward([style])
-vidstreamz.online##[target="_blank"][style]:upward([style])
+vidstream.ru##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34) none repeat scroll 0% 0%;"]
+vidstream.pro##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34) none repeat scroll 0% 0%;"]
+vizcloud2.online##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34) none repeat scroll 0% 0%;"]
+vidstreamz.online##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34) none repeat scroll 0% 0%;"]
+vizcloud.xyz##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34) none repeat scroll 0% 0%;"]
 
 /ad-inject/*$~image
-@@||cdnjs.cloudflare.com^$script,domain=Vidstream.pro|vidstreamz.online|vizstream.ru|vizcloud2.online
-@@||cdn.plyr.io/*/plyr.svg$xmlhttprequest,domain=Vidstream.pro|vidstreamz.online|vizstream.ru|vizcloud2.online
 ###########################################################################################
 # StreamTape
 # Anti-Advertising & Fixes
@@ -108,9 +99,9 @@ streamta.pe*#@#.google-ad
 ||regulationprivilegescan.top^
 
 # Pause Ads
-mcloud.to##.xad-wrapper
-mcloud2.to##.xad-wrapper
-mzcloud.life##.xad-wrapper
+mcloud.to##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34) none repeat scroll 0% 0%;"]
+mcloud2.to##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34) none repeat scroll 0% 0%;"]
+mzcloud.life##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34) none repeat scroll 0% 0%;"]
 
 # Ensure Key connections function
 @@||mcloud.to^$generichide
