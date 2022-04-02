@@ -3,7 +3,7 @@
 ! Expires: 1 days
 ! Description: Filters to fix common issues with 9Anime and block malicious code
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-# Last Update: 4/1/2022 2:54 PM EDT
+# Last Update: 4/1/2022 10:38 PM EDT
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
@@ -69,6 +69,13 @@ vizcloud2.online##div[style*="position: absolute; left: 50%; top: 50%; width: 30
 vidstreamz.online##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34) none repeat scroll 0% 0%;"]
 vizcloud.xyz##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34) none repeat scroll 0% 0%;"]
 
+vidstream.ru##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34);"]
+vidstream.pro##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34);"]
+vizcloud2.online##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34);"]
+vidstreamz.online##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34);"]
+vizcloud.xyz##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34);"]
+
+
 /ad-inject/*$~image
 ###########################################################################################
 # StreamTape
@@ -102,6 +109,11 @@ streamta.pe*#@#.google-ad
 mcloud.to##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34) none repeat scroll 0% 0%;"]
 mcloud2.to##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34) none repeat scroll 0% 0%;"]
 mzcloud.life##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34) none repeat scroll 0% 0%;"]
+
+# Chrome Specific
+mcloud.to##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34);"]
+mcloud2.to##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34);"]
+mzcloud.life##div[style*="position: absolute; left: 50%; top: 50%; width: 300px; height: 250px; margin-left: -150px; margin-top: -125px; background: rgb(34, 34, 34);"]
 
 # Ensure Key connections function
 @@||mcloud.to^$generichide
