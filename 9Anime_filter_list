@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.201
+! Version: 0.202
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 4/23/2022 4:14 PM EDT
+! Last Update: 4/25/2022 5:27 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|9anime.club
@@ -45,6 +45,7 @@
 ||*.hetartwtg.com^$popup
 ||*.mp4upload.com^$popup
 ||whopexesho.pro^$popup
+||wtpdbtlyld.com^$popup
 ||chyjobopse.pro^$popup
 ||nonegrysu.pro^$popup
 ||tvshows88.com^$popup
@@ -168,6 +169,7 @@
 ! Mp4Upload Sub-Ad Servers
 .php?zoneid=
 ||acacdn.com^
+||asacdn.com^
 ||rukoval.com^
 ||xmwwiuly.com^
 ||artpever.com^
@@ -178,6 +180,7 @@
 ||eshouloo.net^
 ||ausoafab.net^
 ||cogleapad.com^
+||wtpdbtlyld.com^
 ||beefraidmob.com^
 ||hbwsjjrofeo.com^
 ||ninobkfvyxdot.com^
@@ -400,6 +403,9 @@
 @@||adblockstreamtape.*/js/jquery.min.js$script
 @@||adblockstreamtape.*/mainstream*.js$script
 @@||adblockstreamtape.*/js/player.*.js$script
+@@||streamadblockplus.*/js/jquery.min.js$script
+@@||streamadblockplus.*/mainstream*.js$script
+@@||streamadblockplus.*/js/player.*.js$script
 ! Vidstream Unblock
 @@||vizstream.ru/assets/vidstream/cache/scripts.js$script
 @@||vizstream.ru/assets/player/jwplayer-*/*$script
