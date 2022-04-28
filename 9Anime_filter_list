@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.208
+! Version: 0.209
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 4/28/2022 3:50 PM EDT
+! Last Update: 4/28/2022 4:18 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|9anime.club|9anime.pl
@@ -191,6 +191,7 @@
 ||ninobkfvyxdot.com^
 ||qcsurwyviqlue.com^
 ||snagbaudhulas.com^
+||ccqoeqerehkhsj.com^
 ||kpgngamrbwsyfd.com^
 ||hlviygodbawutb.com^
 ||attestationlived.com^
