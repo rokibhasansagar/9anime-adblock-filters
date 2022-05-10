@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.210
+! Version: 0.212
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 5/10/2022 3:07 PM EDT
+! Last Update: 5/10/2022 3:23 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|9anime.club|9anime.pl
@@ -18,11 +18,11 @@
 9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,9anime.pl###lay
 9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,9anime.pl##.vjs-logo
 9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,9anime.pl##section.sda
-9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,9anime.pl,videovard.sx,videovard.to###MyDickIsFat
-9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,9anime.pl,videovard.sx,videovard.to###NotReallyYouHaveSmallOne
-9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,9anime.pl,videovard.sx,videovard.to##.jw-reset.jw-wrapper:style(z-index:2147483647 !important)
+9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,9anime.pl,videovard.sx,vidvard.stream,videovard.to###MyDickIsFat
+9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,9anime.pl,videovard.sx,vidvard.streamvideovard.to###NotReallyYouHaveSmallOne
+9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,9anime.pl,videovard.sx,vidvard.streamvideovard.to##.jw-reset.jw-wrapper:style(z-index:2147483647 !important)
 9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,9anime.pl,mcloud.to,mcloud2.to,mzcloud.life##.afs_ads
-9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,9anime.pl,vidstream.pro,vizstream.ru,vizcloud.xyz,vizcloud.online,vizcloud.digital,vizcloud2.online,vidstreamz.online,videovard.sx,videovard.to##.ad-placement
+9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,9anime.pl,vidstream.pro,vizstream.ru,vizcloud.xyz,vizcloud.online,vizcloud.digital,vizcloud2.online,vidstreamz.online,videovard.sx,vidvard.streamvideovard.to##.ad-placement
 9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,9anime.pl,vidstream.pro,vizstream.ru,vizcloud.xyz,vizcloud.online,vizcloud.digital,vizcloud2.online,vidstreamz.online,mcloud.to,mcloud2.to,mzcloud.life##.xad-wrapper
 9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,9anime.pl,tempest.services.disqus.com###ad-container
 9anime.to,9anime.id,9anime.center,9anime.club,9anime.cz,9anime.ws,9anime.me,9anime.pl,fmovies.to,fmovies.wtf,fmovies.taxi,fmovies.pub,fmovies.cafe,fmovies.love,fmovies.world,fmovies.media,fmovies.coffee,fmovies.solar,mcloud.to,mcloud2.to,mzcloud.life###jwa
@@ -184,6 +184,7 @@
 ||geedoovu.net^
 ||eshouloo.net^
 ||ausoafab.net^
+||diryleme.pro^
 ||srpttbyoy.com^
 ||cogleapad.com^
 ||wtpdbtlyld.com^
@@ -278,8 +279,12 @@
 ||carbonatemourning.com^
 ||videovard.*/ad-inject/*
 ||videovard.*/ad/advert/*
-||videovard.to/js/ada1.js$important
-||videovard.to/js/player10/vast.js$important
+||vidvard.*/ad-inject/*
+||vidvard.*/ad/advert/*
+||videovard.*/js/ada1.js$important
+||videovard.*/js/player10/vast.js$important
+||vidvard.*/js/ada1.js$important
+||vidvard.*/js/player10/vast.js$important
 ||skillravageintrusive.com^
 ||antennacountingfloor.com^
 ||supermanpunchchanges.com^
