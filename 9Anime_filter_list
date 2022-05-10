@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.209
+! Version: 0.210
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 4/28/2022 4:18 PM EDT
+! Last Update: 5/10/2022 3:07 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|9anime.club|9anime.pl
@@ -40,6 +40,7 @@
 ||supermanpunchchanges.com^$popup
 ||google.com/favicon.ico^$popup
 ||popads.net^$popup,third-party
+||jerboasjourney.com^$popup
 ||ak.alklinker.com^$popup
 ||ak.astarboka.com^$popup
 ||*.hetartwtg.com^$popup
@@ -56,7 +57,7 @@
 ||kick4ss.*^$popup
 ||9anime.*^$popup,third-party
 ||flixhq.*^$popup
-||9anime.*/E/*.js
+||9anime.*/e/*.js
 ! General Advertisements
 ://xml.*/redirect?*&pubid=$subdocument
 ||*.runative-syndicate.com
@@ -71,14 +72,17 @@
 ||*.addthisedge.com^
 ||lousebankroll.com^
 ||marijuanaturf.com^
+||unseeenreport.com^
 ||glamourgreek.com^
 ||studabsently.com^
 ||itchytidying.com^
+||poshhateful.com^
 ||curbimpress.com^
 ||sanddevelto.fun^
 ||venetrigni.com^
 ||toromclick.com^
 ||viatepigan.com^
+||knownwarn.com^
 ||bulendrie.com^
 ||rowoardog.com^
 ||onesignal.com^
@@ -264,6 +268,7 @@
 ||infercapture.com^
 ||collidetunnel.com^
 ||opcharizardon.com^
+||jerboasjourney.com^
 ||flipboardsports.com^
 ||fullhealthycare.com^
 ||fendhaunteddelay.com^
@@ -273,6 +278,8 @@
 ||carbonatemourning.com^
 ||videovard.*/ad-inject/*
 ||videovard.*/ad/advert/*
+||videovard.to/js/ada1.js$important
+||videovard.to/js/player10/vast.js$important
 ||skillravageintrusive.com^
 ||antennacountingfloor.com^
 ||supermanpunchchanges.com^
@@ -315,11 +322,15 @@
 ||rqqbwimhcbge.com^
 ||dddpvctclvdg.com^
 ||kahrpinvritz.com^
+||kgpabtukhwrp.com^
+||qxazefkhgayy.com^
+||pikedhelloed.com^
 ||rrlafphbrpazu.com^
 ||cwxxumyrvngok.com^
 ||ykxgjldxwffak.com^
 ||zlajnpfqgsleo.com^
 ||*.gloonseetaih.com^
+||rqxaqblskujdui.com^
 ||spzqxefawfeubq.com^
 ||nxuktkuoazvizd.com^
 ||aedqunriyswthc.com^
