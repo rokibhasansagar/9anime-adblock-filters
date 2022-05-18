@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.213
+! Version: 0.214
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 5/13/2022 3:09 PM EDT
+! Last Update: 5/17/2022 11:43 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|9anime.club|9anime.pl
@@ -41,6 +41,7 @@
 ||supermanpunchchanges.com^$popup
 ||google.com/favicon.ico^$popup
 ||popads.net^$popup,third-party
+||chl7rysobc3ol6xla.com^$popup
 ||jerboasjourney.com^$popup
 ||ak.alklinker.com^$popup
 ||ak.astarboka.com^$popup
@@ -53,6 +54,8 @@
 ||tvshows88.com^$popup
 ||xytinusu.pro^$popup
 ||mipujomo.pro^$popup
+*/ERT/ERT.php^$popup
+*/XCV/XCV.php^$popup
 ||hurawatch.*^$popup
 ||movies7.to^$popup
 ||kick4ss.*^$popup
@@ -279,6 +282,7 @@
 ||mignished-sility.com^
 ||landingpagesecure.com^
 ||carbonatemourning.com^
+||chl7rysobc3ol6xla.com^
 ||videovard.*/ad-inject/*
 ||videovard.*/ad/advert/*
 ||vidvard.*/ad-inject/*
@@ -372,6 +376,7 @@
 *.net^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|9anime.club|9anime.pl|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|streamadblockplus.com|adblockstreamtape.fr|shavetape.cash|stape.fun|mp4upload.com
 *.xyz^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|9anime.club|9anime.pl|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|streamadblockplus.com|adblockstreamtape.fr|shavetape.cash|stape.fun|mp4upload.com
 *.top^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|9anime.club|9anime.pl|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|streamadblockplus.com|adblockstreamtape.fr|shavetape.cash|stape.fun|mp4upload.com
+*.com/*.php?*$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|9anime.club|9anime.pl|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|videovard.to|videovard.sx|filemoon.to|filemoon.sx|vardembed.xyz|vardembed.top|vardembed.click|vidvard.stream|vidvard.link
 ! Whitelisted subdocuments
 @@||disqus.com^$subdocument
 @@||mycloud.to^$subdocument
