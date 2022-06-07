@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.214
+! Version: 0.215
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 5/17/2022 11:43 PM EDT
+! Last Update: 6/7/2022 3:47 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||plyr.io^$domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|9anime.club|9anime.pl
@@ -42,6 +42,7 @@
 ||google.com/favicon.ico^$popup
 ||popads.net^$popup,third-party
 ||chl7rysobc3ol6xla.com^$popup
+||smg8oo4njst45oene.com^$popup
 ||jerboasjourney.com^$popup
 ||ak.alklinker.com^$popup
 ||ak.astarboka.com^$popup
@@ -54,6 +55,7 @@
 ||tvshows88.com^$popup
 ||xytinusu.pro^$popup
 ||mipujomo.pro^$popup
+||diryleme.pro^$popup
 */ERT/ERT.php^$popup
 */XCV/XCV.php^$popup
 ||hurawatch.*^$popup
@@ -64,9 +66,11 @@
 ||9anime.*/e/*.js
 ! General Advertisements
 ://xml.*/redirect?*&pubid=$subdocument
+||specialistcorrelation.com^
 ||*.runative-syndicate.com
 ||*.scorecardresearch.com
 ||slidecaffeinecrown.com^
+||simplewebanalysis.com^
 ||clksite.com^$important
 ||frightfuljourney.com^
 ||*.spotscenered.info^
@@ -189,6 +193,7 @@
 ||eshouloo.net^
 ||ausoafab.net^
 ||diryleme.pro^
+||xispsclcq.com^
 ||srpttbyoy.com^
 ||cogleapad.com^
 ||qhqmwheumv.com^
@@ -209,12 +214,12 @@
 ||*.com/*refer=https%3A%2F%2Fwww.mp4upload.com*$important
 ||mp4upload.com/nue/videojs/plugins/vast.vpaid.min.js$important
 ! MyCloud Sub-Ad Servers
-||mcloud.to/log/
-||mcloud2.to/log/
-||mzcloud.life/log/
-||mcloud.to/A/*.js^
-||mcloud2.to/A/*.js^
-||mzcloud.life/A/*.js^
+||*.mcloud.to/log/
+||*.mcloud2.to/log/
+||*.mzcloud.life/log/
+||*.mcloud.to/A/*.js^
+||*.mcloud2.to/A/*.js^
+||*.mzcloud.life/A/*.js^
 ||addresseepaper.com^
 ||runnersgunpowder.com^
 ||absolutionbravery.com^
@@ -283,6 +288,7 @@
 ||landingpagesecure.com^
 ||carbonatemourning.com^
 ||chl7rysobc3ol6xla.com^
+||smg8oo4njst45oene.com^
 ||videovard.*/ad-inject/*
 ||videovard.*/ad/advert/*
 ||vidvard.*/ad-inject/*
@@ -314,6 +320,7 @@
 ||jomtingi.net^
 ||grangilo.net^
 ||psairees.net^
+||diryleme.pro^
 ||xytinusu.pro^
 ||mipujomo.pro^
 ||faipeeji.com^
@@ -323,8 +330,10 @@
 ||wcjlsohd.com^
 ||glainsee.com^
 ||waisheph.com^
+||xbouyazk.com^
 ||ygfwbczu.com^
 ||*.rtmark.net^
+||tlprxzujk.com^
 ||jipfvqusm.com^
 ||vgfutxwgq.com^
 ||nonegrysu.pro^
@@ -333,6 +342,7 @@
 ||sbvancijyi.com^
 ||jmvxdkguyv.com^
 ||xdvsijtlhr.com^
+||upadspanel.com^
 ||offfurreton.com^
 ||mxyxgkuexjr.com^
 ||ymbgepcphum.com^
@@ -344,6 +354,7 @@
 ||kgpabtukhwrp.com^
 ||qxazefkhgayy.com^
 ||pikedhelloed.com^
+||aeoliancorojo.com^
 ||gcfowqaazdycb.com^
 ||rrlafphbrpazu.com^
 ||cwxxumyrvngok.com^
