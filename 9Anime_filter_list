@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.301
+! Version: 0.305
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 9/28/2022 5:18 PM EDT
+! Last Update: 2/10/2023 10:29 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||9anime.*^$script,domain=9anime.to|9anime.id|9anime.me|9anime.pl|9anime.gs
@@ -23,16 +23,33 @@
 ||banquetunarmedgrater.com^
 ||possessionaddictedflight.com^
 ||possessionaddictedflight.com^$popup
+! Genernic Ads & Tracking
+*sbar.json?key=5a49bdb3971e86d0db7e8480f13ed7a3
+*pixel/sbe?t=1&error=timeout
 ! Filemoon.sx Ads
+||peculiaritiesimaginationembankment.com^
+||innocenceexpeditionsensation.com^
+||indignationmapprohibited.com^
+||magazinesfluentlymercury.com^
+||peeksdragoncontinually.com^
 ||homosexualprovenance.com^$popup
 ||homosexualprovenance.com^
+||pioneersuspectedjury.com^
+||outdilateinterrupt.com^
+||keepingconcerned.com^
 ||*.barscreative1.com^
+||friendshipmale.com^
 ||creepingbrings.com^
 ||vilereasoning.com^
 ||unseenreport.com^
+||priestsuede.com^
 ||reapinject.com^
+||*.whookroo.com^
+||radargoats.com^
+||whirltoes.com^
 ! Filemoon Javascript
 ||filemoon.sx/js/xupload.js
+||filemoon.sx/advertises/*
 ||filemoon.sx/js/dnsads.js
 ||filemoon.sx/js/dola.js
 ||filemoon.sx/js/fab.js
@@ -41,33 +58,60 @@
 ||afcdn.net^
 ||acacdn.com^
 ||waisheph.com^
+||cagothie.net^
+||tegrooxo.xyz^
 ||*.exdynsrv.com^
 ||garagesewe.com^
+||onclickalgo.com^
+||upsweephalms.com^
 ||direct.apus.tech^
+||onclickgenius.com^
+||jgevncmrhewpf.xyz^
+||syenitetatler.tech^
 ||tyrvwaipfcywnuo.com^
+||selungdunker.website^
+||apathylahuli.website^
+||amputeeinvenit.space^
+||onclickperformance.com^
 ||mp4upload.com/images/hdblue.png
 ! Streamtape.com / adblockplustape.com Ads
-streamtape.com,adblockplustape.com###play-overlay
+streamtape.com,adblockplustape.com,adblocktape.wiki###play-overlay
 ||d3g5ovfngjw9bw.cloudfront.net^
+||hundredscultureenjoyed.com^
+||lazypeacefullyutterly.com^
 ||adblockplustape.com/ad.js
+||adblocktape.wiki/ad.js
 ||streamtape.com/ad.js
 ||llinks.io/favicon.ico
+||aa.samaniclucked.com^
+||a.adforcast.com^
 ||betotodilea.com^
+||qbxucdgggl.com^
 ||abluvdiscr.com^
 ||glersakr.com^
+||arsnivyr.com^
+||qtspkqzn.com^
 ||aihoasso.net^
+||seapolo.com^
 ||cdn4ads.com^
 ||c.adsco.re^
+||e2ertt.com^
 ||zap.buzz^
 ! Streamtape's Popups
+||mankindcopiesrichest.com^$popup
+||mankindcopiesrichest.com^
 ||capitalonespring.pxf.io^$popup
 ||capitalonespring.pxf.io^
 ||spring.capitalone.com^$popup
 ||spring.capitalone.com^
 ||multilink-llp.co.uk^$popup
 ||multilink-llp.co.uk^
+||ak.psaltauw.net^$popup
+||ak.psaltauw.net^
 ||doruffletr.com^$popup
 ||doruffletr.com^
+||mscoldness.com^$popup
+||mscoldness.com^
 ||guchihyfa.pro^$popup
 ||guchihyfa.pro^
 ||starads.xyz^$popup
@@ -87,11 +131,11 @@ streamtape.com,adblockplustape.com###play-overlay
 ||rsnogpgohyo.com^
 ||fssuqbylk.com^
 ! Major Lockdowns
-*.com^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|9anime.pl|9anime.gs|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|streamadblockplus.com|adblockstreamtape.fr|shavetape.cash|stape.fun|mp4upload.com
-*.pro^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|9anime.pl|9anime.gs|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|streamadblockplus.com|adblockstreamtape.fr|shavetape.cash|stape.fun|mp4upload.com
-*.net^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|9anime.pl|9anime.gs|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|streamadblockplus.com|adblockstreamtape.fr|shavetape.cash|stape.fun|mp4upload.com
-*.xyz^$domain=9anime.to|9anime.id|9anime.me|9anime.pl|9anime.gs|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|streamadblockplus.com|adblockstreamtape.fr|shavetape.cash|stape.fun|mp4upload.com
-*.top^$domain=9anime.to|9anime.id|9anime.me|9anime.pl|9anime.gs|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|streamadblockplus.com|adblockstreamtape.fr|shavetape.cash|stape.fun|mp4upload.com
+*.com^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|9anime.pl|9anime.gs|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|streamadblockplus.com|adblockstreamtape.fr|adblocktape.wiki|shavetape.cash|stape.fun|mp4upload.com
+*.pro^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|9anime.pl|9anime.gs|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|streamadblockplus.com|adblockstreamtape.fr|adblocktape.wiki|shavetape.cash|stape.fun|mp4upload.com
+*.net^$script,subdocument,xmlhttprequest,domain=9anime.to|9anime.id|9anime.me|9anime.pl|9anime.gs|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|streamadblockplus.com|adblockstreamtape.fr|adblocktape.wiki|shavetape.cash|stape.fun|mp4upload.com
+*.xyz^$domain=9anime.to|9anime.id|9anime.me|9anime.pl|9anime.gs|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|streamadblockplus.com|adblockstreamtape.fr|adblocktape.wiki|shavetape.cash|stape.fun|mp4upload.com
+*.top^$domain=9anime.to|9anime.id|9anime.me|9anime.pl|9anime.gs|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|streamtape.com|streamadblockplus.com|adblockstreamtape.fr|adblocktape.wiki|shavetape.cash|stape.fun|mp4upload.com
 *.com/*.php?*$domain=9anime.to|9anime.id|9anime.me|9anime.pl|9anime.gs|fmovies.to|fmovies.wtf|fmovies.taxi|fmovies.pub|fmovies.cafe|fmovies.love|fmovies.world|fmovies.media|fmovies.coffee|fmovies.solar|filemoon.to|filemoon.sx|vardembed.xyz|vardembed.top|vardembed.click|vidvard.stream|vidvard.link
 ! Whitelisted subdocuments
 @@||disqus.com^$subdocument
@@ -157,6 +201,9 @@ streamtape.com,adblockplustape.com###play-overlay
 @@||adblockstreamtape.*/js/jquery.min.js$script
 @@||adblockstreamtape.*/mainstream*.js$script
 @@||adblockstreamtape.*/js/player.*.js$script
+@@||adblocktape.wiki/js/jquery.min.js$script
+@@||adblocktape.wiki/mainstream*.js$script
+@@||adblocktape.wiki/js/player.*.js$script
 @@||streamadblockplus.*/js/jquery.min.js$script
 @@||streamadblockplus.*/mainstream*.js$script
 @@||streamadblockplus.*/js/player.*.js$script
