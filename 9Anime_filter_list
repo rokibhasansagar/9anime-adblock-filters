@@ -1,11 +1,11 @@
 [Adblock Plus 2.0]
 ! Title: 9Anime Filter-list: AdGuard-IOS Edition
 ! Author: Sorrow-San | https://www.reddit.com/user/Sorrow-san/
-! Version: 0.305
+! Version: 0.315
 ! Expires: 1 days
 ! Description: Filters to fix advertisements on 9Anime
 ! Homepage: https://www.reddit.com/r/9anime/comments/c330dx/ublock_origin_filter_fixes/
-! Last Update: 2/10/2023 10:29 PM EDT
+! Last Update: 5/9/2023 5:38 PM EDT
 !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 ! Carefully placed unBlocks
 @@||9anime.*^$script,domain=9anime.to|9anime.id|9anime.me|9anime.pl|9anime.gs
@@ -16,9 +16,12 @@
 ! 9Anime Advertisements
 ||*.addthis.com^
 ||*.bidgear.com^
-! Vidstream.pro / Vizcloud.ink
+||9anime.*/AAA/*.js
+! Vidstream.pro / Vizcloud.ink / Vizcloud.co
+||recruitburp.com^
 ||aircraftmighty.com^
 ||addresseepaper.com^
+||vizcloud.co/AAA/*.js
 ||simplewebanalysis.com^
 ||banquetunarmedgrater.com^
 ||possessionaddictedflight.com^
@@ -26,8 +29,12 @@
 ! Genernic Ads & Tracking
 *sbar.json?key=5a49bdb3971e86d0db7e8480f13ed7a3
 *pixel/sbe?t=1&error=timeout
+*attractivebuilt.com*.js$script
+! Mycloud.to Ads
+||mcloud.to/AAA/*.js
 ! Filemoon.sx Ads
 ||peculiaritiesimaginationembankment.com^
+||filemoon.sx/dl?b=viewpop&file_id=*
 ||innocenceexpeditionsensation.com^
 ||indignationmapprohibited.com^
 ||magazinesfluentlymercury.com^
@@ -37,7 +44,9 @@
 ||pioneersuspectedjury.com^
 ||outdilateinterrupt.com^
 ||keepingconcerned.com^
+||*.whookroo.com^$popup
 ||*.barscreative1.com^
+||youradexchange.com^
 ||friendshipmale.com^
 ||creepingbrings.com^
 ||vilereasoning.com^
@@ -46,7 +55,9 @@
 ||reapinject.com^
 ||*.whookroo.com^
 ||radargoats.com^
+||eventucker.com^
 ||whirltoes.com^
+||crrepo.com^
 ! Filemoon Javascript
 ||filemoon.sx/js/xupload.js
 ||filemoon.sx/advertises/*
@@ -57,9 +68,12 @@
 ! Mp4Upload.com ads
 ||afcdn.net^
 ||acacdn.com^
+||ufpcdn.com^
 ||waisheph.com^
 ||cagothie.net^
 ||tegrooxo.xyz^
+||ovoordie.xyz^
+||yudlhxvha.xyz^
 ||*.exdynsrv.com^
 ||garagesewe.com^
 ||onclickalgo.com^
@@ -69,12 +83,15 @@
 ||jgevncmrhewpf.xyz^
 ||syenitetatler.tech^
 ||tyrvwaipfcywnuo.com^
+||practicalwhich.info^
 ||selungdunker.website^
 ||apathylahuli.website^
 ||amputeeinvenit.space^
 ||onclickperformance.com^
+||mpanythathaveresultet.info^
+||mpanythathaveresultet.info^$popup
 ||mp4upload.com/images/hdblue.png
-! Streamtape.com / adblockplustape.com Ads
+! Streamtape.com / adblockplustape.com Ads (In case they return?)
 streamtape.com,adblockplustape.com,adblocktape.wiki###play-overlay
 ||d3g5ovfngjw9bw.cloudfront.net^
 ||hundredscultureenjoyed.com^
