@@ -7,7 +7,7 @@
 ###########################################################################################
 # General 9Anime Fixes
 # Average user experence fixes (Fixes the website)
-@@||9anime.*$~third-party,domain=9anime.to|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|9anime.club
+@@||9anime.*$~third-party,domain=9anime.to|9anime.pl|9anime.gs|9anime.id|9anime.cz|9anime.ws|9anime.me|9anime.center|9anime.club
 
 # Fix for certain videos never loading, mostly on mobile but it may cause issues on personal computers too.
 # This also resolves certain stylesheet issues, wherein it wouldn't load the css file.
@@ -41,6 +41,7 @@
 #Advertising & Tracking Removal
 ||disqus.com/api/ping
 ||referrer.disqus.com^
+@@||referrer.disqus.com/juggler/stat.gif^
 ###########################################################################################
 # External Player Tweaks
 ###########################################################################################
@@ -73,6 +74,7 @@
 ||vidstream.pro/B/*.js^
 ||vizcloud2.online/B/*.js^
 ||vidstreamz.online/B/*.js^
+vidstream.*##+js(aopr, HTMLElement.prototype.oncontextmenu)
 vidstream.ru##.xad-wrapper
 vidstream.pro##.xad-wrapper
 vizcloud2.online##.xad-wrapper
@@ -88,6 +90,7 @@ vidstreamz.online##[target="_blank"][style]:upward([style])
 ###########################################################################################
 # StreamTape
 # Anti-Advertising & Fixes
+streamtape.*##+js(addEventListener-defuser.js, contextmenu)
 streamtape.*##[class*="bn-container"], div[style*="z-index: 300000;"]
 streamtape.*#@#.google-ad
 streamta.pe*#@#.google-ad
